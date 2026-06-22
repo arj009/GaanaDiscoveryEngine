@@ -1,16 +1,63 @@
-# React + Vite
+# Gaana Discovery Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite frontend for the AI-Powered Review Discovery Engine (Phase 5). Surfaces insights that answer the six Problem Statement questions using processed review data.
 
-Currently, two official plugins are available:
+**Deployment split (per Architecture):**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Component | Host | Path |
+|---|---|---|
+| Dashboard (this app) | Vercel — manual CLI | `gaana-discovery-engine/dashboard` |
+| FastAPI API | Render | `gaana-discovery-engine/api` |
 
-## React Compiler
+## Local development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+The dashboard loads review data from `/public/enriched_reviews.json` (static bundle). Optionally set `VITE_API_URL` in `.env` when the Render API is live.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Manual Vercel deployment
+
+Deploy from the dashboard directory (recommended):
+
+```bash
+cd gaana-discovery-engine/dashboard
+npm install
+npm run build
+npx vercel login          # once
+npx vercel --prod         # production deploy
+```
+
+Or deploy from the monorepo root (uses root `vercel.json`):
+
+```bash
+cd /path/to/Gaana
+npx vercel --prod
+```
+
+### Vercel project settings (manual deploy only)
+
+When linking the project in the Vercel dashboard:
+
+- **Root Directory:** `gaana-discovery-engine/dashboard` (if importing from Git later)
+- **Framework Preset:** Vite
+- **Build Command:** `npm run build`
+- **Output Directory:** `dist`
+- **Install Command:** `npm install`
+- **Node.js Version:** 20.x
+
+Do **not** enable automatic Git deployments if you want manual-only releases — use `vercel --prod` from the CLI instead.
+
+### Environment variables (optional)
+
+| Variable | Purpose |
+|---|---|
+| `VITE_API_URL` | Render FastAPI base URL for live API / NLQ (future); omit to use static JSON |
+
+Copy `.env.example` to `.env` for local overrides. Set the same variable in the Vercel dashboard under Project → Settings → Environment Variables when connecting to the Render API.
+
+## Data source
+
+Production builds bundle `public/enriched_reviews.json` (~800 KB). Regenerate it by running the processing pipeline, then rebuild and redeploy.
