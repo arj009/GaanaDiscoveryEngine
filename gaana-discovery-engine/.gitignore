@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+*.db
+
+# Env files (never commit real keys!)
+.env
+
+# Node
+node_modules/
+dist/
+.vercel/
+
+# Data files (too large for git)
+ingestion/raw_reviews_dump.json
+processing/enriched_reviews.json
