@@ -18,7 +18,7 @@ services:
         sync: false
       - key: PINECONE_API_KEY
         sync: false
-      - key: OPENAI_API_KEY
+      - key: GROQ_API_KEY
         sync: false
       - key: REDDIT_CLIENT_ID
         sync: false
