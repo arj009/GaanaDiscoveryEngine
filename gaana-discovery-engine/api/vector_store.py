@@ -2,7 +2,7 @@ import os
 from pinecone import Pinecone
 from dotenv import load_dotenv
 
-load_dotenv(dotenv_path="../.env")
+load_dotenv()
 
 class VectorDBManager:
     """Handles semantic search using Pinecone Vector Database."""
