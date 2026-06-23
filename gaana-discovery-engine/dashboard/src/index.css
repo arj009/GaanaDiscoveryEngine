@@ -272,3 +272,115 @@ body {
 .delay-3 { animation-delay: 0.3s; opacity: 0; }
 .delay-4 { animation-delay: 0.4s; opacity: 0; }
 .delay-5 { animation-delay: 0.5s; opacity: 0; }
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .sidebar { width: 200px; }
+  .main { padding: 32px 32px; }
+  .kpi-row { grid-template-columns: repeat(2, 1fr); }
+  .three-col { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .app-layout { flex-direction: column; }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 16px;
+    border-right: none;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  
+  .logo { padding: 0; }
+  
+  .nav-section-label { display: none; }
+  
+  .nav-item {
+    display: inline-flex;
+    padding: 8px 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  
+  .main { padding: 24px 16px; }
+  
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  .topbar-left h1 { font-size: 22px; }
+  .topbar-left p { font-size: 13px; }
+  
+  .nlq-box { max-width: 100%; }
+  
+  .kpi-row { 
+    grid-template-columns: 1fr; 
+    gap: 16px;
+  }
+  
+  .kpi-card { padding: 20px; }
+  .kpi-val { font-size: 32px; }
+  
+  .two-col { grid-template-columns: 1fr; }
+  .three-col { grid-template-columns: 1fr; }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .section-num { width: 24px; height: 24px; font-size: 11px; }
+  .section-title { font-size: 16px; }
+  .section-sub { font-size: 12px; }
+  
+  .glass-card { padding: 20px; }
+  
+  .chart-title { font-size: 14px; }
+  
+  .segment-card { padding: 16px; }
+  .seg-count { font-size: 24px; }
+  
+  .needs-grid { gap: 8px; }
+  .need-pill { font-size: 12px; padding: 6px 12px; }
+  
+  .evidence-card { padding: 14px; }
+  .evidence-text { font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .sidebar { padding: 12px; }
+  
+  .logo-text { font-size: 16px; }
+  .logo-sub { font-size: 10px; }
+  
+  .nav-item { 
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  
+  .main { padding: 20px 12px; }
+  
+  .topbar-left h1 { font-size: 20px; }
+  .topbar-left p { font-size: 12px; }
+  
+  .kpi-val { font-size: 28px; }
+  .kpi-lbl { font-size: 12px; }
+  .kpi-sub { font-size: 11px; }
+  
+  .glass-card { padding: 16px; }
+  
+  .section-title { font-size: 15px; }
+  .section-sub { font-size: 11px; }
+  
+  .h-bar-label { font-size: 12px; }
+  .h-bar-track { height: 6px; }
+  
+  .seg-name { font-size: 13px; }
+  .seg-count { font-size: 22px; }
+  .seg-neg { font-size: 11px; }
+}
