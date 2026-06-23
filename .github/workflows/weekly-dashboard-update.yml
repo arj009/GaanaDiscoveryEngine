@@ -18,28 +18,23 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-          cache: 'pip'
       
-      - name: Install all dependencies
+      - name: Install processing dependencies
         run: |
-          echo "Installing ingestion dependencies..."
-          pip install -r gaana-discovery-engine/ingestion/requirements.txt
           echo "Installing processing dependencies..."
-          pip install -r gaana-discovery-engine/processing/requirements.txt
-          echo "Verifying google_play_scraper installation..."
-          python -c "import google_play_scraper; print('google_play_scraper installed successfully')"
-          echo "All installed packages:"
+          pip install transformers torch sentence-transformers groq langdetect pydantic python-dotenv sqlalchemy psycopg2-binary pinecone
+          echo "Verifying installation..."
           pip list
       
-      - name: Run ingestion pipeline
-        run: |
-          cd gaana-discovery-engine/ingestion
-          python pipeline.py
-      
-      - name: Run processing pipeline
+      - name: Run processing pipeline on existing data
         run: |
           cd gaana-discovery-engine/processing
-          python pipeline.py
+          if [ -f "../ingestion/raw_reviews_dump.json" ]; then
+            echo "Processing existing raw_reviews_dump.json..."
+            python pipeline.py
+          else
+            echo "No raw_reviews_dump.json found - skipping processing"
+          fi
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       
