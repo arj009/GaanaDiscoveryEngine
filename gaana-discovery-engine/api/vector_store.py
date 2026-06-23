@@ -1,6 +1,5 @@
 import os
 from pinecone import Pinecone
-from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 import uuid
 
@@ -12,7 +11,7 @@ class VectorDBManager:
         self.api_key = os.getenv("PINECONE_API_KEY")
         self.index_name = os.getenv("PINECONE_INDEX_NAME", "gaana-reviews-index")
         self.embedding_dim = 384  # all-MiniLM-L6-v2 produces 384-dimensional embeddings
-        self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+        self.embedding_model = None  # Lazy load only when needed
         
         if self.api_key and self.api_key != "your_pinecone_api_key_here":
             self.pc = Pinecone(api_key=self.api_key)
@@ -34,6 +33,15 @@ class VectorDBManager:
         else:
             self.index = None
             print("⚠️  No PINECONE_API_KEY found — using simulated vector search")
+    
+    def _get_embedding_model(self):
+        """Lazy load the embedding model only when needed."""
+        if self.embedding_model is None:
+            from sentence_transformers import SentenceTransformer
+            print("Loading sentence-transformers model...")
+            self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+            print("✅ Embedding model loaded")
+        return self.embedding_model
 
     def upsert_reviews(self, reviews: list):
         """Upload review embeddings to Pinecone."""
@@ -78,8 +86,11 @@ class VectorDBManager:
                 }
             ]
         
+        # Get embedding model (lazy loaded)
+        model = self._get_embedding_model()
+        
         # Generate embedding for query
-        query_embedding = self.embedding_model.encode(query_text, convert_to_numpy=True).tolist()
+        query_embedding = model.encode(query_text, convert_to_numpy=True).tolist()
         
         # Search Pinecone
         results = self.index.query(
