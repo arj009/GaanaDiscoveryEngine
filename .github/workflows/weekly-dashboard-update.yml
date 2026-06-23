@@ -22,8 +22,13 @@ jobs:
       
       - name: Install all dependencies
         run: |
+          echo "Installing ingestion dependencies..."
           pip install -r gaana-discovery-engine/ingestion/requirements.txt
+          echo "Installing processing dependencies..."
           pip install -r gaana-discovery-engine/processing/requirements.txt
+          echo "Verifying google_play_scraper installation..."
+          python -c "import google_play_scraper; print('google_play_scraper installed successfully')"
+          echo "All installed packages:"
           pip list
       
       - name: Run ingestion pipeline
