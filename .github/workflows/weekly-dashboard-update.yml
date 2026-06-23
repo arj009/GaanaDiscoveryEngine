@@ -18,16 +18,13 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+          cache: 'pip'
       
-      - name: Install ingestion dependencies
+      - name: Install all dependencies
         run: |
-          cd gaana-discovery-engine/ingestion
-          pip install -r requirements.txt
-      
-      - name: Install processing dependencies
-        run: |
-          cd gaana-discovery-engine/processing
-          pip install -r requirements.txt
+          pip install -r gaana-discovery-engine/ingestion/requirements.txt
+          pip install -r gaana-discovery-engine/processing/requirements.txt
+          pip list
       
       - name: Run ingestion pipeline
         run: |
