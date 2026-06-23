@@ -241,14 +241,15 @@ flowchart TD
 ```
 
 ### 3.4 Deliverables
-- [ ] Preprocessing pipeline with language detection and PII redaction
-- [ ] Sentiment analysis model deployed (fine-tuned or pre-trained)
+- [x] Preprocessing pipeline with language detection and PII redaction
+- [x] Sentiment analysis model deployed (fine-tuned or pre-trained)
 - [ ] BERTopic model trained on initial corpus of Gaana reviews
-- [ ] LLM-based intent extraction with structured JSON output
-- [ ] User segment classifier
-- [ ] Embeddings generated and stored in vector database
+- [x] LLM-based intent extraction with structured JSON output (Groq Llama 3.3)
+- [x] User segment classifier
+- [x] Embeddings generated using sentence-transformers (all-MiniLM-L6-v2)
+- [x] Embeddings stored in Pinecone vector database for semantic search
 - [ ] Full-text search index in Elasticsearch
-- [ ] Pipeline monitoring (processing time, error rates, LLM costs)
+- [x] Pipeline monitoring (processing time, error rates, LLM costs)
 
 ---
 
@@ -322,12 +323,12 @@ CREATE TABLE segment_insights (
 | `/api/v1/reports/generate` | POST | Trigger automated report generation |
 
 ### 4.3 Deliverables
-- [ ] PostgreSQL schema migrated and indexed
-- [ ] FastAPI service with all endpoints
-- [ ] Semantic search via vector store integration
+- [x] PostgreSQL schema migrated and indexed (SQLite fallback for local dev)
+- [x] FastAPI service with all endpoints
+- [x] Semantic search via Pinecone vector store integration
 - [ ] Full-text search via Elasticsearch
-- [ ] Natural language query endpoint (ask questions in plain English)
-- [ ] API documentation (Swagger/OpenAPI auto-generated)
+- [x] Natural language query endpoint (ask questions in plain English)
+- [x] API documentation (Swagger/OpenAPI auto-generated)
 
 ---
 

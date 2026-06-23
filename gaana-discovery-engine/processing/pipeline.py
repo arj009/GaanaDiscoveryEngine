@@ -3,6 +3,7 @@ import os
 from preprocessing import TextPreprocessor
 from analyzer import SentimentAnalyzer, SegmentClassifier
 from llm_extraction import LLMExtractor
+from embeddings import EmbeddingGenerator
 
 class ProcessingPipeline:
     def __init__(self):
@@ -10,6 +11,7 @@ class ProcessingPipeline:
         self.sentiment_analyzer = SentimentAnalyzer()
         self.segment_classifier = SegmentClassifier()
         self.llm_extractor = LLMExtractor()
+        self.embedding_generator = EmbeddingGenerator()
 
     def run(self, input_file: str, output_file: str):
         print("=== Starting AI Processing Pipeline (Phase 3) ===")
@@ -46,11 +48,15 @@ class ProcessingPipeline:
             if segment == "Discovery Seeker" or sentiment_data["sentiment"] == "NEGATIVE":
                  insights = self.llm_extractor.extract_insights(clean_txt)
 
-            # 4. Enrich the original review JSON
+            # 4. Generate Embedding for Vector Search
+            embedding = self.embedding_generator.generate_embedding(clean_txt)
+            
+            # 5. Enrich the original review JSON
             review["sentiment"] = sentiment_data["sentiment"]
             review["sentiment_score"] = sentiment_data["score"]
             review["user_segment"] = segment
             review["llm_insights"] = insights
+            review["embedding"] = embedding
             review["processing_status"] = "completed"
 
             enriched_reviews.append(review)

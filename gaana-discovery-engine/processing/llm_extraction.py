@@ -66,7 +66,7 @@ class LLMExtractor:
 
         try:
             response = self.client.chat.completions.create(
-                model="llama-3.1-70b-versatile",  # Best free model on Groq
+                model="llama-3.3-70b-versatile",  # Best free model on Groq
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": USER_PROMPT_TEMPLATE.format(review_text=text[:800])}
