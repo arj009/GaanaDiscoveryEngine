@@ -19,6 +19,11 @@ jobs:
         with:
           python-version: '3.11'
       
+      - name: Install ingestion dependencies
+        run: |
+          cd gaana-discovery-engine/ingestion
+          pip install -r requirements.txt
+      
       - name: Install processing dependencies
         run: |
           cd gaana-discovery-engine/processing
