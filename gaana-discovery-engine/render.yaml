@@ -6,26 +6,6 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
-      - key: POSTGRES_USER
-        fromDatabase:
-          name: gaana-postgres
-          property: user
-      - key: POSTGRES_PASSWORD
-        fromDatabase:
-          name: gaana-postgres
-          property: password
-      - key: POSTGRES_DB
-        fromDatabase:
-          name: gaana-postgres
-          property: database
-      - key: POSTGRES_HOST
-        fromDatabase:
-          name: gaana-postgres
-          property: host
-      - key: POSTGRES_PORT
-        fromDatabase:
-          name: gaana-postgres
-          property: port
       - key: PINECONE_API_KEY
         sync: false
       - key: PINECONE_ENVIRONMENT
@@ -44,7 +24,3 @@ services:
         sync: false
       - key: TWITTER_API_SECRET
         sync: false
-databases:
-  - name: gaana-postgres
-    databaseName: gaana_discovery
-    user: gaana_user
