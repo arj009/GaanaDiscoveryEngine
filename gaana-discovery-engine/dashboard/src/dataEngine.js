@@ -6,11 +6,17 @@ export function processAggregatedData(aggregated, unmetNeeds, classifiedReviews)
 
   const formatObj = (obj) => Object.entries(obj || {}).map(([name, value]) => ({ name: formatLabel(name), value }));
   
-  const segments = Object.entries(aggregated.segments || {}).map(([name, count]) => ({
-    name: formatLabel(name),
-    count: count,
-    negativePct: 0, // Not explicitly tracked in new aggregation script, but can be added back if needed
-  }));
+  const segments = Object.entries(aggregated.segments || {}).map(([name, count]) => {
+    // Calculate real negative % per segment from classified reviews
+    const segmentReviews = (classifiedReviews || []).filter(r => r.claude_output?.user_segment === name);
+    const negCount = segmentReviews.filter(r => r.claude_output?.sentiment === 'negative').length;
+    const negativePct = segmentReviews.length > 0 ? Math.round((negCount / segmentReviews.length) * 100) : 0;
+    return {
+      name: formatLabel(name),
+      count: count,
+      negativePct: negativePct,
+    };
+  });
 
   const evidenceReviews = (classifiedReviews || [])
     .filter(r => r.claude_output?.discovery_friction === true && r.claude_output?.sentiment === 'negative' && r.content?.length > 30)

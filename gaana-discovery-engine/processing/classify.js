@@ -20,8 +20,8 @@ if (apiKeys.length === 0) {
 }
 
 const CLASSIFICATION_PROMPT = (review) => `
-You are analyzing a user review of Gaana, an Indian music streaming app.
-Your job is to extract structured insights for a product research study on music discovery.
+You are a neutral product analyst classifying a user review of Gaana, an Indian music streaming app.
+Classify this review objectively. Do NOT assume the review is about music discovery unless it explicitly mentions it.
 
 Review text: "${review.content.replace(/\n/g, ' ')}"
 Star rating: ${review.rating ?? 'not available'}/5
@@ -31,7 +31,7 @@ Respond ONLY with a valid JSON object. No preamble, no explanation, no markdown 
 
 {
   "sentiment": "positive" | "negative" | "neutral",
-  "sentiment_confidence": 0.0,
+  "sentiment_confidence": 0.0 to 1.0,
   "discovery_friction": true | false,
   "primary_frustration": "repetitive_recommendations" | "poor_discovery_ui" | "limited_genre_support" | "algorithm_echo_chamber" | "no_explore_mode" | "content_library_gaps" | "payment_issue" | "app_performance" | "other" | "none",
   "listening_intent": "seek_new_music" | "artist_deep_dive" | "mood_listening" | "background_listening" | "playlist_curation" | "none",
@@ -41,10 +41,17 @@ Respond ONLY with a valid JSON object. No preamble, no explanation, no markdown 
   "key_phrase": "the most important 5-10 word phrase from this review that captures their core feeling, or null"
 }
 
-Rules:
+CRITICAL RULES:
 - sentiment must reflect the OVERALL tone of the review
-- discovery_friction is true if the user mentions anything about repetitive songs, poor recommendations, inability to find new music, or being stuck in a listening bubble
-- primary_frustration must be exactly one of the listed values
+- discovery_friction: Set to true ONLY if the user EXPLICITLY mentions repetitive songs, poor recommendations, inability to find new music, or being stuck in a loop. Generic complaints about ads, crashes, payments, or UI bugs are NOT discovery friction. Be conservative — when in doubt, set to false.
+- primary_frustration: Must be exactly one value. Use "payment_issue" for subscription/billing complaints. Use "app_performance" for crashes/bugs/lag. Use "other" for generic complaints. Use "none" for positive reviews.
+- user_segment classification rules:
+  * "discovery_seeker": ONLY if user explicitly wants new music, new artists, or better recommendations
+  * "casual_listener": User listens occasionally, mentions background music, or has simple needs
+  * "general_user": Default for users who complain about general app issues (ads, crashes, payments) without mentioning specific listening habits
+  * "power_user": User mentions playlists, equalizer, offline mode, or advanced features
+  * "audiophile": User specifically discusses audio quality, bitrate, lossless, or sound fidelity
+  Most app store reviewers are casual_listener or general_user. Do NOT default to discovery_seeker.
 - unmet_need should describe a FEATURE or BEHAVIOR the user wants, not just restate the complaint
 `;
 
