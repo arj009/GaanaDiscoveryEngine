@@ -6,7 +6,18 @@ import dotenv from 'dotenv';
 const envPath = path.resolve(process.cwd(), '.env');
 dotenv.config({ path: envPath });
 
-const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
+const apiKeys = [
+  process.env.GROQ_API_KEY_1 || process.env.GROQ_API_KEY,
+  process.env.GROQ_API_KEY_2,
+  process.env.GROQ_API_KEY_3,
+  process.env.GROQ_API_KEY_4,
+  process.env.GROQ_API_KEY_5
+].filter(k => k); // Keep only defined keys
+
+if (apiKeys.length === 0) {
+    console.error("No GROQ API keys found in environment.");
+    process.exit(1);
+}
 
 const CLASSIFICATION_PROMPT = (review) => `
 You are analyzing a user review of Gaana, an Indian music streaming app.
@@ -41,17 +52,23 @@ async function classifyReviews() {
   const rawData = fs.readFileSync('data/reviews_raw.json', 'utf8');
   let reviews = JSON.parse(rawData);
   
-  // Set limit to 200 reviews to safely fit inside the 100,000 TPD limit of llama-3.1-8b-instant
-  const limit = 200;
+  // Dynamic scaling: 200 reviews per available API key to bypass strict 100k free tier limits!
+  const limit = Math.min(apiKeys.length * 200, 1000);
   reviews = reviews.slice(0, limit);
   
   const results = [];
   const DELAY_MS = 1500; 
 
-  console.log(`Classifying ${reviews.length} reviews using llama-3.1-8b-instant...`);
+  console.log(`Classifying ${reviews.length} reviews utilizing ${apiKeys.length} API keys...`);
+
+  let keyIndex = 0;
 
   for (let i = 0; i < reviews.length; i++) {
     const review = reviews[i];
+    
+    // Rotate key
+    const currentKey = apiKeys[keyIndex % apiKeys.length];
+    const client = new Groq({ apiKey: currentKey });
     
     try {
       const response = await client.chat.completions.create({
@@ -64,7 +81,11 @@ async function classifyReviews() {
       let raw = response.choices[0].message.content.trim();
       const parsed = JSON.parse(raw);
       results.push({ ...review, claude_output: parsed, processing_status: 'done' });
+      keyIndex++; // Only rotate to next key on success to balance load
     } catch (err) {
+      if (err.message.includes('rate_limit')) {
+         keyIndex++; // If a key hits a rate limit early, jump to the next key
+      }
       results.push({ ...review, processing_status: 'failed', claude_output: null });
     }
 
