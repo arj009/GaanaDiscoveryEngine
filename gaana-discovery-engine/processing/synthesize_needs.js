@@ -91,22 +91,35 @@ Respond ONLY with a valid JSON object matching this exact schema:
 
   console.log("Synthesizing final top 5 unmet needs using Groq's llama-3.1-8b-instant...");
   
-  try {
-      const response = await client.chat.completions.create({
-          model: 'llama-3.1-8b-instant',
-          messages: [{ role: 'user', content: FINAL_PROMPT }],
-          temperature: 0.2,
-          response_format: { type: "json_object" }
-      });
+  let success = false;
+  for (let i = 0; i < apiKeys.length; i++) {
+      try {
+          const client = new Groq({ apiKey: apiKeys[i] });
+          const response = await client.chat.completions.create({
+              model: 'llama-3.1-8b-instant',
+              messages: [{ role: 'user', content: FINAL_PROMPT }],
+              temperature: 0.2,
+              response_format: { type: "json_object" }
+          });
 
-      const raw = response.choices[0].message.content.trim();
-      const parsed = JSON.parse(raw);
-      const needs = parsed.unmet_needs || parsed;
+          const raw = response.choices[0].message.content.trim();
+          const parsed = JSON.parse(raw);
+          const needs = parsed.unmet_needs || parsed;
 
-      fs.writeFileSync('data/unmet_needs.json', JSON.stringify(needs, null, 2));
-      console.log(`\n✅ Synthesized ${needs.length} unmet needs → data/unmet_needs.json`);
-  } catch (err) {
-      console.error(`Final synthesis failed: ${err.message}`);
+          fs.writeFileSync('data/unmet_needs.json', JSON.stringify(needs, null, 2));
+          console.log(`\n✅ Synthesized ${needs.length} unmet needs → data/unmet_needs.json`);
+          success = true;
+          break; // Exit the loop on success
+      } catch (err) {
+          console.error(`Key ${i+1} failed: ${err.message}`);
+          if (!err.message.includes('rate_limit') && !err.message.includes('Invalid')) {
+              break; // If it's a real error (like prompt too long), don't keep trying
+          }
+      }
+  }
+
+  if (!success) {
+      console.error("All API keys failed for synthesis.");
   }
 }
 
