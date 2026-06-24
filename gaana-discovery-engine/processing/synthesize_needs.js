@@ -45,7 +45,8 @@ async function synthesizeUnmetNeeds() {
       return;
   }
 
-  const mappedReviews = targetReviews.map(r => ({
+  // Slice to max 60 reviews to avoid exceeding Groq's 6,000 TPM limit on free tier
+  const mappedReviews = targetReviews.slice(0, 60).map(r => ({
       text: r.content,
       frustration: r.claude_output.primary_frustration,
       unmet_need: r.claude_output.unmet_need,
