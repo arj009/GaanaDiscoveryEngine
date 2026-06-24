@@ -5,7 +5,7 @@ from base_scraper import BaseScraper
 from schema import ReviewModel, ReviewMetadata
 
 class AppleStoreScraper(BaseScraper):
-    def __init__(self, app_name: str = "gaana", app_id: str = "585270521"):
+    def __init__(self, app_name: str = "gaana", app_id: str = "407694866"):
         self.app_name = app_name
         self.app_id = app_id
 

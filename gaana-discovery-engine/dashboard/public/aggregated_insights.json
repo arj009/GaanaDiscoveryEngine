@@ -1,0 +1,30 @@
+{
+  "total_reviews": 199,
+  "discovery_friction_pct": 18.1,
+  "sentiment": {
+    "positive": 163,
+    "negative": 36
+  },
+  "frustrations": {
+    "algorithm_echo_chamber": 19,
+    "repetitive_recommendations": 5,
+    "poor_discovery_ui": 2
+  },
+  "listening_intents": {
+    "seek_new_music": 135,
+    "background_listening": 27,
+    "playlist_curation": 17,
+    "mood_listening": 8
+  },
+  "repetition_causes": {
+    "algorithm_overfits_history": 25,
+    "limited_content_variety": 3
+  },
+  "segments": {
+    "discovery_seeker": 131,
+    "casual_listener": 41,
+    "general_user": 13,
+    "power_user": 11,
+    "audiophile": 3
+  }
+}

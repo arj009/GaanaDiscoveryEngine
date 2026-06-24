@@ -1,0 +1,3992 @@
+[
+  {
+    "id": "medium_manual_spotify_gaana_comparison",
+    "source": "medium",
+    "content": "Comparative Analysis: Spotify vs Gaana. Spotify offers a straightforward, simple, and clean layout that is easy to navigate and highly intuitive. Gaana, on the other hand, suffers from a much more confusing design with too many buttons and cluttered sections. This excessive complexity creates a high cognitive load for users and causes significant confusion during the discovery process.",
+    "rating": null,
+    "timestamp": "2026-06-24T12:05:00.000Z",
+    "author": "Praniel Gurung",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "poor_discovery_ui",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "limited_content_variety",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "A more intuitive and clean design to facilitate music discovery",
+      "key_phrase": "confusing design with too many buttons"
+    }
+  },
+  {
+    "id": "medium_manual_case_study",
+    "source": "medium",
+    "content": "Case Study on Gaana Home Screen Redesign: Current homepage is overwhelming with 20+ sections causing cognitive overload. Search screen is underutilized. Sharing music is clunky and manual outside the app. 87.5% of users listen based on mood/activity and want to share music, but find it hard to discover new or similar artists. Recommended solutions: Move 'Discover' genres to Search screen. Rename Home to 'My Gaana' with 'Your Daily' activity playlists. Add 'Favorite Artists' section. Implement an in-app social layer 'Music Stories' where friends can listen to 10-second previews and instantly play songs to improve social discovery.",
+    "rating": null,
+    "timestamp": "2026-06-24T12:00:00.000Z",
+    "author": "Medium Design Bootcamp",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 0.8,
+      "discovery_friction": true,
+      "primary_frustration": "poor_discovery_ui",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "An in-app social layer to discover new music through friends' playlists and recommendations",
+      "key_phrase": "overwhelming home screen causing cognitive overload"
+    }
+  },
+  {
+    "id": "twitter_manual_001",
+    "source": "twitter",
+    "content": "Dear @gaana - please tell me you have more than just 10 songs in your library. The recommendations are painfully repetitive. Time to hit the refresh button on that algorithm! 🤦♂️ #Gaana #Frustrated #Music\n\nCurrently wrapping up product teardown of music streaming apps. It's becoming increasingly clear that local incumbents are struggling to keep pace with the UX and algorithmic maturity of leaders like @Spotify and @YouTubeMusic. Gap in recommendation engines is quite significant.",
+    "rating": null,
+    "timestamp": "2026-06-23T12:00:00.000Z",
+    "author": "Aunkar Ranjan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "repetitive_recommendations",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "More diverse and personalized music recommendations",
+      "key_phrase": "painfully repetitive recommendations"
+    }
+  },
+  {
+    "id": "play_manual_001",
+    "source": "play_store",
+    "content": "The app suffers from a very repetitive recommendation system. It fails to offer fresh, relevant music, often recycling the same small library of tracks. When compared to the discovery features of other major streaming apps, this experience falls well short. I hope the team focuses on a serious update to the recommendation logic and overall UI responsiveness soon.",
+    "rating": 1,
+    "timestamp": "2026-06-23T12:00:00.000Z",
+    "author": "Aunkar Ranjan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "repetitive_recommendations",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "A more personalized recommendation system that suggests fresh music",
+      "key_phrase": "fails to offer fresh, relevant music"
+    }
+  },
+  {
+    "id": "play_174f8605-594e-44c2-9108-12f6a0d3b4f9",
+    "source": "play_store",
+    "content": "add bhut jada aata h",
+    "rating": 1,
+    "timestamp": "2026-06-23T06:14:15.285Z",
+    "author": "NIHAL CHANDRAKAR",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "repetitive_recommendations",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "More diverse music recommendations to avoid repetitive songs",
+      "key_phrase": "bhut jada aata h"
+    }
+  },
+  {
+    "id": "play_49d8a806-6ecd-4d17-a533-972861dd5e72",
+    "source": "play_store",
+    "content": "it's too bad that by mistake auto payment cut of 599 unknowingly i didn't know about it & it not gonna refund I need my money I need it so muchhh 😭😭😭😭 but no one is gonna help me for that can't you gaana just make a exception like I didn't awAre of the payment you just cut it it's like fraud for me 🥺",
+    "rating": 1,
+    "timestamp": "2026-06-23T04:24:33.866Z",
+    "author": "Chandni Praveen",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": "refund policy that allows for exceptions in case of mistaken auto payments",
+      "key_phrase": "need my money back"
+    }
+  },
+  {
+    "id": "play_08fefbb2-d29d-41d7-b05e-0dca626c7865",
+    "source": "play_store",
+    "content": "यह एक बहुत बड़ा फ्रॉड Application है",
+    "rating": 1,
+    "timestamp": "2026-06-23T03:57:01.345Z",
+    "author": "Abhinav Bhati",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "An application that suggests new music based on user preferences",
+      "key_phrase": "बहुत बड़ा फ्रॉड Application है"
+    }
+  },
+  {
+    "id": "play_14db0f5f-82d8-44fe-b6b6-3a193a46416d",
+    "source": "play_store",
+    "content": "bekar hai or abhi paisa do to gana suno",
+    "rating": 1,
+    "timestamp": "2026-06-23T00:56:20.630Z",
+    "author": "Sandip Dhrangdhariya",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "More personalized and diverse music recommendations",
+      "key_phrase": "bekar hai or abhi paisa do to gana suno"
+    }
+  },
+  {
+    "id": "play_299d7ad7-b37d-4728-a163-855c1a71669c",
+    "source": "play_store",
+    "content": "The app is not good 😡",
+    "rating": 1,
+    "timestamp": "2026-06-22T18:44:14.952Z",
+    "author": "shahrukh KHAN",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "the app is not good"
+    }
+  },
+  {
+    "id": "play_1fda8374-e5b6-4d55-99f9-bdf489832f79",
+    "source": "play_store",
+    "content": "they've deducted my money without any prior notice. worst app and their customer service, it's been 4 days and not a single response from their side",
+    "rating": 1,
+    "timestamp": "2026-06-22T11:57:56.540Z",
+    "author": "Kartikeya shukla",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "worst app and their customer service"
+    }
+  },
+  {
+    "id": "play_912da2a7-cd15-4d87-9aa6-a0c23e6da0d1",
+    "source": "play_store",
+    "content": "all india fm online Radio ststions please Add",
+    "rating": 4,
+    "timestamp": "2026-06-22T10:24:50.218Z",
+    "author": "Sebastian Paul",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "all india fm online Radio ststions please Add"
+    }
+  },
+  {
+    "id": "play_32713807-f6be-4956-a2d8-6b1e686d4824",
+    "source": "play_store",
+    "content": "without subscription only 10 second ganna chal ta hai bakwas app Spotify best hai is se to",
+    "rating": 1,
+    "timestamp": "2026-06-22T06:53:08.832Z",
+    "author": "Himanshu YADAV",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "More personalized and varied music recommendations without subscription",
+      "key_phrase": "without subscription only 10 second ganna chal ta hai"
+    }
+  },
+  {
+    "id": "play_3da9b31c-411c-40a5-a388-690d9e487872",
+    "source": "play_store",
+    "content": "pathetic, like you have to buy a premium subscription then you can only enjoy the music",
+    "rating": 1,
+    "timestamp": "2026-06-21T20:32:50.519Z",
+    "author": "Ritom Halder",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "a feature to break the cycle of repetitive songs",
+      "key_phrase": "have to buy a premium subscription"
+    }
+  },
+  {
+    "id": "play_0ad43a73-7077-45b0-b591-b78c92d210a9",
+    "source": "play_store",
+    "content": "wrost app sirf ad hi aata ha",
+    "rating": 5,
+    "timestamp": "2026-06-21T20:25:51.173Z",
+    "author": "CHANDRAPAL BAGHEL",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "repetitive_recommendations",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "sirf ad hi aata ha"
+    }
+  },
+  {
+    "id": "play_f3f098fe-45c0-4921-aaf2-43e5a37f2c6d",
+    "source": "play_store",
+    "content": "katai ghatiya app hai ye",
+    "rating": 1,
+    "timestamp": "2026-06-21T15:58:33.488Z",
+    "author": "Anshu Tiwari",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "an app that can suggest new music based on my preferences",
+      "key_phrase": "katai ghatiya app hai ye"
+    }
+  },
+  {
+    "id": "play_9633cdb4-76b7-4dca-9615-8b8f4882ab07",
+    "source": "play_store",
+    "content": "without subscriptions no play any music. so please don't download this app",
+    "rating": 1,
+    "timestamp": "2026-06-21T13:02:52.783Z",
+    "author": "Vikash Kumar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "limited_content_variety",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "ability to play music without subscription",
+      "key_phrase": "without subscriptions no play any music"
+    }
+  },
+  {
+    "id": "play_16c44326-158d-46ba-8fe5-8a3b1a880943",
+    "source": "play_store",
+    "content": "auto pay scam lost 599+599 rs",
+    "rating": 1,
+    "timestamp": "2026-06-21T11:35:41.158Z",
+    "author": "akshaya a",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "auto pay scam lost 599+599 rs"
+    }
+  },
+  {
+    "id": "play_5db1abb5-7b1e-4493-b98c-1f96f71006a3",
+    "source": "play_store",
+    "content": "My playlists feel fresher than ever because of the discovery features. 🎵✨",
+    "rating": 5,
+    "timestamp": "2026-06-21T09:05:58.602Z",
+    "author": "Barsha Konra",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "playlists feel fresher than ever"
+    }
+  },
+  {
+    "id": "play_0b67a21b-89a7-4443-9c85-fc72f3a0ca4e",
+    "source": "play_store",
+    "content": "The app has introduced me to some truly underrated tracks. ⭐🙌",
+    "rating": 5,
+    "timestamp": "2026-06-21T08:46:57.165Z",
+    "author": "Shabana Yasmin",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "truly underrated tracks"
+    }
+  },
+  {
+    "id": "play_9aeb2186-a9bd-49a5-9288-a05b38ecd1c1",
+    "source": "play_store",
+    "content": "The recommendations are ideal for anyone who loves variety in music. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-21T08:15:45.210Z",
+    "author": "Ravi Barde",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendations are ideal for anyone who loves variety in music"
+    }
+  },
+  {
+    "id": "play_2dd877cf-648d-495b-a13b-17b92ccd1093",
+    "source": "play_store",
+    "content": "I enjoy revisiting classic songs alongside the latest releases. 📀🔥",
+    "rating": 5,
+    "timestamp": "2026-06-21T08:13:55.620Z",
+    "author": "Dyan Dyan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "enjoy revisiting classic songs alongside latest releases"
+    }
+  },
+  {
+    "id": "play_7a75da99-c540-41af-a535-ba7b792c52d9",
+    "source": "play_store",
+    "content": "Gaana makes music discovery feel exciting instead of overwhelming. 🎯👌",
+    "rating": 5,
+    "timestamp": "2026-06-21T08:05:43.633Z",
+    "author": "Minecraft Gamer",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "music discovery feel exciting instead of overwhelming"
+    }
+  },
+  {
+    "id": "play_faf43c4a-0675-44ff-bd16-b17d45351464",
+    "source": "play_store",
+    "content": "The app has helped me appreciate genres I never explored before. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-21T07:41:00.175Z",
+    "author": "Deepak Bhatnagar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "app has helped me appreciate genres I never explored before"
+    }
+  },
+  {
+    "id": "play_a1534b60-2e67-4d31-b734-436c624f2fc5",
+    "source": "play_store",
+    "content": "I frequently discover artists that quickly become part of my daily playlist. ⭐✨",
+    "rating": 5,
+    "timestamp": "2026-06-21T07:28:40.940Z",
+    "author": "Lucky Singh",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "discover artists that quickly become part of my daily playlist"
+    }
+  },
+  {
+    "id": "play_a9345742-3ef3-48b1-a36f-2d4310c5dbbe",
+    "source": "play_store",
+    "content": "ek dam bekar hai mere pase refund nhi kre vapis email krne ke bad bhi",
+    "rating": 1,
+    "timestamp": "2026-06-21T07:09:44.377Z",
+    "author": "Anamika Sharma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "A feature to suggest new music based on current mood or preferences",
+      "key_phrase": "ek dam bekar hai mere pase refund nhi kre vapis email krne ke bad bhi"
+    }
+  },
+  {
+    "id": "play_21a68467-9ea7-4356-9e5b-f85764d69817",
+    "source": "play_store",
+    "content": "Gaana offers one of the most enjoyable music exploration experiences I've used. 🌈🙌",
+    "rating": 5,
+    "timestamp": "2026-06-21T07:00:15.639Z",
+    "author": "Frojust Gamer 2.0",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "most enjoyable music exploration experiences"
+    }
+  },
+  {
+    "id": "play_13594633-63c3-4db6-8631-c1b281e02abe",
+    "source": "play_store",
+    "content": "The regional music catalog continues to exceed my expectations. 🇮🇳🎵",
+    "rating": 5,
+    "timestamp": "2026-06-21T06:30:52.487Z",
+    "author": "Caller Babu",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "regional music catalog exceeds expectations"
+    }
+  },
+  {
+    "id": "play_84349937-bf11-46aa-a1c9-e304cfdb2f96",
+    "source": "play_store",
+    "content": "The personalized suggestions keep getting better over time. 🎯🔥",
+    "rating": 3,
+    "timestamp": "2026-06-21T06:07:24.460Z",
+    "author": "Sonu Kumar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "personalized suggestions keep getting better over time"
+    }
+  },
+  {
+    "id": "play_e3cabf47-762f-46c8-b47d-99f725a2cd0b",
+    "source": "play_store",
+    "content": "Finding quality music for long study sessions is effortless here. 📚⭐",
+    "rating": 5,
+    "timestamp": "2026-06-21T05:59:53.158Z",
+    "author": "Bittu Malik",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Finding quality music for long study sessions is effortless here"
+    }
+  },
+  {
+    "id": "play_75eeccc2-6aad-4dcc-bf28-bc9c73a26d61",
+    "source": "play_store",
+    "content": "I love how the app balances familiar favorites with new discoveries. 📀🎵",
+    "rating": 5,
+    "timestamp": "2026-06-21T05:33:08.450Z",
+    "author": "BARNALI Bar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "balances familiar favorites with new discoveries"
+    }
+  },
+  {
+    "id": "play_f7b3781f-b61e-473b-9d02-927bc0c1e808",
+    "source": "play_store",
+    "content": "The recommendations help me break out of my usual music routine. 🌈🎯",
+    "rating": 5,
+    "timestamp": "2026-06-21T05:31:51.646Z",
+    "author": "SUJIT DAS",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "the recommendations help me break out of my usual music routine"
+    }
+  },
+  {
+    "id": "play_6aa2a949-4638-4e75-af0f-0950876d5c5d",
+    "source": "play_store",
+    "content": "I’m a premium Gaana subscriber but the Samsung TV Gaana app is unusable. It doesn’t let me log in with my registered email, and there’s no device link option. Because of this, I can’t access my paid subscription on TV. Needs urgent fix.",
+    "rating": 2,
+    "timestamp": "2026-06-21T05:04:05.367Z",
+    "author": "CA Chetan Sharma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": "A seamless TV app experience that allows users to access their paid subscription",
+      "key_phrase": "Samsung TV Gaana app is unusable"
+    }
+  },
+  {
+    "id": "play_5600f665-a3f9-43ce-bbe5-8a0f1b064fa1",
+    "source": "play_store",
+    "content": "The experience feels smooth whether I'm listening for minutes or hours. ⭐📲",
+    "rating": 5,
+    "timestamp": "2026-06-21T04:46:36.780Z",
+    "author": "Pankaj Kumar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the experience feels smooth whether I'm listening for minutes or hours"
+    }
+  },
+  {
+    "id": "play_23ccf6dd-cf2d-402e-b788-d6fd2629b3fa",
+    "source": "play_store",
+    "content": "The app consistently introduces me to songs I would've otherwise missed. 🌈📀",
+    "rating": 5,
+    "timestamp": "2026-06-21T04:38:27.686Z",
+    "author": "Anchal Sharma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "introduces me to songs I would've otherwise missed"
+    }
+  },
+  {
+    "id": "play_ccb8afb4-017f-4044-b6cc-d8f040eefcf1",
+    "source": "play_store",
+    "content": "I appreciate how easy it is to find music for every occasion. 🎵👌",
+    "rating": 5,
+    "timestamp": "2026-06-21T04:33:10.550Z",
+    "author": "Roy Rabijit",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "easy to find music for every occasion"
+    }
+  },
+  {
+    "id": "play_56507b09-5e1b-48a8-b9d5-3ad5a78e3f49",
+    "source": "play_store",
+    "content": "The playlist suggestions make every workout session more energetic. 🔥🎯",
+    "rating": 5,
+    "timestamp": "2026-06-21T04:12:19.127Z",
+    "author": "Udit Gond",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "playlist suggestions make every workout session more energetic"
+    }
+  },
+  {
+    "id": "play_b8eac346-f6e3-4c87-9bf3-5311170a7eaa",
+    "source": "play_store",
+    "content": "The platform showcases India's musical diversity beautifully. 🇮🇳🙌",
+    "rating": 5,
+    "timestamp": "2026-06-21T00:19:14.673Z",
+    "author": "Hriday Tripura",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "India's musical diversity beautifully"
+    }
+  },
+  {
+    "id": "play_3f81bac7-2dba-45b3-8494-f36c01e49cc1",
+    "source": "play_store",
+    "content": "The music selection for road trips is always spot on. 🚗🎵✨",
+    "rating": 5,
+    "timestamp": "2026-06-20T22:48:49.168Z",
+    "author": "Shudish G",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "music selection for road trips is always spot on"
+    }
+  },
+  {
+    "id": "play_178d1762-de39-43c9-bf89-2e949a7ef784",
+    "source": "play_store",
+    "content": "I discovered several amazing independent musicians through this app. ⭐🙌",
+    "rating": 5,
+    "timestamp": "2026-06-20T22:26:50.569Z",
+    "author": "Ruhi Parween",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "discovered several amazing independent musicians"
+    }
+  },
+  {
+    "id": "play_b525b86a-c9b3-4ce2-b3c7-ca961228e336",
+    "source": "play_store",
+    "content": "yt music aur Spotify se accha hai",
+    "rating": 4,
+    "timestamp": "2026-06-20T19:38:19.943Z",
+    "author": "Rana Dey Sarkar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "yt music aur Spotify se accha hai"
+    }
+  },
+  {
+    "id": "play_56cf51df-c8bd-4ecf-a870-166c48e5e6fd",
+    "source": "play_store",
+    "content": "COMPLETELY FAKE APP.",
+    "rating": 1,
+    "timestamp": "2026-06-20T19:33:37.978Z",
+    "author": "Orlando Khiphur",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "COMPLETELY FAKE APP"
+    }
+  },
+  {
+    "id": "play_a57d1cd6-c867-40e0-a73a-8b2e4a0c9e4f",
+    "source": "play_store",
+    "content": "The platform makes exploring different Indian languages incredibly enjoyable. 🇮🇳🌈",
+    "rating": 5,
+    "timestamp": "2026-06-20T19:31:53.357Z",
+    "author": "Cute Dilip Prajapati",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "exploring different Indian languages incredibly enjoyable"
+    }
+  },
+  {
+    "id": "play_f9dcf146-7733-4785-af1b-b2b7d2566905",
+    "source": "play_store",
+    "content": "1 rupee kyu leta hai",
+    "rating": 1,
+    "timestamp": "2026-06-20T19:17:08.260Z",
+    "author": "Purushottam Yadav",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "repetitive_recommendations",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "More personalized and diverse music recommendations",
+      "key_phrase": "1 rupee kyu leta hai"
+    }
+  },
+  {
+    "id": "play_bccee4c5-3445-4943-8508-38565ad79fd9",
+    "source": "play_store",
+    "content": "Gaana helps me stay updated with trending songs without much effort. 📲🎵",
+    "rating": 5,
+    "timestamp": "2026-06-20T19:05:11.231Z",
+    "author": "Payal Ojha",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "stay updated with trending songs"
+    }
+  },
+  {
+    "id": "play_cb225a27-8154-44cf-aac5-f25753b176c0",
+    "source": "play_store",
+    "content": "Gaana delivers a reliable, enjoyable, and music-focused experience every day. 🙌🎵🔥",
+    "rating": 5,
+    "timestamp": "2026-06-20T18:32:10.282Z",
+    "author": "Pavan Naik",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "reliable enjoyable music-focused experience"
+    }
+  },
+  {
+    "id": "play_3567eba0-6bb1-4fcc-b302-48e9ae4792ad",
+    "source": "play_store",
+    "content": "The recommendations often feel like they were handpicked just for me. 🎯🔥",
+    "rating": 5,
+    "timestamp": "2026-06-20T18:18:16.428Z",
+    "author": "Gopala krishna Sathi",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendations often feel like they were handpicked just for me"
+    }
+  },
+  {
+    "id": "play_b0a30ead-807f-4acd-bb26-5c20bd3a3f41",
+    "source": "play_store",
+    "content": "I enjoy how effortlessly the app introduces me to fresh artists. 🙌🎵",
+    "rating": 5,
+    "timestamp": "2026-06-20T18:03:08.799Z",
+    "author": "Abhineswari Dontina",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "effortlessly introduces me to fresh artists"
+    }
+  },
+  {
+    "id": "play_8ba4cbd3-a055-4e51-9cfb-715249b554e1",
+    "source": "play_store",
+    "content": "The collection of retro songs is fantastic and brings back wonderful memories. 📀⭐",
+    "rating": 5,
+    "timestamp": "2026-06-20T18:02:25.901Z",
+    "author": "Yalla Durga",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "collection of retro songs is fantastic"
+    }
+  },
+  {
+    "id": "play_0167cbfd-4e1b-4914-b562-d28038d9551a",
+    "source": "play_store",
+    "content": "worst app better to go with Spotify",
+    "rating": 1,
+    "timestamp": "2026-06-20T17:53:52.558Z",
+    "author": "BIBHUTI BHUSHAN DAS",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "a feature to break the cycle of repetitive songs",
+      "key_phrase": "worst app better to go with Spotify"
+    }
+  },
+  {
+    "id": "play_0246a54b-ab0d-48a1-83f8-f39b796bef49",
+    "source": "play_store",
+    "content": "My evening relaxation routine feels incomplete without Gaana playlists. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-20T17:37:02.934Z",
+    "author": "VEnOm SaDaD",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "evening relaxation routine feels incomplete without Gaana playlists"
+    }
+  },
+  {
+    "id": "play_e12e07a1-ea9d-4871-a57c-94a6851ec93f",
+    "source": "play_store",
+    "content": "Gaana has completely changed how I discover new music during my free time. 🎵🌈",
+    "rating": 5,
+    "timestamp": "2026-06-20T17:14:51.996Z",
+    "author": "Chetan Sutar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana has completely changed how I discover new music"
+    }
+  },
+  {
+    "id": "play_007881e2-59a8-48a4-bc69-cbb1f51f0a3d",
+    "source": "play_store",
+    "content": "worst app I ever seen",
+    "rating": 1,
+    "timestamp": "2026-06-20T16:40:02.254Z",
+    "author": "Mulchand Prjapat",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "worst app I ever seen"
+    }
+  },
+  {
+    "id": "play_b74f63a7-3a36-402e-974b-2cbfa9fd14b5",
+    "source": "play_store",
+    "content": "I love finding regional tracks that remind me of family gatherings and celebrations. 🇮🇳🥰",
+    "rating": 5,
+    "timestamp": "2026-06-20T16:09:12.657Z",
+    "author": "Mohd Aaqib",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "finding regional tracks that remind me of family gatherings"
+    }
+  },
+  {
+    "id": "play_9ec046a8-4f33-4f70-9f8b-735243317715",
+    "source": "play_store",
+    "content": "Every week I find at least a few songs worth adding permanently. 📀⭐",
+    "rating": 5,
+    "timestamp": "2026-06-20T15:14:44.474Z",
+    "author": "Sk Rafijul Alam",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "find at least a few songs worth adding permanently"
+    }
+  },
+  {
+    "id": "play_9abb1a2a-0a87-4a77-93cb-8b9333417b5d",
+    "source": "play_store",
+    "content": "The app has made music discovery one of my favorite daily activities. 🎵✨",
+    "rating": 5,
+    "timestamp": "2026-06-20T15:02:58.560Z",
+    "author": "Anisa Khatun",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "music discovery one of my favorite daily activities"
+    }
+  },
+  {
+    "id": "play_a170b8d6-4b66-40bd-9ed1-cd2acab52c9a",
+    "source": "play_store",
+    "content": "I enjoy exploring different cultures through the regional music collections. 🇮🇳🌈",
+    "rating": 5,
+    "timestamp": "2026-06-20T14:52:54.501Z",
+    "author": "Yusuf Sid",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "exploring different cultures through regional music collections"
+    }
+  },
+  {
+    "id": "play_23cc3567-dd99-4311-91e0-dfd05302ebb9",
+    "source": "play_store",
+    "content": "dolby Atmos songs have low volume at 100% volume, please add normal version of songs too..",
+    "rating": 3,
+    "timestamp": "2026-06-20T14:24:36.320Z",
+    "author": "charan charan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "Add normal versions of songs to avoid low volume issues",
+      "key_phrase": "low volume at 100% volume"
+    }
+  },
+  {
+    "id": "play_f56e9bb0-8d4e-48d7-9d98-08d626095e32",
+    "source": "play_store",
+    "content": "The recommendations continue to evolve with my listening habits. 🎯🔥",
+    "rating": 5,
+    "timestamp": "2026-06-20T13:39:35.165Z",
+    "author": "AMMULA RAGHU",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendations continue to evolve with my listening habits"
+    }
+  },
+  {
+    "id": "play_7de53bec-f036-4ddd-ae64-59fcd0ea7a94",
+    "source": "play_store",
+    "content": "Gaana feels like a platform built by people who genuinely love music. 🎵🇮🇳",
+    "rating": 5,
+    "timestamp": "2026-06-20T13:27:55.188Z",
+    "author": "ROHIT Op",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana feels like a platform built by people who genuinely love music"
+    }
+  },
+  {
+    "id": "play_e105596d-071c-45a5-b8de-f86449fc5e46",
+    "source": "play_store",
+    "content": "The music quality remains excellent throughout long listening sessions. 🔊⭐",
+    "rating": 5,
+    "timestamp": "2026-06-20T13:11:42.533Z",
+    "author": "RaW GaminG",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "music quality remains excellent throughout long listening sessions"
+    }
+  },
+  {
+    "id": "play_8857f9a8-b7fb-4b1d-9404-9757f8fb5b7c",
+    "source": "play_store",
+    "content": "Gaana consistently delivers an enjoyable listening experience. 🎵🔥",
+    "rating": 5,
+    "timestamp": "2026-06-20T13:02:29.903Z",
+    "author": "D_R Gamers",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "enjoyable listening experience"
+    }
+  },
+  {
+    "id": "play_43f96f1c-df30-4059-9550-641031a077b2",
+    "source": "play_store",
+    "content": "I love how many hidden gems I've uncovered through this app. 🌈🙌p",
+    "rating": 5,
+    "timestamp": "2026-06-20T12:54:18.883Z",
+    "author": "Use Office",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "hidden gems I've uncovered through this app"
+    }
+  },
+  {
+    "id": "play_81aacad1-8355-4a78-b9d7-0c2a8cb48566",
+    "source": "play_store",
+    "content": "The personalized playlists save me from searching endlessly. 🎯📀",
+    "rating": 5,
+    "timestamp": "2026-06-20T12:31:36.559Z",
+    "author": "Venkat Selvam",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "personalized playlists save me from searching endlessly"
+    }
+  },
+  {
+    "id": "play_bdc4b504-83eb-48c0-8479-5312bca2c0f8",
+    "source": "play_store",
+    "content": "The platform strikes a great balance between simplicity and features. 📲✨",
+    "rating": 5,
+    "timestamp": "2026-06-20T12:11:56.192Z",
+    "author": "HARSH BAGHEL",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "the platform strikes a great balance between simplicity and features"
+    }
+  },
+  {
+    "id": "play_2c757499-64f8-4596-9fcf-43509be7e52f",
+    "source": "play_store",
+    "content": "I often discover forgotten classics while browsing recommendations. 🥰⭐",
+    "rating": 5,
+    "timestamp": "2026-06-20T12:00:17.141Z",
+    "author": "Arman Ali",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "discover forgotten classics while browsing recommendations"
+    }
+  },
+  {
+    "id": "play_a12a43ac-39cb-43f4-aa8b-09c8322a84d6",
+    "source": "play_store",
+    "content": "The app's organization makes music exploration enjoyable. 📀🎵",
+    "rating": 5,
+    "timestamp": "2026-06-20T11:48:49.147Z",
+    "author": "Chinmay Jena",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "music exploration enjoyable"
+    }
+  },
+  {
+    "id": "play_10ed2c4a-126c-4de4-a8ae-5f08129bb2e8",
+    "source": "play_store",
+    "content": "mat use kro mere 599 krke do baar apne aap payment cut ho gaya",
+    "rating": 1,
+    "timestamp": "2026-06-20T11:47:26.352Z",
+    "author": "Thkkar Vaishu",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "A feature to prevent duplicate payments",
+      "key_phrase": "payment cut ho gaya"
+    }
+  },
+  {
+    "id": "play_907fd971-fd2e-4513-886e-e45086c92c08",
+    "source": "play_store",
+    "content": "The recommendations feel authentic rather than algorithmic. 🌈👌",
+    "rating": 5,
+    "timestamp": "2026-06-20T11:35:08.549Z",
+    "author": "Chumki Das",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendations feel authentic rather than algorithmic"
+    }
+  },
+  {
+    "id": "play_bd380aa5-042a-4840-868e-ae5178b7e11f",
+    "source": "play_store",
+    "content": "this app ask money to play the app is not free",
+    "rating": 1,
+    "timestamp": "2026-06-20T11:16:16.995Z",
+    "author": "vishwas R",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "this app ask money to play"
+    }
+  },
+  {
+    "id": "play_ea68d903-3fc9-432e-a0da-e94c2dec50f8",
+    "source": "play_store",
+    "content": "The regional music section continues to impress me. 🇮🇳🌈",
+    "rating": 5,
+    "timestamp": "2026-06-20T09:56:20.550Z",
+    "author": "Raj Kumar Gupta",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "regional music section continues to impress me"
+    }
+  },
+  {
+    "id": "play_e0c0e892-4197-4989-98b1-d3773fb2d77c",
+    "source": "play_store",
+    "content": "The app makes it easy to keep up with current music trends. 🎵📲",
+    "rating": 5,
+    "timestamp": "2026-06-20T09:16:05.578Z",
+    "author": "Akash Singh",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "easy to keep up with current music trends"
+    }
+  },
+  {
+    "id": "play_5f988f33-06dc-451b-8bfb-03bc2acd7c3c",
+    "source": "play_store",
+    "content": "The music catalog feels rich and diverse across genres. 🇮🇳⭐",
+    "rating": 5,
+    "timestamp": "2026-06-20T08:53:37.234Z",
+    "author": "HYDRA PALASH",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "music catalog feels rich and diverse across genres"
+    }
+  },
+  {
+    "id": "play_7334e19c-4ea7-40bc-84fb-96a00fc5aecb",
+    "source": "play_store",
+    "content": "The artist discovery experience is one of the best features. 🎯🙌",
+    "rating": 5,
+    "timestamp": "2026-06-20T07:55:08.588Z",
+    "author": "Jeewan Singh",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "artist discovery experience is one of the best features"
+    }
+  },
+  {
+    "id": "play_d3e053f6-d97c-4788-9d30-2daa86f1967b",
+    "source": "play_store",
+    "content": "Gaana's playlists are perfect for road trips and vacations. 🚗🎵 🌈",
+    "rating": 5,
+    "timestamp": "2026-06-20T07:44:52.924Z",
+    "author": "Kalangi Sulochana",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Gaana's playlists are perfect for road trips and vacations"
+    }
+  },
+  {
+    "id": "play_2f3805a9-9035-4864-9820-f1478d1cff79",
+    "source": "play_store",
+    "content": "You can't listen to any song without subscription, it is a completely useless app.",
+    "rating": 1,
+    "timestamp": "2026-06-20T07:17:43.903Z",
+    "author": "Dheeraj Manwani",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "limited_content_variety",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "ability to listen to any song without subscription",
+      "key_phrase": "completely useless app"
+    }
+  },
+  {
+    "id": "play_3b709740-a2ca-4c08-8172-df1541300b39",
+    "source": "play_store",
+    "content": "Voice search performs exceptionally well for Indian song names. 🎯👌",
+    "rating": 5,
+    "timestamp": "2026-06-20T07:04:43.692Z",
+    "author": "Kesava Simhachalam",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Voice search performs exceptionally well for Indian song names"
+    }
+  },
+  {
+    "id": "play_77cdd32f-f367-49df-b1a5-326659b96279",
+    "source": "play_store",
+    "content": "The listening experience feels polished from start to finish. ⭐✨",
+    "rating": 5,
+    "timestamp": "2026-06-20T06:17:21.394Z",
+    "author": "manoj kumar Nagar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the listening experience feels polished from start to finish"
+    }
+  },
+  {
+    "id": "play_d7b95d3b-5b9f-4a8e-b13b-2b7525549f78",
+    "source": "play_store",
+    "content": "The app helps me revisit songs I haven't heard in years. 🎵🥰",
+    "rating": 5,
+    "timestamp": "2026-06-20T06:12:24.360Z",
+    "author": "Pabitra Sabar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "revisit songs I haven't heard in years"
+    }
+  },
+  {
+    "id": "play_e3bf05c9-faaa-4336-9e9e-6750c022463c",
+    "source": "play_store",
+    "content": "I appreciate how quickly new releases appear on the platform. 🔥📲",
+    "rating": 5,
+    "timestamp": "2026-06-20T05:56:38.323Z",
+    "author": "Rajesh Sahu",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "new releases appear quickly on the platform"
+    }
+  },
+  {
+    "id": "play_1d50244b-9540-4a8e-8fc8-f207f0a5f2ca",
+    "source": "play_store",
+    "content": "Gaana works wonderfully for background music while studying. 📚🎵 ⭐",
+    "rating": 5,
+    "timestamp": "2026-06-20T05:46:53.236Z",
+    "author": "Yaxo Zoo",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Gaana works wonderfully for background music"
+    }
+  },
+  {
+    "id": "play_2fbaf2f7-c679-45ea-ac9d-b5bc1e9cd9c3",
+    "source": "play_store",
+    "content": "The collection of devotional content is extensive and easy to explore. 🙌🇮🇳",
+    "rating": 5,
+    "timestamp": "2026-06-20T05:37:47.923Z",
+    "author": "Prathmesh Khapake",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "extensive and easy to explore devotional content"
+    }
+  },
+  {
+    "id": "play_4507eefe-4e5b-4e73-ac4d-8a9740920926",
+    "source": "play_store",
+    "content": "dont download worst app there are many ads in every 10 second",
+    "rating": 1,
+    "timestamp": "2026-06-20T05:23:17.244Z",
+    "author": "Utkarsh Kannaujiya",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "an app that doesn't play ads every 10 seconds",
+      "key_phrase": "worst app with many ads"
+    }
+  },
+  {
+    "id": "play_777d1a3f-a19e-42ca-868d-52dc93aeabbd",
+    "source": "play_store",
+    "content": "The song suggestions never feel repetitive or boring. 🌈✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T13:07:59.540Z",
+    "author": "Gourav Pal",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "song suggestions never feel repetitive or boring"
+    }
+  },
+  {
+    "id": "play_e52e648c-1b57-4fcf-b696-22f97706dfd9",
+    "source": "play_store",
+    "content": "Gaana makes evening drives much more enjoyable with great recommendations. 🚗🎵 ⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T13:05:08.888Z",
+    "author": "Kishan Patel",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Gaana makes evening drives much more enjoyable"
+    }
+  },
+  {
+    "id": "play_78458b92-8ce8-4727-8a68-e6648b9f4be8",
+    "source": "play_store",
+    "content": "The personalized radio stations are surprisingly accurate. 🎯🔥",
+    "rating": 5,
+    "timestamp": "2026-06-19T13:01:38.951Z",
+    "author": "Kartik Ghosh",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "personalized radio stations are surprisingly accurate"
+    }
+  },
+  {
+    "id": "play_1e6b306a-6d2e-426e-acad-2cf68430ec8b",
+    "source": "play_store",
+    "content": "Finding songs from old movies is incredibly easy here. 🎵👌",
+    "rating": 5,
+    "timestamp": "2026-06-19T12:53:49.336Z",
+    "author": "Sona Patil",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Finding songs from old movies is incredibly easy here"
+    }
+  },
+  {
+    "id": "play_97e06184-bcd3-4d15-8f24-95d627df2a1b",
+    "source": "play_store",
+    "content": "Every update seems to improve the overall user experience. 📲⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T12:37:30.973Z",
+    "author": "Ambika Ambuka k",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Every update seems to improve the overall user experience"
+    }
+  },
+  {
+    "id": "play_8081d697-5fb0-404b-8db6-bb573ddc656a",
+    "source": "play_store",
+    "content": "I use it daily for meditation and relaxing instrumental tracks. 🙌✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T12:25:31.734Z",
+    "author": "Kiran Hk",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "use it daily for meditation and relaxing instrumental tracks"
+    }
+  },
+  {
+    "id": "play_9ab3872e-2bfe-4009-9e8e-0e3fdf3ccd65",
+    "source": "play_store",
+    "content": "Gaana keeps introducing me to songs that never appear on my social feeds. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T12:23:01.228Z",
+    "author": "Sagar Das",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana keeps introducing me to songs that never appear on my social feeds"
+    }
+  },
+  {
+    "id": "play_89fae9f5-12f3-4e1b-a11a-b923d1d26e03",
+    "source": "play_store",
+    "content": "This is also a very useless app. I downloaded it so that I could listen to songs but this app is also useless.",
+    "rating": 1,
+    "timestamp": "2026-06-19T12:21:59.476Z",
+    "author": "Pari Kumari",
+    "processing_status": "failed",
+    "claude_output": null
+  },
+  {
+    "id": "play_99914479-3865-4761-8b52-556e729d40bb",
+    "source": "play_store",
+    "content": "The music quality remains impressive across different genres and artists. 🔊⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T12:15:23.209Z",
+    "author": "Anshul Babu",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "music quality remains impressive across different genres and artists"
+    }
+  },
+  {
+    "id": "play_6d88a19e-6625-4512-8005-4b323c1709ba",
+    "source": "play_store",
+    "content": "I appreciate how easy it is to create and organize playlists. 🎯📀",
+    "rating": 5,
+    "timestamp": "2026-06-19T12:14:42.410Z",
+    "author": "Fsffss Bdhgdgd",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "easy to create and organize playlists"
+    }
+  },
+  {
+    "id": "play_949b5a02-a6db-4060-8203-4f4a2c1a45e7",
+    "source": "play_store",
+    "content": "The collection of romantic songs is excellent and updated regularly. 😍✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T12:08:50.719Z",
+    "author": "K Chakri",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "excellent and updated regularly romantic songs"
+    }
+  },
+  {
+    "id": "play_7630bc7d-95b6-4755-8ec9-185f73cbfdcc",
+    "source": "play_store",
+    "content": "I enjoy exploring independent artists through the app's suggestions. ⭐🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T11:08:01.727Z",
+    "author": "Dipak Solanki",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "enjoy exploring independent artists"
+    }
+  },
+  {
+    "id": "play_df0ab92f-009b-42f9-b1f5-1cbd986d1cb8",
+    "source": "play_store",
+    "content": "The recommendations often match my mood surprisingly well. 🌈🔥",
+    "rating": 5,
+    "timestamp": "2026-06-19T11:01:15.231Z",
+    "author": "Aditya Raj",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendations match my mood surprisingly well"
+    }
+  },
+  {
+    "id": "play_4d373d02-4243-4eb8-91bb-756455dd9595",
+    "source": "play_store",
+    "content": "very bad aap only play ads",
+    "rating": 1,
+    "timestamp": "2026-06-19T10:46:45.259Z",
+    "author": "Parbjot singh Sandhu",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "a feature to break the loop of repetitive ads and songs",
+      "key_phrase": "only play ads"
+    }
+  },
+  {
+    "id": "play_7eff1951-0a08-4a93-9ce3-ceab2a514298",
+    "source": "play_store",
+    "content": "corrupt music app dont download!! I just hate why indian all apps asks for money do they can't provide anything without money !!",
+    "rating": 1,
+    "timestamp": "2026-06-19T10:07:53.900Z",
+    "author": "VA GAMER YT",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "an app that can provide new music without asking for money",
+      "key_phrase": "corrupt music app"
+    }
+  },
+  {
+    "id": "play_a4b0a8b5-1662-446d-826b-ce7327535c6e",
+    "source": "play_store",
+    "content": "Gaana helped me rediscover many childhood favorites that I had forgotten about. 🎵🥰",
+    "rating": 5,
+    "timestamp": "2026-06-19T09:33:56.177Z",
+    "author": "Govind chaudhry",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "rediscover many childhood favorites"
+    }
+  },
+  {
+    "id": "play_995ee2f9-7d2a-468f-8e2e-df9f47608f2c",
+    "source": "play_store",
+    "content": "The listening experience feels premium without being complicated. ✨📲",
+    "rating": 5,
+    "timestamp": "2026-06-19T09:05:37.641Z",
+    "author": "Sathya Narayana",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the listening experience feels premium"
+    }
+  },
+  {
+    "id": "play_39be1f7a-0efd-45a8-8667-7c86ff1913a3",
+    "source": "play_store",
+    "content": "This app has an amazing collection of songs, and the offline playback feature works flawlessly without any buffering. The user interface makes it very easy to discover new music and create custom playlists. ..🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T09:01:40.816Z",
+    "author": "Aditya Kumar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "amazing collection of songs"
+    }
+  },
+  {
+    "id": "play_5bd8029a-5949-4f35-af58-193630b7b552",
+    "source": "play_store",
+    "content": "I was impressed by how quickly the app learned my music preferences. 🎯👌",
+    "rating": 5,
+    "timestamp": "2026-06-19T08:55:57.234Z",
+    "author": "Rumpa Modak",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "how quickly the app learned my music preferences"
+    }
+  },
+  {
+    "id": "play_94f89d4a-3adc-4d92-b0f8-5cf16950a710",
+    "source": "play_store",
+    "content": "The variety of language options makes it easy to enjoy music from different regions. 🇮🇳⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T08:46:31.407Z",
+    "author": "Ravi Guttedar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "variety of language options makes it easy to enjoy music"
+    }
+  },
+  {
+    "id": "play_83bef5c6-08e1-4ef9-9e0d-5dd84110ffbd",
+    "source": "play_store",
+    "content": "In this you can listen to your favorite singers,Had fun and Touching the heart, a better experience..🫣",
+    "rating": 5,
+    "timestamp": "2026-06-19T08:46:24.939Z",
+    "author": "Shahid Hasan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Had fun and Touching the heart, a better experience"
+    }
+  },
+  {
+    "id": "play_6874f81a-0283-4237-924e-b4da3d2344cf",
+    "source": "play_store",
+    "content": "I found several old devotional songs here that I couldn't locate elsewhere. Really happy with the collection. 🙌✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T08:19:22.480Z",
+    "author": "Soham",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "found several old devotional songs here"
+    }
+  },
+  {
+    "id": "play_7cdda4e9-11d5-4b6a-9db2-85e724d06162",
+    "source": "play_store",
+    "content": "Gaana has earned a permanent place among my favorite apps.",
+    "rating": 5,
+    "timestamp": "2026-06-19T08:10:45.720Z",
+    "author": "Pravin bhai Rathod",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana has earned a permanent place among my favorite apps."
+    }
+  },
+  {
+    "id": "play_3dbd05d8-98de-411e-a136-6a037623148d",
+    "source": "play_store",
+    "content": "Dolby Atmos brings a cinematic feel to everyday listening. 🔊✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T07:58:12.274Z",
+    "author": "Niraj Chaudhary",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Dolby Atmos brings a cinematic feel to everyday listening"
+    }
+  },
+  {
+    "id": "play_365902af-c2f8-41e8-85e2-48a7ae41cd31",
+    "source": "play_store",
+    "content": "\"Gaana makes it easy to find my favourite songs and podcasts in one place. The music quality is good and the recommendations match my taste very well. ..😊\"",
+    "rating": 5,
+    "timestamp": "2026-06-19T07:51:07.875Z",
+    "author": "Ayush kumar Sah",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "find my favourite songs and podcasts in one place"
+    }
+  },
+  {
+    "id": "play_55c6d6be-34aa-42bb-9b20-d4acecfc4ff8",
+    "source": "play_store",
+    "content": "I regularly discover songs that become instant favorites. 🌈🎯",
+    "rating": 5,
+    "timestamp": "2026-06-19T07:36:43.969Z",
+    "author": "Sandeep Yadav",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "discover songs that become instant favorites"
+    }
+  },
+  {
+    "id": "play_6ff93544-b504-4e61-8e5e-7c8f11b24a16",
+    "source": "play_store",
+    "content": "The app delivers a smooth and enjoyable experience overall. 👌🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T07:25:02.840Z",
+    "author": "Vennela cme044",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "smooth and enjoyable experience"
+    }
+  },
+  {
+    "id": "play_82458f80-c452-4b50-9373-c193ca53f5fa",
+    "source": "play_store",
+    "content": "Import Playlist is one of the most useful features available. 📲📀",
+    "rating": 5,
+    "timestamp": "2026-06-19T07:10:27.931Z",
+    "author": "Vinay Kumar Sharma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Import Playlist is one of the most useful features available"
+    }
+  },
+  {
+    "id": "play_88e2c550-a893-402a-a527-dc918537b6f2",
+    "source": "play_store",
+    "content": "The variety of Indian content keeps the platform unique. 🇮🇳⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T07:00:21.578Z",
+    "author": "B1 Bb",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "variety of Indian content keeps the platform unique"
+    }
+  },
+  {
+    "id": "play_ec4c022c-ba68-45c9-a533-33f32963e4d5",
+    "source": "play_store",
+    "content": "Every listening session feels more engaging with Dolby audio. 🔊🔥",
+    "rating": 5,
+    "timestamp": "2026-06-19T06:50:12.711Z",
+    "author": "Rajesh Dhawan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Every listening session feels more engaging"
+    }
+  },
+  {
+    "id": "play_41e66039-2549-4dfe-8c9c-ca8d12a0cd88",
+    "source": "play_store",
+    "content": "The recommendation engine feels intelligent and adaptive. 🎯🌈",
+    "rating": 5,
+    "timestamp": "2026-06-19T06:44:07.901Z",
+    "author": "Rajan Warval",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "the recommendation engine feels intelligent and adaptive"
+    }
+  },
+  {
+    "id": "play_33976dd7-cbee-401a-9198-e56aecd05a49",
+    "source": "play_store",
+    "content": "Streaming quality remains consistently strong. ⭐🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T06:34:40.363Z",
+    "author": "Mohit Sharma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Streaming quality remains consistently strong"
+    }
+  },
+  {
+    "id": "play_68960bb8-6894-4e40-8cbb-73519a8dcb36",
+    "source": "play_store",
+    "content": "Playlist transfer was completed without any issues. 📀✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T06:30:09.980Z",
+    "author": "Manish Verma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Playlist transfer was completed without any issues"
+    }
+  },
+  {
+    "id": "play_cdc308c0-a4a0-41c5-a4f4-9f8406cebcc5",
+    "source": "play_store",
+    "content": "Moving playlists from another service took only a few moments. 📀✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T06:25:34.928Z",
+    "author": "Bhargavi Bapanapattu",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Moving playlists from another service took only a few moments"
+    }
+  },
+  {
+    "id": "play_ee58df59-693c-4e92-b67d-606623728697",
+    "source": "play_store",
+    "content": "The Dolby Atmos experience adds real value for music lovers. 🔊🔥",
+    "rating": 5,
+    "timestamp": "2026-06-19T06:12:55.609Z",
+    "author": "Balakishan Doddoju",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "audiophile",
+      "unmet_need": null,
+      "key_phrase": "the Dolby Atmos experience adds real value"
+    }
+  },
+  {
+    "id": "play_b01ee7e3-48ed-465f-b296-2307fb0fb932",
+    "source": "play_store",
+    "content": "Discovering fresh music has never been easier. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T05:52:17.357Z",
+    "author": "Dj Nobita",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Discovering fresh music has never been easier"
+    }
+  },
+  {
+    "id": "play_571e1a36-6375-4118-9188-69a85b7ea03d",
+    "source": "play_store",
+    "content": "Importing playlists helped me start using the app immediately. 📲📀",
+    "rating": 5,
+    "timestamp": "2026-06-19T05:35:42.290Z",
+    "author": "Rehana Siddique",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "Importing playlists helped me start using the app immediately"
+    }
+  },
+  {
+    "id": "play_f6076bda-1ca4-4824-ba75-2888c0b3a7f1",
+    "source": "play_store",
+    "content": "I love the balance between Bollywood hits and regional tracks. 🇮🇳🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T05:16:54.544Z",
+    "author": "junaid ansari",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "balance between Bollywood hits and regional tracks"
+    }
+  },
+  {
+    "id": "play_f135f03e-49f1-431c-ab8d-3115e18afbae",
+    "source": "play_store",
+    "content": "it's really awesome.Thanks Gaana apps and given all songs.🥰🥰🥰🥰🥰🥰..",
+    "rating": 5,
+    "timestamp": "2026-06-19T05:07:42.113Z",
+    "author": "PRATEEK KUMAR SINGH",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "given all songs"
+    }
+  },
+  {
+    "id": "play_02fb285d-a4a2-4f82-895c-a0a19f1c8938",
+    "source": "play_store",
+    "content": "Music sounds cleaner and more detailed with Dolby support. 🔊✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T04:39:36.404Z",
+    "author": "28 ARFIN PATHAN",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "audiophile",
+      "unmet_need": null,
+      "key_phrase": "Music sounds cleaner and more detailed with Dolby support"
+    }
+  },
+  {
+    "id": "play_a86f4568-b47c-4703-94ab-ce255184f3ea",
+    "source": "play_store",
+    "content": "The app is reliable enough for daily use. ⭐🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T04:09:33.902Z",
+    "author": "Nandini Mallampalli",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the app is reliable enough for daily use"
+    }
+  },
+  {
+    "id": "play_7930509e-da95-45f3-b20a-aac25c18bef5",
+    "source": "play_store",
+    "content": "Playlist migration was accurate and efficient. 📀📲",
+    "rating": 5,
+    "timestamp": "2026-06-19T04:05:21.792Z",
+    "author": "Guruvu Kiran naga sriram",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Playlist migration was accurate and efficient"
+    }
+  },
+  {
+    "id": "play_faef03b9-81b7-40bf-8a6f-70bdffc32a02",
+    "source": "play_store",
+    "content": "I am very disappointed with Gaana Music. I had saved money for an important medical process, but ₹799 was automatically deducted for subscription renewal without my notice. I immediately requested a refund, but my request was denied. This amount is very important for me, and I am not even using the renewed subscription. I request the Gaana team to review my case and help with a refund. I am scheduled for medical on Monday. Due to an unex Very poor customer support experience.",
+    "rating": 2,
+    "timestamp": "2026-06-19T04:04:23.765Z",
+    "author": "PRASANTH KUMAR PALLE",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "unex Very poor customer support experience"
+    }
+  },
+  {
+    "id": "play_94f2d73e-13ff-44d3-be7e-6b46a0e2e680",
+    "source": "play_store",
+    "content": "Dolby-enabled listening feels premium and immersive. 🔊🔥",
+    "rating": 5,
+    "timestamp": "2026-06-19T03:36:50.620Z",
+    "author": "JAREEN",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Dolby-enabled listening feels premium and immersive"
+    }
+  },
+  {
+    "id": "play_144c8546-a80b-4b93-9ab6-3f8ae87f6826",
+    "source": "play_store",
+    "content": "The search experience is smooth and highly responsive. 🎯⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T03:32:41.428Z",
+    "author": "Ameena Pendari",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "the search experience is smooth and highly responsive"
+    }
+  },
+  {
+    "id": "play_5f878320-2b0c-4d0b-9808-5c2273fd0805",
+    "source": "play_store",
+    "content": "Gaana's Discover section never disappoints. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T03:23:47.468Z",
+    "author": "diwan chandrashekar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana's Discover section never disappoints"
+    }
+  },
+  {
+    "id": "play_ad65d4e0-ded3-425d-855b-98ce68d0a235",
+    "source": "play_store",
+    "content": "Everything feels optimized for convenience and enjoyment. ⭐👌",
+    "rating": 5,
+    "timestamp": "2026-06-19T03:01:43.231Z",
+    "author": "Baddam Mounika",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Everything feels optimized for convenience and enjoyment"
+    }
+  },
+  {
+    "id": "play_d87309b3-8fde-468b-8426-62b5561e9e65",
+    "source": "play_store",
+    "content": "Import Playlist makes switching services stress-free. 📲✨",
+    "rating": 5,
+    "timestamp": "2026-06-19T02:47:45.586Z",
+    "author": "Ashis Lenka",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Import Playlist makes switching services stress-free"
+    }
+  },
+  {
+    "id": "play_0c6222c0-7a81-4156-a19a-ab7e22cda2a8",
+    "source": "play_store",
+    "content": "Regional music fans will find plenty to enjoy here. 🇮🇳🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T02:45:55.250Z",
+    "author": "Ahammad Hussain",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Regional music fans will find plenty to enjoy here"
+    }
+  },
+  {
+    "id": "play_347fb0a1-469d-411d-b26a-b6390a69ef36",
+    "source": "play_store",
+    "content": "The migration process was seamless from start to finish. 📀📲",
+    "rating": 5,
+    "timestamp": "2026-06-19T02:11:46.348Z",
+    "author": "Mani sarru",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "the migration process was seamless from start to finish"
+    }
+  },
+  {
+    "id": "play_48761179-8eb6-4f54-b93d-26f2acc8e2a2",
+    "source": "play_store",
+    "content": "I enjoy supporting a platform that understands Indian music lovers. 🇮🇳⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T02:10:06.247Z",
+    "author": "Sawpna Mondal",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "supports Indian music lovers"
+    }
+  },
+  {
+    "id": "play_b8d67666-0118-42e0-986a-d77add85d9cc",
+    "source": "play_store",
+    "content": "Voice search works accurately and saves time. 👌🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:52:37.452Z",
+    "author": "AKHILA BATTULA",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Voice search works accurately and saves time"
+    }
+  },
+  {
+    "id": "play_a3b38bab-7e29-4150-9a85-0d9986a887d6",
+    "source": "play_store",
+    "content": "Music discovery feels effortless thanks to smart recommendations. 🌈🎯",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:49:11.606Z",
+    "author": "Chanchala Devi",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "music discovery feels effortless thanks to smart recommendations"
+    }
+  },
+  {
+    "id": "play_a5de33ee-7a4c-4228-a9f0-c76a867f3881",
+    "source": "play_store",
+    "content": "The listening experience remains enjoyable across devices. ⭐🔥",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:42:44.810Z",
+    "author": "siva sankar nagineni",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the listening experience remains enjoyable across devices"
+    }
+  },
+  {
+    "id": "play_bbb5531b-8406-4127-848a-e687f7943792",
+    "source": "play_store",
+    "content": "Playlist import was fast enough to surprise me. 📲📀",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:39:49.991Z",
+    "author": "Parveen Rajesh",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Playlist import was fast enough to surprise me"
+    }
+  },
+  {
+    "id": "play_338c2ee2-7bd9-4cb1-ba9c-1118de5610fc",
+    "source": "play_store",
+    "content": "Gaana offers an excellent mix of mainstream and regional content. 🇮🇳🙌",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:34:12.815Z",
+    "author": "ʀᴀʜᴜʟ ʀᴀᴊᴩᴜᴛ",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "excellent mix of mainstream and regional content"
+    }
+  },
+  {
+    "id": "play_ccf2c82f-6b82-4eaf-a80a-8618a71a9df7",
+    "source": "play_store",
+    "content": "The clarity and depth of Dolby audio are impressive. 🔊🎵",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:25:38.994Z",
+    "author": "Krushna Sonune",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "audiophile",
+      "unmet_need": null,
+      "key_phrase": "the clarity and depth of Dolby audio are impressive"
+    }
+  },
+  {
+    "id": "play_df90b727-4e82-4c62-97e1-21374acd6be7",
+    "source": "play_store",
+    "content": "The recommendations feel thoughtful and personalized. 🎯🌈",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:08:52.698Z",
+    "author": "Vishesh Kumar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendations feel thoughtful and personalized"
+    }
+  },
+  {
+    "id": "play_ba1c8d92-8066-4fe6-899d-52ab3cced26f",
+    "source": "play_store",
+    "content": "Streaming remains smooth even during peak usage hours. 👌⭐",
+    "rating": 5,
+    "timestamp": "2026-06-19T01:08:31.294Z",
+    "author": "Nirmala",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "streaming remains smooth even during peak usage hours"
+    }
+  },
+  {
+    "id": "play_4ae59104-10b6-4f76-be70-77c43a162463",
+    "source": "play_store",
+    "content": "customer service very bad 😞😞😞😞😞😞😞😞",
+    "rating": 1,
+    "timestamp": "2026-06-18T23:46:59.157Z",
+    "author": "Pankaj Kumar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "A feature to break the cycle of repetitive songs and provide more diverse recommendations",
+      "key_phrase": "customer service very bad"
+    }
+  },
+  {
+    "id": "play_fcadbd86-ff05-4fa5-b419-f15e1b36df0e",
+    "source": "play_store",
+    "content": "The app represents Indian music culture exceptionally well. 🇮🇳🎵",
+    "rating": 5,
+    "timestamp": "2026-06-18T22:48:18.967Z",
+    "author": "Sourav Guha",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Indian music culture exceptionally well"
+    }
+  },
+  {
+    "id": "play_c8f0beae-da20-46b2-94b2-5771586ec0a1",
+    "source": "play_store",
+    "content": "Dolby support enhances every genre I listen to. 🔊🔥",
+    "rating": 5,
+    "timestamp": "2026-06-18T22:45:17.810Z",
+    "author": "Jeromy Hudson",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Dolby support enhances every genre I listen to"
+    }
+  },
+  {
+    "id": "play_bda852ff-8840-4f01-a26f-76da6d4cdef0",
+    "source": "play_store",
+    "content": "Search functionality is quick and dependable. 🎯⭐",
+    "rating": 5,
+    "timestamp": "2026-06-18T21:56:52.767Z",
+    "author": "ankit jain",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Search functionality is quick and dependable"
+    }
+  },
+  {
+    "id": "play_0de0aba1-1f55-4afa-aa8c-74ea598fc275",
+    "source": "play_store",
+    "content": "The clean design makes navigation incredibly simple. ⭐👌",
+    "rating": 5,
+    "timestamp": "2026-06-18T20:10:57.829Z",
+    "author": "Dishant Yadav",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "clean design makes navigation incredibly simple"
+    }
+  },
+  {
+    "id": "play_062f8a85-f320-4b6d-bb5f-92cf3e4eeacd",
+    "source": "play_store",
+    "content": "Gaana combines local relevance with a premium user experience. 🇮🇳🙌",
+    "rating": 5,
+    "timestamp": "2026-06-18T19:03:39.810Z",
+    "author": "Rohit Gaur",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana combines local relevance with a premium user experience"
+    }
+  },
+  {
+    "id": "play_80d67d41-d2a8-4eca-b5e6-b9851b6a1dc7",
+    "source": "play_store",
+    "content": "The upgraded sound quality is immediately noticeable. 🔊✨",
+    "rating": 5,
+    "timestamp": "2026-06-18T18:29:57.780Z",
+    "author": "Hshsusjsn Hdjdjdkxmm",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "the upgraded sound quality is immediately noticeable"
+    }
+  },
+  {
+    "id": "play_17a1ea8a-2c22-41d8-ab7c-3957dd36f524",
+    "source": "play_store",
+    "content": "Recommendations continue to improve over time. 🎯🌈",
+    "rating": 5,
+    "timestamp": "2026-06-18T18:27:23.958Z",
+    "author": "Manisha Dutta",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Recommendations continue to improve over time"
+    }
+  },
+  {
+    "id": "play_6b4df168-85e5-46b0-bea3-e03a037a7d2a",
+    "source": "play_store",
+    "content": "Playlist transfer worked perfectly on the first attempt. 📀📲",
+    "rating": 5,
+    "timestamp": "2026-06-18T18:00:29.718Z",
+    "author": "keerthana Reddy 197_505",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Playlist transfer worked perfectly on the first attempt"
+    }
+  },
+  {
+    "id": "play_807bb502-382f-4dbc-b597-046706154317",
+    "source": "play_store",
+    "content": "I appreciate the focus on Indian artists and regional languages. 🇮🇳⭐",
+    "rating": 5,
+    "timestamp": "2026-06-18T17:53:06.266Z",
+    "author": "Ragini Singh",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "focus on Indian artists and regional languages"
+    }
+  },
+  {
+    "id": "play_0cce51fb-b88e-4472-9a73-a675cd85c1d4",
+    "source": "play_store",
+    "content": "cannot search downloaded songs after new update..faaaahhh",
+    "rating": 1,
+    "timestamp": "2026-06-18T17:52:01.141Z",
+    "author": "Ananthu Murali",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "ability to search downloaded songs",
+      "key_phrase": "cannot search downloaded songs"
+    }
+  },
+  {
+    "id": "play_67843b68-ab9a-4dc7-8f9e-4d61f9bb3871",
+    "source": "play_store",
+    "content": "Dolby Atmos creates an immersive environment for music lovers. 🔊🔥",
+    "rating": 5,
+    "timestamp": "2026-06-18T17:50:54.400Z",
+    "author": "Mandeep Burt",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "mood_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Dolby Atmos creates an immersive environment"
+    }
+  },
+  {
+    "id": "play_640cf847-6eb8-4e70-914b-e9298bb084a0",
+    "source": "play_store",
+    "content": "Playlist transfer was smooth and accurate. Nothing important was lost. 📀📲",
+    "rating": 5,
+    "timestamp": "2026-06-18T17:39:52.423Z",
+    "author": "Moiun Sk",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Playlist transfer was smooth and accurate"
+    }
+  },
+  {
+    "id": "play_983c4f00-dbf3-4d78-9d06-0d77bff27310",
+    "source": "play_store",
+    "content": "The overall listening experience feels refined and enjoyable. ⭐✨",
+    "rating": 5,
+    "timestamp": "2026-06-18T17:38:09.519Z",
+    "author": "Manabendra Sing",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the overall listening experience feels refined and enjoyable"
+    }
+  },
+  {
+    "id": "play_fcbc0dd1-1140-4707-b321-a559a92038a0",
+    "source": "play_store",
+    "content": "The recommendation engine understands my preferences remarkably well. 🎯🌈",
+    "rating": 5,
+    "timestamp": "2026-06-18T16:56:00.227Z",
+    "author": "Sourav Sourav",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendation engine understands my preferences remarkably well"
+    }
+  },
+  {
+    "id": "play_94107c12-a579-42d0-a94d-9ac00a982906",
+    "source": "play_store",
+    "content": "Gaana's regional catalog is genuinely impressive. 🇮🇳🎵",
+    "rating": 5,
+    "timestamp": "2026-06-18T16:44:53.552Z",
+    "author": "Devi Devi",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana's regional catalog is genuinely impressive"
+    }
+  },
+  {
+    "id": "play_bdb041f1-963b-4fcb-be90-61291dac9692",
+    "source": "play_store",
+    "content": "I frequently discover artists who become long-term favorites. 🌈🎯",
+    "rating": 5,
+    "timestamp": "2026-06-18T16:42:09.459Z",
+    "author": "Nikhil Bhade",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "discover artists who become long-term favorites"
+    }
+  },
+  {
+    "id": "play_2bfee276-a959-4276-b2db-979d6de19f87",
+    "source": "play_store",
+    "content": "The app's design makes everyday usage effortless. 👌🎵",
+    "rating": 5,
+    "timestamp": "2026-06-18T16:42:07.621Z",
+    "author": "Imad Mir",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the app's design makes everyday usage effortless"
+    }
+  },
+  {
+    "id": "play_517aef85-c0bd-446b-91fc-41e6c8c82a81",
+    "source": "play_store",
+    "content": "Playlist migration was straightforward and stress-free. 📲📀",
+    "rating": 5,
+    "timestamp": "2026-06-18T16:36:34.720Z",
+    "author": "Abhishek Jaat",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "playlist migration was straightforward and stress-free"
+    }
+  },
+  {
+    "id": "play_5bd996cf-752e-4ba8-816e-ae1665e87125",
+    "source": "play_store",
+    "content": "The soundstage feels wider and more immersive with Dolby Atmos. 🔊✨",
+    "rating": 5,
+    "timestamp": "2026-06-18T16:25:17.709Z",
+    "author": "Dwarika Prasad",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the soundstage feels wider and more immersive"
+    }
+  },
+  {
+    "id": "play_bdbb1526-cdc5-4d9b-b682-c6d0cd18472d",
+    "source": "play_store",
+    "content": "Search accuracy is excellent, even for older tracks. 🎯👌",
+    "rating": 5,
+    "timestamp": "2026-06-18T15:55:12.743Z",
+    "author": "Balaji G",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Search accuracy is excellent, even for older tracks"
+    }
+  },
+  {
+    "id": "play_5f6ff03b-781c-49de-889d-bf1d6de7a622",
+    "source": "play_store",
+    "content": "I enjoy exploring new genres through Gaana's discovery tools. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-18T15:42:09.790Z",
+    "author": "Suraj Bakale",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "exploring new genres through Gaana's discovery tools"
+    }
+  },
+  {
+    "id": "play_b84827c2-addc-48b5-a6bb-c299f2577bf3",
+    "source": "play_store",
+    "content": "Import Playlist is a feature I didn't know I needed until I used it. 📀📲",
+    "rating": 5,
+    "timestamp": "2026-06-18T15:03:16.154Z",
+    "author": "Pratik Waghe",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": null,
+      "key_phrase": "Import Playlist is a feature I didn't know I needed"
+    }
+  },
+  {
+    "id": "play_f16e0e3a-5369-4e78-9f9e-aa924f938ded",
+    "source": "play_store",
+    "content": "The wide variety of Indian music keeps me engaged daily. 🇮🇳🙌",
+    "rating": 5,
+    "timestamp": "2026-06-18T14:49:53.124Z",
+    "author": "अखिलेश पाण्डेय, प्रधानाचार्य,स. वि.मं , गोशाला कहलगाँव",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "wide variety of Indian music"
+    }
+  },
+  {
+    "id": "play_b71740a0-e156-4c73-85a6-eec196ccb99a",
+    "source": "play_store",
+    "content": "The recommendations are relevant and rarely repetitive. 🎯🌈",
+    "rating": 5,
+    "timestamp": "2026-06-18T14:32:43.251Z",
+    "author": "Sourav Banerjee",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "recommendations are relevant and rarely repetitive"
+    }
+  },
+  {
+    "id": "play_1e806df2-76c2-4271-b18d-304d42c312fa",
+    "source": "play_store",
+    "content": "Browsing music categories is intuitive and enjoyable. 👌🎵",
+    "rating": 5,
+    "timestamp": "2026-06-18T14:30:15.858Z",
+    "author": "Live Test",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "browsing music categories is intuitive and enjoyable"
+    }
+  },
+  {
+    "id": "play_8ce5bfe9-4a0d-40ec-9c69-72708dade047",
+    "source": "play_store",
+    "content": "Playlist migration worked faster than I expected. 📲✨",
+    "rating": 5,
+    "timestamp": "2026-06-18T14:25:15.648Z",
+    "author": "Rockstar Sai",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "Playlist migration worked faster than I expected"
+    }
+  },
+  {
+    "id": "play_8bd502d7-96be-4d7f-8aec-3e2373e564a0",
+    "source": "play_store",
+    "content": "after subscription you can't download to your device any songs.",
+    "rating": 1,
+    "timestamp": "2026-06-18T14:18:34.460Z",
+    "author": "Syed Raza",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "ability to download songs after subscription",
+      "key_phrase": "can't download songs after subscription"
+    }
+  },
+  {
+    "id": "play_87937f54-9801-449a-9378-30cb3ef5b9d4",
+    "source": "play_store",
+    "content": "Gaana feels designed specifically with Indian listeners in mind. 🇮🇳⭐",
+    "rating": 5,
+    "timestamp": "2026-06-18T14:16:29.328Z",
+    "author": "Rajeev Dutt",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Gaana feels designed specifically with Indian listeners in mind"
+    }
+  },
+  {
+    "id": "play_6fa73a39-aa41-481c-9a36-2834b7a7af0d",
+    "source": "play_store",
+    "content": "The enhanced audio quality makes long listening sessions more enjoyable. 🔊🔥",
+    "rating": 5,
+    "timestamp": "2026-06-18T14:12:56.953Z",
+    "author": "Endless ambarsariya",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "enhanced audio quality makes long listening sessions more enjoyable"
+    }
+  },
+  {
+    "id": "play_2823f652-115f-4955-9e69-b24b6b43d16e",
+    "source": "play_store",
+    "content": "The app performs reliably regardless of how much I use it. 🎵👌",
+    "rating": 5,
+    "timestamp": "2026-06-18T14:07:47.178Z",
+    "author": "Aarushi Rawat",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "the app performs reliably"
+    }
+  },
+  {
+    "id": "play_4ac014a6-cd75-424e-a133-a800c449f009",
+    "source": "play_store",
+    "content": "My playlists transferred accurately without any missing songs. 📀⭐",
+    "rating": 5,
+    "timestamp": "2026-06-18T13:56:13.586Z",
+    "author": "Jangili Sravani",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "playlists transferred accurately without any missing songs"
+    }
+  },
+  {
+    "id": "play_df448ad1-48ae-4749-9edd-b8ebfaa066fc",
+    "source": "play_store",
+    "content": "The local music selection is one of the reasons I keep returning. 🇮🇳🙌",
+    "rating": 5,
+    "timestamp": "2026-06-18T13:40:48.510Z",
+    "author": "Nitin",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "local music selection"
+    }
+  },
+  {
+    "id": "play_d34447ab-8fa7-4266-9bed-e133fcbc213e",
+    "source": "play_store",
+    "content": "Voice search has become one of my most-used features. 🎯👌",
+    "rating": 5,
+    "timestamp": "2026-06-18T13:24:24.887Z",
+    "author": "Surendra Godara",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Voice search has become one of my most-used features"
+    }
+  },
+  {
+    "id": "play_2227bb0c-60f3-45a5-a207-ee52a7329eec",
+    "source": "play_store",
+    "content": "Gaana makes discovering music enjoyable instead of overwhelming. 🌈🎵",
+    "rating": 5,
+    "timestamp": "2026-06-18T13:17:24.313Z",
+    "author": "Rahul Rathod",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "discovering music enjoyable instead of overwhelming"
+    }
+  },
+  {
+    "id": "play_4acedf74-d0f6-427d-b99e-7e118e520f6b",
+    "source": "play_store",
+    "content": "The app consistently delivers a smooth streaming experience. 👌🔥",
+    "rating": 5,
+    "timestamp": "2026-06-18T13:16:01.447Z",
+    "author": "Aditya Choudhary",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "smooth streaming experience"
+    }
+  },
+  {
+    "id": "play_f8a57f31-01f9-4cbc-bba1-a5287633aba2",
+    "source": "play_store",
+    "content": "wonderful music app with a lot of streaming songs.. 🥰",
+    "rating": 5,
+    "timestamp": "2026-06-18T05:20:09.801Z",
+    "author": "Dharshu B",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "wonderful music app with a lot of streaming songs"
+    }
+  },
+  {
+    "id": "play_52cbb29e-44c4-458e-bac9-e11edbc65223",
+    "source": "play_store",
+    "content": "very bad experience, I got offer of geeting un intrupted music at just 1 rs and when I availed that offer, my music is still getting paused and the platform is asking to subscribe not recommended this app, try something else",
+    "rating": 1,
+    "timestamp": "2026-06-18T05:18:49.590Z",
+    "author": "Amod Ranjan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "uninterrupted music playback without subscription",
+      "key_phrase": "uninterrupted music at just 1 rs"
+    }
+  },
+  {
+    "id": "play_60d701ca-46c4-4568-a95a-9c9d3f4f07cf",
+    "source": "play_store",
+    "content": "This is a great application, you can listen to any song.. you have heard in it. ❤️ 💜",
+    "rating": 5,
+    "timestamp": "2026-06-18T04:45:18.629Z",
+    "author": "jai Vaishnav",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "listen to any song you have heard in it"
+    }
+  },
+  {
+    "id": "play_4cf47cd4-9dcd-4e49-a1a2-674e47aaccc7",
+    "source": "play_store",
+    "content": "kabhi bhi 1Rs wala triel pack mat lena warana auto renewal ke naam pe 799Rs Kat lega froud hai ye mere sath ayesa howa hai",
+    "rating": 1,
+    "timestamp": "2026-06-18T04:38:17.490Z",
+    "author": "Vinodkumar Maurya",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "A one-time trial pack without auto-renewal option",
+      "key_phrase": "1Rs wala triel pack mat lena"
+    }
+  },
+  {
+    "id": "play_5add9555-3975-4ba7-a6ff-6c5c17cdea13",
+    "source": "play_store",
+    "content": "my experience is excellent and nice 🤩🤩🤩....",
+    "rating": 5,
+    "timestamp": "2026-06-18T03:27:30.580Z",
+    "author": "Official Abhimanyu",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "my experience is excellent and nice"
+    }
+  },
+  {
+    "id": "play_7c73e430-dd65-4a95-9a09-01b9d9f71928",
+    "source": "play_store",
+    "content": "ya aap bhut karab aap hai is aap ko use mat kar na iss aap ne mere 799 pase cat liyeauto pay se",
+    "rating": 1,
+    "timestamp": "2026-06-18T01:55:32.704Z",
+    "author": "Anurag thakur Thakur (Anurag)",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": true,
+      "primary_frustration": "algorithm_echo_chamber",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "discovery_seeker",
+      "unmet_need": "a feature to break the loop of repetitive songs",
+      "key_phrase": "bhut karab aap hai"
+    }
+  },
+  {
+    "id": "play_9ec6faee-1f1e-4130-9fc5-10cdd93f450b",
+    "source": "play_store",
+    "content": "nice app our bhuat acch platform heà gaana mp4 song",
+    "rating": 5,
+    "timestamp": "2026-06-18T00:10:30.710Z",
+    "author": "Sameed Khan",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "nice app our bhuat acch platform heà gaana mp4 song"
+    }
+  },
+  {
+    "id": "play_d5bca828-92b0-42ff-ba67-f08d1e3f6e04",
+    "source": "play_store",
+    "content": "Good and very helpful app",
+    "rating": 5,
+    "timestamp": "2026-06-17T23:54:46.498Z",
+    "author": "Suma Debbarma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "Good and very helpful app"
+    }
+  },
+  {
+    "id": "play_6a5588b2-538b-4a52-a4ba-19d83eafbfcc",
+    "source": "play_store",
+    "content": "Very good app.... 😄😄",
+    "rating": 5,
+    "timestamp": "2026-06-17T23:04:03.755Z",
+    "author": "Santosh Garkal",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "Very good app"
+    }
+  },
+  {
+    "id": "play_af4e2e84-c891-4ae7-b371-e71de3bc5ddf",
+    "source": "play_store",
+    "content": "The Gaana app is a popular Indian music streaming platform best known for its massive library of regional, Bollywood, and classic Hindi songs.amazing app",
+    "rating": 5,
+    "timestamp": "2026-06-17T22:20:16.739Z",
+    "author": "Gyan Prakash",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "amazing app"
+    }
+  },
+  {
+    "id": "play_140f79fc-ca97-4902-9a1a-81381e79aa02",
+    "source": "play_store",
+    "content": "This app is best for song Love you",
+    "rating": 5,
+    "timestamp": "2026-06-17T22:02:54.616Z",
+    "author": "Anand Uikey",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "This app is best for song Love you"
+    }
+  },
+  {
+    "id": "play_aceb4c2d-cac2-454a-b956-28e6f30ebe32",
+    "source": "play_store",
+    "content": "An amazing app for Hindi and regional music..........😍",
+    "rating": 5,
+    "timestamp": "2026-06-17T21:56:42.428Z",
+    "author": "Dhruva Kumar",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "amazing app for Hindi and regional music"
+    }
+  },
+  {
+    "id": "play_9491179b-0f45-4c09-b241-197de8c774c4",
+    "source": "play_store",
+    "content": "🥳🥳🥳🥳listening to songs from gaana apps feels amazing and fantansy",
+    "rating": 5,
+    "timestamp": "2026-06-17T21:53:55.152Z",
+    "author": "Rishikesh prajapati",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "listening to songs from gaana apps feels amazing"
+    }
+  },
+  {
+    "id": "play_1afb5417-b09b-45cb-8015-9747f83fa80f",
+    "source": "play_store",
+    "content": "very nice apps 👌👏👏👏good",
+    "rating": 5,
+    "timestamp": "2026-06-17T20:54:22.835Z",
+    "author": "Sonu Yadav",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "very nice apps"
+    }
+  },
+  {
+    "id": "play_c506a684-17cf-4f54-9ec7-a8ef229554b5",
+    "source": "play_store",
+    "content": "it is an excellent one which we can 🎶",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:57:27.328Z",
+    "author": "Ramakrishna Mattewada",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "excellent one which we can"
+    }
+  },
+  {
+    "id": "play_71ced40c-5a58-437c-a865-6bc246feb272",
+    "source": "play_store",
+    "content": "Love this app! It has all the songs I need and works perfectly.\"",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:55:13.775Z",
+    "author": "Dark Hydra",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "all the songs I need"
+    }
+  },
+  {
+    "id": "play_dd5ed91b-357d-45dd-a10d-82bf5076f402",
+    "source": "play_store",
+    "content": "Wonderful Music Streaming App And So Playing Best Songs.",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:21:32.968Z",
+    "author": "Arvind Sharma",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "Wonderful Music Streaming App And So Playing Best Songs"
+    }
+  },
+  {
+    "id": "play_f1280149-3a3a-46b3-91e3-4a5f78a0be76",
+    "source": "play_store",
+    "content": "यह बहुत अच्छा ऐप है इसमें अपनी पसंद की गाना सुन सकते हो।",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:19:31.130Z",
+    "author": "SKN",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "अपनी पसंद की गाना सुन सकते हो"
+    }
+  },
+  {
+    "id": "play_21ddac73-5979-49ef-808e-e6172f861b88",
+    "source": "play_store",
+    "content": "... this app is so♥️ lovely and usefull app so try this ❤️❤️❤️",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:18:49.778Z",
+    "author": "Amit Mhto",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "this app is so lovely and usefull"
+    }
+  },
+  {
+    "id": "play_038f0115-137d-4008-b846-282c14aa9816",
+    "source": "play_store",
+    "content": "NICE APPLICATION .. 🤩",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:09:03.226Z",
+    "author": "Rutvik Shah",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "NICE APPLICATION"
+    }
+  },
+  {
+    "id": "play_cd25decc-8594-4bd6-8d82-a79879439d3a",
+    "source": "play_store",
+    "content": "This app my favourite.. Gaana app me music and video my entertainment🙏",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:08:55.700Z",
+    "author": "Paikaray Ratikanta",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "Gaana app me music and video my entertainment"
+    }
+  },
+  {
+    "id": "play_bd95bccd-f1d2-47fe-b09e-477aa1baccec",
+    "source": "play_store",
+    "content": "very Smooth app Awsome 👌",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:08:06.343Z",
+    "author": "Abdul Sameer",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "background_listening",
+      "repetition_cause": "none",
+      "user_segment": "casual_listener",
+      "unmet_need": null,
+      "key_phrase": "very Smooth app Awsome"
+    }
+  },
+  {
+    "id": "play_5e338eef-b723-425d-9a14-7ee671d93c20",
+    "source": "play_store",
+    "content": "lajavab app I'm impressed I love song 🛒🎧",
+    "rating": 5,
+    "timestamp": "2026-06-17T19:07:01.924Z",
+    "author": "Kiransinh Rajput",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "positive",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "none",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "none",
+      "user_segment": "discovery_seeker",
+      "unmet_need": null,
+      "key_phrase": "lajavab app I'm impressed I love song"
+    }
+  }
+]

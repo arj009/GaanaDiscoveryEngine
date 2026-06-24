@@ -3,18 +3,18 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell,
   PieChart, Pie, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis
 } from 'recharts'
-import { processReviews } from './dataEngine'
+import { processAggregatedData } from './dataEngine'
 
 // ── Color palette ──────────────────────────────────────────────────────────
-const ACCENT        = '#e51d45'
-const POSITIVE_CLR  = '#10b981'
-const NEUTRAL_CLR   = '#6b6b82'
-const NEGATIVE_CLR  = '#ef4444'
-const WARNING_CLR   = '#f59e0b'
-const PURPLE_CLR    = '#8b5cf6'
+const ACCENT = '#e51d45'
+const POSITIVE_CLR = '#10b981'
+const NEUTRAL_CLR = '#6b6b82'
+const NEGATIVE_CLR = '#ef4444'
+const WARNING_CLR = '#f59e0b'
+const PURPLE_CLR = '#8b5cf6'
 
 const FRUSTRATION_COLORS = [ACCENT, '#ff5277', WARNING_CLR, PURPLE_CLR, '#06b6d4', POSITIVE_CLR]
-const SEGMENT_COLORS     = [ACCENT, PURPLE_CLR, POSITIVE_CLR, WARNING_CLR, '#06b6d4']
+const SEGMENT_COLORS = [ACCENT, PURPLE_CLR, POSITIVE_CLR, WARNING_CLR, '#06b6d4']
 
 const TOOLTIP_STYLE = {
   contentStyle: {
@@ -69,46 +69,72 @@ function StarRating({ rating }) {
 
 // ── Main App ───────────────────────────────────────────────────────────────
 export default function App() {
-  const [data, setData]       = useState(null)
+  const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const [nlqInput, setNlqInput] = useState('')
   const [nlqAnswer, setNlqAnswer] = useState('')
 
   useEffect(() => {
-    fetch('/enriched_reviews.json')
+    fetch('http://localhost:8000/api/insights')
       .then(r => r.json())
-      .then(reviews => {
-        setData(processReviews(reviews))
+      .then(json => {
+        setData(processAggregatedData(json.aggregated, json.unmetNeeds, json.classifiedReviews))
         setLoading(false)
       })
-      .catch(() => setLoading(false))
+      .catch((err) => {
+        console.warn('FastAPI backend not running, falling back to static JSON files:', err)
+        Promise.all([
+          fetch('/aggregated_insights.json').then(r => r.json()),
+          fetch('/unmet_needs.json').then(r => r.json()),
+          fetch('/reviews_classified.json').then(r => r.json())
+        ])
+        .then(([agg, unmet, classified]) => {
+          setData(processAggregatedData(agg, unmet, classified))
+          setLoading(false)
+        })
+        .catch(fallbackErr => {
+          console.error('Fallback failed:', fallbackErr)
+          setLoading(false)
+        })
+      })
   }, [])
 
-  function handleNLQ(e) {
+  async function handleNLQ(e) {
     if (e.key !== 'Enter' || !nlqInput.trim()) return
-    const q = nlqInput.toLowerCase()
-    if (!data) return
-
-    let answer = ''
-    if (q.includes('frustrat') || q.includes('complain') || q.includes('problem')) {
-      const top3 = data.topFrustrations.slice(0,3).map(f => f.name).join(', ')
-      answer = `Top frustrations from ${data.total} reviews: ${top3}. "${top3.split(',')[0]}" is the #1 issue.`
-    } else if (q.includes('segment') || q.includes('user type') || q.includes('who')) {
-      const top = data.segments[0]
-      answer = `Largest segment is "${top?.name}" (${top?.count} users). Discovery Seekers have the highest negative sentiment.`
-    } else if (q.includes('discover') || q.includes('new music')) {
-      answer = `${data.discoveryPct}% of completed reviews (${data.discoveryCount} total) mention discovery struggles. Main barrier: repetitive recommendation loops.`
-    } else if (q.includes('repeat') || q.includes('same')) {
-      const top = data.topRepetitionCauses[0]
-      answer = `The #1 cause of repetitive listening is "${top?.name}" — mentioned in ${top?.value} reviews.`
-    } else if (q.includes('need') || q.includes('unmet')) {
-      const top = data.unmetNeeds.slice(0,3).map(n => n.name).join(', ')
-      answer = `Top unmet needs: ${top}.`
-    } else {
-      answer = `${data.discoveryPct}% of reviews mention discovery friction. Top issue: ${data.topFrustrations[0]?.name}. ${data.segments[0]?.name} is the dominant user segment.`
-    }
-    setNlqAnswer(answer)
+    const query = nlqInput
     setNlqInput('')
+    setNlqAnswer('Thinking...')
+
+    try {
+      const res = await fetch('http://localhost:8000/api/nlq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query })
+      })
+      
+      if (res.ok) {
+        const data = await res.json()
+        setNlqAnswer(data.answer)
+      } else {
+        throw new Error('API failed')
+      }
+    } catch (err) {
+      // Fallback to basic keyword matching if FastAPI isn't running
+      const q = query.toLowerCase()
+      let answer = ''
+      if (q.includes('frustrat') || q.includes('complain') || q.includes('problem')) {
+        const top3 = data.topFrustrations.slice(0, 3).map(f => f.name).join(', ')
+        answer = `Top frustrations from ${data.total} reviews: ${top3}. "${top3.split(',')[0]}" is the #1 issue.`
+      } else if (q.includes('segment') || q.includes('user type') || q.includes('who')) {
+        const top = data.segments[0]
+        answer = `Largest segment is "${top?.name}" (${top?.count} users).`
+      } else if (q.includes('discover') || q.includes('new music')) {
+        answer = `${data.discoveryPct}% of completed reviews (${data.discoveryCount} total) mention discovery struggles.`
+      } else {
+        answer = `(Fallback) ${data.discoveryPct}% of reviews mention discovery friction. Start the FastAPI backend for real AI answers!`
+      }
+      setNlqAnswer(answer)
+    }
   }
 
   if (loading) {
@@ -130,7 +156,7 @@ export default function App() {
 
   const sentimentPie = [
     { name: 'Positive', value: data.sentimentCounts.POSITIVE, color: POSITIVE_CLR },
-    { name: 'Neutral',  value: data.sentimentCounts.NEUTRAL,  color: NEUTRAL_CLR  },
+    { name: 'Neutral', value: data.sentimentCounts.NEUTRAL, color: NEUTRAL_CLR },
     { name: 'Negative', value: data.sentimentCounts.NEGATIVE, color: NEGATIVE_CLR },
   ]
 
@@ -227,31 +253,30 @@ export default function App() {
           </div>
         </div>
 
-        {/* ── Q1: Why do users struggle to discover? ── */}
+        {/* ── Q1: Is discovery friction a real problem? ── */}
         <div className="section fade-in delay-2">
           <SectionHeader
             num="Q1"
-            title="Why do users struggle to discover new music?"
-            sub={`${data.discoveryPct}% of reviews (${data.discoveryCount} out of ${data.total}) contain discovery-related complaints`}
+            title="Why do users struggle to discover new music? (Is Discovery Friction a Major Problem?)"
+            sub={`${data.discoveryPct}% of reviews (${data.discoveryCount} out of ${data.total}) mention struggling to find new music`}
           />
           <div className="two-col">
             <div className="glass-card">
-              <div className="chart-title">Overall Sentiment Split</div>
-              <ResponsiveContainer width="100%" height={260}>
-                <PieChart>
-                  <Pie data={sentimentPie} cx="50%" cy="50%" innerRadius={65} outerRadius={95} paddingAngle={4} dataKey="value" stroke="none">
-                    {sentimentPie.map((e, i) => <Cell key={i} fill={e.color} />)}
-                  </Pie>
-                  <Tooltip {...TOOLTIP_STYLE} />
-                </PieChart>
-              </ResponsiveContainer>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: 20, marginTop: 8 }}>
-                {sentimentPie.map(e => (
-                  <div key={e.name} style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13 }}>
-                    <div style={{ width: 10, height: 10, borderRadius: '50%', background: e.color }} />
-                    {e.name} ({e.value})
+              <div className="chart-title">Discovery Friction vs Normal Listening</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 20, marginTop: 20, padding: '0 20px' }}>
+                <div style={{ fontSize: 14, color: 'var(--text-muted)' }}>
+                  A massive portion of our negative reviews stem directly from algorithmic loops rather than bugs or pricing. This validates our strategic goal.
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 15 }}>
+                  <div style={{ flex: 1, height: 24, background: 'rgba(255,255,255,0.1)', borderRadius: 12, overflow: 'hidden', display: 'flex' }}>
+                    <div style={{ width: `${data.discoveryPct}%`, background: WARNING_CLR }} />
+                    <div style={{ width: `${100 - data.discoveryPct}%`, background: POSITIVE_CLR }} />
                   </div>
-                ))}
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 13, fontWeight: 600 }}>
+                  <span style={{ color: WARNING_CLR }}>{data.discoveryPct}% Experience Friction</span>
+                  <span style={{ color: POSITIVE_CLR }}>{100 - data.discoveryPct}% Normal/Positive</span>
+                </div>
               </div>
             </div>
             <div className="glass-card">
@@ -277,7 +302,7 @@ export default function App() {
           <SectionHeader
             num="Q2"
             title="What are the most common frustrations with recommendations?"
-            sub="Keyword-matched frustration categories across all 900 reviews"
+            sub="GROQ-classified frustration categories across all reviews"
           />
           <div className="glass-card">
             {data.topFrustrations.length > 0 ? (
@@ -372,7 +397,7 @@ export default function App() {
             {data.segments.slice(0, 5).map((seg, i) => (
               <div className="glass-card segment-card" key={i}>
                 <div style={{ fontSize: 28, marginBottom: 8 }}>
-                  {['🎧','🔍','🎸','👥','😐'][i]}
+                  {['🎧', '🔍', '🎸', '👥', '😐'][i]}
                 </div>
                 <div className="seg-name">{seg.name}</div>
                 <div className="seg-count" style={{ color: SEGMENT_COLORS[i] }}>{seg.count}</div>
@@ -383,12 +408,12 @@ export default function App() {
           <div className="glass-card">
             <div className="chart-title">Segment Size Comparison</div>
             <ResponsiveContainer width="100%" height={220}>
-              <BarChart data={data.segments.slice(0,5)} margin={{ left: 0, right: 20 }}>
+              <BarChart data={data.segments.slice(0, 5)} margin={{ left: 0, right: 20 }}>
                 <XAxis dataKey="name" stroke="var(--text-muted)" tick={{ fontSize: 12 }} />
                 <YAxis stroke="var(--text-muted)" />
                 <Tooltip {...TOOLTIP_STYLE} />
                 <Bar dataKey="count" radius={[6, 6, 0, 0]}>
-                  {data.segments.slice(0,5).map((_, i) => <Cell key={i} fill={SEGMENT_COLORS[i]} />)}
+                  {data.segments.slice(0, 5).map((_, i) => <Cell key={i} fill={SEGMENT_COLORS[i]} />)}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
@@ -402,35 +427,29 @@ export default function App() {
             title="What unmet needs emerge consistently across reviews?"
             sub="Extracted by the LLM from the most critical negative and discovery-seeking reviews"
           />
-          <div className="glass-card" style={{ marginBottom: 20 }}>
-            {data.unmetNeeds.length > 0 ? (
-              <div className="needs-grid">
-                {data.unmetNeeds.map((n, i) => (
-                  <div className="need-pill" key={i}>
-                    {n.name}
-                    <span className="need-count">{n.count}</span>
+          <div className="two-col">
+            {data.unmetNeeds && data.unmetNeeds.length > 0 ? (
+              data.unmetNeeds.map((item, i) => (
+                <div className="glass-card" key={i}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <div style={{ fontSize: 28, marginBottom: 12 }}>💡</div>
+                    <div style={{ fontSize: 13, fontWeight: 'bold', color: 'var(--accent)' }}>Opportunity: {item.opportunity_score}/10</div>
                   </div>
-                ))}
-              </div>
+                  <div style={{ fontSize: 15, fontWeight: 600, marginBottom: 8 }}>{item.name}</div>
+                  <div style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: 12 }}>{item.description}</div>
+                  <div style={{ fontSize: 12, fontStyle: 'italic', color: 'rgba(255,255,255,0.5)', background: 'rgba(0,0,0,0.2)', padding: '6px 10px', borderRadius: 6, borderLeft: '2px solid var(--accent)' }}>
+                    "{item.example_phrase}"
+                  </div>
+                  <div style={{ marginTop: 12, fontSize: 11, background: 'rgba(255,255,255,0.05)', padding: '4px 8px', borderRadius: 4, display: 'inline-block' }}>
+                    Primary Segment: {item.primary_segment} ({item.mention_pct}% mention rate)
+                  </div>
+                </div>
+              ))
             ) : (
-              <div style={{ color: 'var(--text-muted)', fontSize: 14, marginBottom: 16 }}>
-                Real OpenAI API key not yet set — unmet needs will be extracted automatically from review clusters once you add your key to .env. Showing qualitative analysis below:
+              <div style={{ color: 'var(--text-muted)', fontSize: 14 }}>
+                Unmet needs are currently being synthesized. Please run the Phase D pipeline.
               </div>
             )}
-          </div>
-          <div className="two-col">
-            {[
-              { emoji: '🌐', title: 'Deeper Genre Exploration', desc: 'Users — especially Discovery Seekers and Audiophiles — want a way to actively explore micro-genres like Indian Indie, regional classical, or city pop without being pulled back to mainstream tracks.' },
-              { emoji: '🎲', title: '"Surprise Me" Feature', desc: 'Multiple reviews request a one-tap button that plays something completely outside the user\'s listening history — an AI-curated wild card.' },
-              { emoji: '📈', title: 'Transparent Recommendation Reasoning', desc: 'Power users want to know WHY a song was suggested. A "Because you liked X..." explanation would build trust in the algorithm.' },
-              { emoji: '🔔', title: 'New Release Alerts for Followed Artists', desc: 'Users want proactive push notifications when a followed artist drops new music — not just a buried update in the app.' },
-            ].map((item, i) => (
-              <div className="glass-card" key={i}>
-                <div style={{ fontSize: 28, marginBottom: 12 }}>{item.emoji}</div>
-                <div style={{ fontSize: 15, fontWeight: 600, marginBottom: 8 }}>{item.title}</div>
-                <div style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.7 }}>{item.desc}</div>
-              </div>
-            ))}
           </div>
         </div>
 

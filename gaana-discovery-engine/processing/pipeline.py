@@ -1,15 +1,13 @@
 import json
 import os
+import time
 from preprocessing import TextPreprocessor
-from analyzer import SentimentAnalyzer, SegmentClassifier
 from llm_extraction import LLMExtractor
 from embeddings import EmbeddingGenerator
 
 class ProcessingPipeline:
     def __init__(self):
         self.preprocessor = TextPreprocessor()
-        self.sentiment_analyzer = SentimentAnalyzer()
-        self.segment_classifier = SegmentClassifier()
         self.llm_extractor = LLMExtractor()
         self.embedding_generator = EmbeddingGenerator()
 
@@ -25,6 +23,7 @@ class ProcessingPipeline:
         print(f"Loaded {len(reviews)} raw reviews. Processing...")
         enriched_reviews = []
 
+        # Process a subset or all, but let's process them all sequentially with a slight delay
         for i, review in enumerate(reviews):
             text = review.get("content", "")
             
@@ -32,39 +31,47 @@ class ProcessingPipeline:
             lang = self.preprocessor.detect_language(text)
             clean_txt = self.preprocessor.clean_text(text)
             
-            # We only process English reviews for this initial AI pass
-            if lang != "en" and lang != "unknown":
+            # We only process English/Unknown reviews for this initial AI pass
+            if lang not in ["en", "unknown"]:
                 review["processing_status"] = "skipped_non_english"
                 enriched_reviews.append(review)
                 continue
 
-            # 2. Core Analysis (Sentiment & Segment)
-            sentiment_data = self.sentiment_analyzer.analyze(clean_txt)
-            segment = self.segment_classifier.classify(clean_txt)
+            # Skip very short reviews
+            if len(clean_txt.strip()) < 20:
+                review["processing_status"] = "skipped_too_short"
+                enriched_reviews.append(review)
+                continue
+                
+            # 2. LLM Intent Extraction (now doing sentiment and segment too)
+            # Add a small delay to avoid hitting RPM limits on Groq free tier
+            time.sleep(0.5)
             
-            # 3. LLM Intent Extraction 
-            # Smart Token Saving: We only send reviews to GPT-4o if they are NEGATIVE or from a Discovery Seeker!
-            insights = {}
-            if segment == "Discovery Seeker" or sentiment_data["sentiment"] == "NEGATIVE":
-                 insights = self.llm_extractor.extract_insights(clean_txt)
+            insights = self.llm_extractor.extract_insights(review)
+            
+            if insights:
+                review["claude_output"] = insights # Store it under claude_output to match Dashboard UI expectations
+                review["sentiment"] = insights.get("sentiment", "neutral").upper()
+                review["user_segment"] = insights.get("user_segment", "general_user")
+            else:
+                review["claude_output"] = None
+                review["sentiment"] = "NEUTRAL"
+                review["user_segment"] = "General User"
 
-            # 4. Generate Embedding for Vector Search
+            # 3. Generate Embedding for Vector Search
             embedding = self.embedding_generator.generate_embedding(clean_txt)
-            
-            # 5. Enrich the original review JSON
-            review["sentiment"] = sentiment_data["sentiment"]
-            review["sentiment_score"] = sentiment_data["score"]
-            review["user_segment"] = segment
-            review["llm_insights"] = insights
             review["embedding"] = embedding
             review["processing_status"] = "completed"
 
             enriched_reviews.append(review)
 
-            if (i + 1) % 200 == 0:
+            if (i + 1) % 50 == 0:
                 print(f"Processed {i + 1}/{len(reviews)} reviews...")
+                # Write intermediate progress
+                with open(output_file, 'w', encoding='utf-8') as f:
+                    json.dump(enriched_reviews, f, indent=2)
 
-        # 5. Save the enriched data
+        # 5. Save the final enriched data
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(enriched_reviews, f, indent=2)
         
