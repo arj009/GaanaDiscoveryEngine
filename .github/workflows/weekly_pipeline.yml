@@ -43,6 +43,8 @@ jobs:
       run: |
         git config --global user.name "Gaana Pipeline Bot"
         git config --global user.email "bot@gaana.com"
+        cp -r gaana-discovery-engine/data/* gaana-discovery-engine/dashboard/public/
         git add gaana-discovery-engine/data/*.json
+        git add gaana-discovery-engine/dashboard/public/*.json
         git commit -m "chore: automated weekly data refresh [skip ci]" || echo "No changes to commit"
         git push
