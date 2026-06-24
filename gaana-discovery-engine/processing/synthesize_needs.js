@@ -6,7 +6,21 @@ import dotenv from 'dotenv';
 const envPath = path.resolve(process.cwd(), '.env');
 dotenv.config({ path: envPath });
 
-const client = new Groq({ apiKey: process.env.GROQ_API_KEY });
+const apiKeys = [
+  process.env.GROQ_API_KEY_1 || process.env.GROQ_API_KEY,
+  process.env.GROQ_API_KEY_2,
+  process.env.GROQ_API_KEY_3,
+  process.env.GROQ_API_KEY_4,
+  process.env.GROQ_API_KEY_5
+].filter(k => k); // Keep only defined keys
+
+if (apiKeys.length === 0) {
+    console.error("No GROQ API keys found in environment.");
+    process.exit(1);
+}
+
+// Just use the first valid key for synthesis
+const client = new Groq({ apiKey: apiKeys[0] });
 
 async function synthesizeUnmetNeeds() {
   if (!fs.existsSync('data/reviews_classified.json')) {
