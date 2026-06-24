@@ -1,30 +1,38 @@
 {
-  "total_reviews": 199,
-  "discovery_friction_pct": 18.1,
+  "total_reviews": 979,
+  "discovery_friction_pct": 74.1,
   "sentiment": {
-    "positive": 163,
-    "negative": 36
+    "negative": 719,
+    "positive": 259,
+    "neutral": 1
   },
   "frustrations": {
-    "algorithm_echo_chamber": 19,
-    "repetitive_recommendations": 5,
-    "poor_discovery_ui": 2
+    "algorithm_echo_chamber": 422,
+    "repetitive_recommendations": 54,
+    "limited_genre_support": 36,
+    "poor_discovery_ui": 31,
+    "content_library_gaps": 4,
+    "limited_content_variety": 1,
+    "no_explore_mode": 1
   },
   "listening_intents": {
-    "seek_new_music": 135,
-    "background_listening": 27,
-    "playlist_curation": 17,
-    "mood_listening": 8
+    "seek_new_music": 864,
+    "background_listening": 35,
+    "playlist_curation": 23,
+    "mood_listening": 15,
+    "artist_deep_dive": 1
   },
   "repetition_causes": {
-    "algorithm_overfits_history": 25,
-    "limited_content_variety": 3
+    "algorithm_overfits_history": 539,
+    "limited_content_variety": 77,
+    "autoplay_loops_same_genre": 10,
+    "no_serendipity_feature": 5
   },
   "segments": {
-    "discovery_seeker": 131,
-    "casual_listener": 41,
-    "general_user": 13,
-    "power_user": 11,
-    "audiophile": 3
+    "discovery_seeker": 852,
+    "casual_listener": 64,
+    "general_user": 45,
+    "power_user": 12,
+    "audiophile": 6
   }
 }
