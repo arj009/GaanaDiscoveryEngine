@@ -40,6 +40,26 @@
     "claude_output": null
   },
   {
+    "id": "play_7f2175fb-ccc0-4444-8b61-a5c19a9a677b",
+    "source": "play_store",
+    "content": "very bad performance and not new song available in this ap and this ap change the music lyrics",
+    "rating": 1,
+    "timestamp": "2026-06-23T16:24:20.100Z",
+    "author": "POWER XNOVA",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "play_ec117e26-c520-40ec-a0c8-af1075c7f78a",
+    "source": "play_store",
+    "content": "worst app ever ! Only Ads...No music...",
+    "rating": 1,
+    "timestamp": "2026-06-23T16:10:43.361Z",
+    "author": "Abhay Anand",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
     "id": "play_ed8921e9-ce45-433c-aba5-903f69db3bf4",
     "source": "play_store",
     "content": "worst music app I have ever tried I have full year subscription of this app and still my downloaded songs get deleted automatically and this happened many. time",
@@ -760,32 +780,32 @@
     "claude_output": null
   },
   {
-    "id": "play_5f988f33-06dc-451b-8bfb-03bc2acd7c3c",
+    "id": "play_16113f7a-942b-41c5-bfaf-4f0c3fde190c",
     "source": "play_store",
-    "content": "The music catalog feels rich and diverse across genres. 🇮🇳⭐",
+    "content": "The curated playlists save me time when I'm unsure what to play. 🎯📀",
     "rating": 5,
-    "timestamp": "2026-06-20T08:53:37.234Z",
-    "author": "HYDRA PALASH",
+    "timestamp": "2026-06-19T14:20:01.407Z",
+    "author": "Ramakrishna Meduri",
     "processing_status": "pending",
     "claude_output": null
   },
   {
-    "id": "play_7334e19c-4ea7-40bc-84fb-96a00fc5aecb",
+    "id": "play_c3a6fabc-e63c-4120-a984-9b7453d8f504",
     "source": "play_store",
-    "content": "The artist discovery experience is one of the best features. 🎯🙌",
+    "content": "make the ui more smooth and app more optimized",
     "rating": 5,
-    "timestamp": "2026-06-20T07:55:08.588Z",
-    "author": "Jeewan Singh",
+    "timestamp": "2026-06-19T14:16:42.212Z",
+    "author": "Shubham Jaiswal",
     "processing_status": "pending",
     "claude_output": null
   },
   {
-    "id": "play_d3e053f6-d97c-4788-9d30-2daa86f1967b",
+    "id": "play_697ef278-e24e-4eb8-916c-a9b8b8e2b8ca",
     "source": "play_store",
-    "content": "Gaana's playlists are perfect for road trips and vacations. 🚗🎵 🌈",
+    "content": "I can always find something interesting to listen to here. 🌈⭐",
     "rating": 5,
-    "timestamp": "2026-06-20T07:44:52.924Z",
-    "author": "Kalangi Sulochana",
+    "timestamp": "2026-06-19T14:14:27.621Z",
+    "author": "PONDURU BHUVANESWARI",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -1710,32 +1730,12 @@
     "claude_output": null
   },
   {
-    "id": "play_1e806df2-76c2-4271-b18d-304d42c312fa",
+    "id": "play_1585ce29-4671-4ef2-a198-80d4e038c496",
     "source": "play_store",
-    "content": "Browsing music categories is intuitive and enjoyable. 👌🎵",
+    "content": "Dolby Atmos makes live performances sound incredibly realistic. It genuinely feels like being at a concert. 🔊🔥",
     "rating": 5,
-    "timestamp": "2026-06-18T14:30:15.858Z",
-    "author": "Live Test",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_8ce5bfe9-4a0d-40ec-9c69-72708dade047",
-    "source": "play_store",
-    "content": "Playlist migration worked faster than I expected. 📲✨",
-    "rating": 5,
-    "timestamp": "2026-06-18T14:25:15.648Z",
-    "author": "Rockstar Sai",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_8bd502d7-96be-4d7f-8aec-3e2373e564a0",
-    "source": "play_store",
-    "content": "after subscription you can't download to your device any songs.",
-    "rating": 1,
-    "timestamp": "2026-06-18T14:18:34.460Z",
-    "author": "Syed Raza",
+    "timestamp": "2026-06-18T07:55:41.140Z",
+    "author": "Sahil K",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -2560,12 +2560,12 @@
     "claude_output": null
   },
   {
-    "id": "play_e5d77c43-b03e-4b0d-9ed6-446d04a82887",
+    "id": "play_ba2a77fa-0fac-4006-8fa5-a0de80148ad6",
     "source": "play_store",
-    "content": "I am a music lover and this aap is totally suitable for me. best experience love this aap .",
-    "rating": 4,
-    "timestamp": "2026-06-16T11:00:05.533Z",
-    "author": "Aakash",
+    "content": "stupid add show no doubt making losses",
+    "rating": 1,
+    "timestamp": "2026-06-13T16:41:15.122Z",
+    "author": "Rathang Chaturvedi",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -3190,12 +3190,12 @@
     "claude_output": null
   },
   {
-    "id": "play_11d56737-7661-4e82-ba3a-dce17a56db4d",
+    "id": "play_b0e0f977-9892-4a51-affd-5c818760ab25",
     "source": "play_store",
-    "content": "this is wrost app did not refund subscription money 🤑",
-    "rating": 1,
-    "timestamp": "2026-06-08T07:46:43.536Z",
-    "author": "Umanaga Maheswari",
+    "content": "it's good aap for break up person soo try that to take more sad song",
+    "rating": 5,
+    "timestamp": "2026-06-05T17:52:05.463Z",
+    "author": "Raghav Rawat",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -3850,12 +3850,12 @@
     "claude_output": null
   },
   {
-    "id": "play_d8956442-c1d1-4b2d-9cf5-787c7a26ef2e",
+    "id": "play_58c1b03b-86ba-446c-a8b3-f490c3ac013e",
     "source": "play_store",
-    "content": "one of the worst app I have ever used",
+    "content": "ghtia app...music play hi ni krne Diya or inko subscription ki add deti non stop ...meri zindgi ki sbse ghtia app jo mene first time install ki ....ik dum faltu app...user ko sunne hi ni dia music ....kaise lega vi subscription pehle hi frustrate krdiya.....😡😡😡",
     "rating": 1,
-    "timestamp": "2026-05-30T07:41:57.151Z",
-    "author": "Tripti Panja",
+    "timestamp": "2026-05-27T07:49:44.682Z",
+    "author": "Simran Jeet",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -4490,6 +4490,26 @@
     "claude_output": null
   },
   {
+    "id": "play_3903f09e-43fc-41e1-bd16-0adb59a41547",
+    "source": "play_store",
+    "content": "very bad 😞 in now days but after that it's past in 2017 is best",
+    "rating": 1,
+    "timestamp": "2026-05-16T06:27:10.290Z",
+    "author": "Binod Kumar Tiu",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "play_15c38c47-3717-408b-bec7-136eaeab3360",
+    "source": "play_store",
+    "content": "Worst app. No full song available",
+    "rating": 1,
+    "timestamp": "2026-05-16T06:09:05.133Z",
+    "author": "Shabbirhusen Akhunji",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
     "id": "play_f7b3a2c2-488e-4c07-83dc-7e1d603342eb",
     "source": "play_store",
     "content": "yh khrab app hai mere khud kha gy bhut jyada khrab app hai",
@@ -5080,22 +5100,12 @@
     "claude_output": null
   },
   {
-    "id": "play_649ab39b-b186-4974-ae35-2c7cf1601fc9",
+    "id": "play_579895be-424d-453e-bd8f-7b84c04dc664",
     "source": "play_store",
-    "content": "worse app I use in my life",
+    "content": "ek. no. ka bakwas h maine indian app h soch kar download Kia par ye bina subscription ke chal hi nahi Raha h isse acha to Spotify h there should be a free plan also bcauz not everyone can afford ur paid plan",
     "rating": 1,
-    "timestamp": "2026-05-09T09:40:20.978Z",
-    "author": "RUMMY OUN",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_320d91c3-efa5-4ae0-89ed-8c283958e8c2",
-    "source": "play_store",
-    "content": "bakchod app h pura without premium kabada h",
-    "rating": 1,
-    "timestamp": "2026-05-09T09:13:49.160Z",
-    "author": "Tushar Rajput",
+    "timestamp": "2026-05-04T08:00:02.985Z",
+    "author": "Prashant Upadhyay",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -5660,22 +5670,22 @@
     "claude_output": null
   },
   {
-    "id": "play_8a52f812-c40d-4b93-ab8d-45f40513a495",
+    "id": "play_218596e8-2f72-4d0b-9c7c-6c60959c0647",
     "source": "play_store",
-    "content": "wonderful experience on my phone but I am unable to install it on my tab Oneplus Pad Go 2. on my tab the playstore shows only the Gaana tv app. Please guide",
-    "rating": 5,
-    "timestamp": "2026-04-24T09:57:12.677Z",
-    "author": "Rajiv Ratan",
+    "content": "bakwas , asking for money in every 10 seconds",
+    "rating": 1,
+    "timestamp": "2026-04-20T09:23:03.384Z",
+    "author": "rvsingh rajpurohit",
     "processing_status": "pending",
     "claude_output": null
   },
   {
-    "id": "play_1790b27e-afcc-4a6a-a1bf-31bf0c329d8a",
+    "id": "play_e27e7ed6-82ad-47e5-8305-c4fb4c5986f4",
     "source": "play_store",
-    "content": "only time west this bartar Spotify",
+    "content": "very low quality audio never sign for annual subscription",
     "rating": 1,
-    "timestamp": "2026-04-24T08:13:03.470Z",
-    "author": "Brijesh Kumar",
+    "timestamp": "2026-04-20T09:01:19.113Z",
+    "author": "Krishna Tifane",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -6330,6 +6340,26 @@
     "claude_output": null
   },
   {
+    "id": "play_4bfd9c68-a37e-492d-a473-4cf0f32cb9dd",
+    "source": "play_store",
+    "content": "it is a scam app I log out from this app but amount taken by me I will give 00",
+    "rating": 1,
+    "timestamp": "2026-04-08T09:23:21.831Z",
+    "author": "Rajani Palleti",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "play_87823f18-a368-446a-b41a-b3433c3910f6",
+    "source": "play_store",
+    "content": "DISAPPOINTED When I downloaded it, I liked the interface and theme, but when I searched for a song to play, it played for 10 seconds, then an ad started. I thought, \"Okay, it's fine since I'm using the free version.\" But then I realized that the song that played was over. Wow, this app is amazing, providing us with a teaser of the song. I don't have a problem paying ₹1 for a free tier, but why should I do that just to listen to one song? That's why everyone going with Spotify.",
+    "rating": 1,
+    "timestamp": "2026-04-08T08:58:37.130Z",
+    "author": "Siddhesh Asati",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
     "id": "play_2cc0de88-6024-4a3a-968e-fdfcc8ae8ab2",
     "source": "play_store",
     "content": "you can't listen to a song unless you take subscription",
@@ -6966,16 +6996,6 @@
     "rating": 1,
     "timestamp": "2026-04-03T06:44:30.108Z",
     "author": "SHIVAM AGGARWAL",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_19c50538-7571-47bd-90c3-bbbcbc85ec5e",
-    "source": "play_store",
-    "content": "yah Gaana AAP automatic Paisa Kat leti Hai bekar hai",
-    "rating": 1,
-    "timestamp": "2026-04-03T04:51:45.506Z",
-    "author": "Amit Kumar",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -10826,16 +10846,6 @@
     "rating": 1,
     "timestamp": "2024-08-26T04:00:56-07:00",
     "author": "Sam080849",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "appstore_11653950952",
-    "source": "app_store",
-    "content": "App closes abruptly. Am unable to list even a song song since last 10 minutes",
-    "rating": 1,
-    "timestamp": "2024-08-26T00:48:00-07:00",
-    "author": "VinaySree",
     "processing_status": "pending",
     "claude_output": null
   },

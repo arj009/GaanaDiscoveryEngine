@@ -1,42 +1,42 @@
 [
   {
     "name": "Personalized Recommendation",
-    "description": "Users want diverse and fresh music recommendations, not repetitive songs. They want an algorithm that understands their preferences.",
+    "description": "Users want music recommendations tailored to their tastes and preferences, not repetitive suggestions.",
     "primary_segment": "discovery_seeker",
     "mention_pct": 60,
     "example_phrase": "painfully repetitive recommendations",
     "opportunity_score": 9
   },
   {
-    "name": "Intuitive Music Discovery",
-    "description": "Users struggle with Gaana's cluttered design and want a more straightforward discovery process. They want to easily find new music and artists.",
+    "name": "Intuitive Discovery UI",
+    "description": "Users struggle with the app's cluttered design, making it hard to find new music and artists.",
     "primary_segment": "discovery_seeker",
-    "mention_pct": 50,
+    "mention_pct": 40,
     "example_phrase": "confusing design with too many buttons",
     "opportunity_score": 8
   },
   {
-    "name": "Break Algorithm Echo Chamber",
-    "description": "Users feel trapped in a loop of repetitive songs and ads. They want an app that suggests new music based on their preferences and mood.",
+    "name": "Conversational Discovery",
+    "description": "Users want to discover music by describing their mood, activity, or preferences, not just browsing through categories.",
     "primary_segment": "discovery_seeker",
-    "mention_pct": 45,
-    "example_phrase": "cycle of repetitive songs",
-    "opportunity_score": 9
-  },
-  {
-    "name": "More Diverse Music Recommendations",
-    "description": "Users want an app that suggests a wide range of music genres and artists. They get bored with the same old recommendations.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 40,
-    "example_phrase": "bhut jada aata h",
-    "opportunity_score": 8
-  },
-  {
-    "name": "Seamless Music Playback",
-    "description": "Users want uninterrupted music playback without ads or subscription prompts. They want to enjoy their music without interruptions.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 35,
-    "example_phrase": "uninterrupted music at just 1 rs",
+    "mention_pct": 20,
+    "example_phrase": "I want something like Arijit but more upbeat",
     "opportunity_score": 7
+  },
+  {
+    "name": "Diverse Music Library",
+    "description": "Users feel the app lacks a wide range of music, leading to repetitive listening and a lack of discovery.",
+    "primary_segment": "discovery_seeker",
+    "mention_pct": 30,
+    "example_phrase": "only 10 songs in the library",
+    "opportunity_score": 6
+  },
+  {
+    "name": "Real-time Feedback Loop",
+    "description": "Users want the app to learn from their listening habits and adapt recommendations in real-time.",
+    "primary_segment": "discovery_seeker",
+    "mention_pct": 10,
+    "example_phrase": "algorithmic maturity of leaders like Spotify",
+    "opportunity_score": 5
   }
 ]
