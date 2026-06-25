@@ -54,7 +54,7 @@ async function scrapeAll() {
       "claude_output": null
     },
     {
-      "id": "reddit_manual_001",
+      "id": "itsakhsan",
       "source": "reddit",
       "content": "Does anyone else feel like Gaana is loosing space it's space. Spotify and YT Music are eating it up. I started based on an Arijit Singh song, and after some time it started playing standard top 40 Bollywood hits",
       "rating": null,
@@ -64,7 +64,7 @@ async function scrapeAll() {
       "claude_output": null
     },
     {
-      "id": "reddit_manual_002",
+      "id": "priya001",
       "source": "reddit",
       "content": "I genuinely want to support local Indian apps, but Gaana is not giving that vibe compared to other apps. There is no 'Discover Weekly' equivalent. Also it asks to pay us before using the app in free trail",
       "rating": null,
@@ -72,8 +72,19 @@ async function scrapeAll() {
       "author": "u/indie_head",
       "processing_status": "pending",
       "claude_output": null
+    },
+    {
+      "id": "ursdeviprasad",
+      "source": "reddit",
+      "content": "Where can I find my library/playlists in gaana app , reinstalled gaana after 2 years Music. I can't upload screenshot here , i searched throughly but the gaana app is showing only 4 tabs - home, search , podcasts, upgrade gaana+",
+      "rating": null,
+      "timestamp": "2026-06-24T18:30:00.000Z",
+      "author": "u/indie_head",
+      "processing_status": "pending",
+      "claude_output": null
     }
   ];
+
 
   // --- Google Play Store ---
   console.log('Scraping Play Store...');
