@@ -52,9 +52,29 @@ async function scrapeAll() {
       "author": "Medium Design Bootcamp",
       "processing_status": "pending",
       "claude_output": null
+    },
+    {
+      "id": "reddit_manual_001",
+      "source": "reddit",
+      "content": "Does anyone else feel like Gaana is loosing space it's space. Spotify and YT Music are eating it up. I started based on an Arijit Singh song, and after some time it started playing standard top 40 Bollywood hits",
+      "rating": null,
+      "timestamp": "2026-06-25T10:00:00.000Z",
+      "author": "u/MusicLover_99",
+      "processing_status": "pending",
+      "claude_output": null
+    },
+    {
+      "id": "reddit_manual_002",
+      "source": "reddit",
+      "content": "I genuinely want to support local Indian apps, but Gaana is not giving that vibe compared to other apps. There is no 'Discover Weekly' equivalent. Also it asks to pay us before using the app in free trail",
+      "rating": null,
+      "timestamp": "2026-06-24T18:30:00.000Z",
+      "author": "u/indie_head",
+      "processing_status": "pending",
+      "claude_output": null
     }
   ];
-  
+
   // --- Google Play Store ---
   console.log('Scraping Play Store...');
   try {
@@ -174,13 +194,13 @@ async function scrapeAll() {
         const link = $(el).find('link').text();
         const pubDate = $(el).find('pubDate').text();
         let content = $(el).find('content\\:encoded').text() || $(el).find('description').text();
-        
+
         // Remove HTML tags for clean text
         content = content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
-        
+
         // Take a max 1000 character snippet
         const snippet = content.slice(0, 1000);
-        
+
         reviews.push({
           id: `medium_${crypto.createHash('md5').update(link).digest('hex')}`,
           source: 'medium',
@@ -200,7 +220,7 @@ async function scrapeAll() {
   const seen = new Set();
   const deduped = reviews.filter(r => {
     if (!r.content || r.content.length < 20) return false;
-    
+
     // Create hash from first 100 characters to catch slight variations
     const hash = crypto.createHash('md5').update(r.content.slice(0, 100)).digest('hex');
     if (seen.has(hash)) return false;

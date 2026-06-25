@@ -231,10 +231,11 @@ export default function App() {
         <div className="glass-card fade-in delay-1" style={{ marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <div style={{ fontSize: 14, color: 'var(--text-muted)', marginBottom: 4 }}>DATA PIPELINE OVERVIEW</div>
-            <div style={{ fontSize: 24, fontWeight: 700 }}>1,096 <span style={{ fontSize: 16, fontWeight: 400, color: 'var(--text-muted)' }}>Total Scraped</span></div>
+            <div style={{ fontSize: 24, fontWeight: 700 }}>1,123 <span style={{ fontSize: 16, fontWeight: 400, color: 'var(--text-muted)' }}>Total Scraped</span></div>
             <div style={{ display: 'flex', gap: 16, marginTop: 12, fontSize: 13, color: 'var(--text-muted)', flexWrap: 'wrap' }}>
               <span><b style={{color: '#fff'}}>695</b> Play Store</span>
               <span><b style={{color: '#fff'}}>386</b> App Store</span>
+              <span><b style={{color: '#fff'}}>27</b> Reddit</span>
               <span><b style={{color: '#fff'}}>14</b> Medium Articles</span>
               <span><b style={{color: '#fff'}}>1</b> Twitter</span>
             </div>
