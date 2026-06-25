@@ -60,6 +60,166 @@
     "claude_output": null
   },
   {
+    "id": "itsakhsan",
+    "source": "reddit",
+    "content": "Does anyone else feel like Gaana is loosing space it's space. Spotify and YT Music are eating it up. I started based on an Arijit Singh song, and after some time it started playing standard top 40 Bollywood hits",
+    "rating": null,
+    "timestamp": "2026-06-25T10:00:00.000Z",
+    "author": "u/MusicLover_99",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 0.8,
+      "discovery_friction": true,
+      "primary_frustration": "repetitive_recommendations",
+      "listening_intent": "seek_new_music",
+      "repetition_cause": "algorithm_overfits_history",
+      "user_segment": "general_user",
+      "unmet_need": "Gaana should provide more diverse and less repetitive song recommendations",
+      "key_phrase": "loosing space to Spotify and YT Music"
+    }
+  },
+  {
+    "id": "priya001",
+    "source": "reddit",
+    "content": "I genuinely want to support local Indian apps, but Gaana is not giving that vibe compared to other apps. There is no 'Discover Weekly' equivalent. Also it asks to pay us before using the app in free trail",
+    "rating": null,
+    "timestamp": "2026-06-24T18:30:00.000Z",
+    "author": "u/indie_head",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 0.8,
+      "discovery_friction": true,
+      "primary_frustration": "content_library_gaps",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": "A music discovery feature similar to Discover Weekly",
+      "key_phrase": "no Discover Weekly equivalent"
+    }
+  },
+  {
+    "id": "ursdeviprasad",
+    "source": "reddit",
+    "content": "Where can I find my library/playlists in gaana app , reinstalled gaana after 2 years Music. I can't upload screenshot here , i searched throughly but the gaana app is showing only 4 tabs - home, search , podcasts, upgrade gaana+",
+    "rating": null,
+    "timestamp": "2026-06-24T18:30:00.000Z",
+    "author": "u/indie_head",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 0.8,
+      "discovery_friction": false,
+      "primary_frustration": "app_performance",
+      "listening_intent": "playlist_curation",
+      "repetition_cause": "none",
+      "user_segment": "power_user",
+      "unmet_need": "A clear and accessible library and playlist management feature within the Gaana app",
+      "key_phrase": "can't find my library/playlists"
+    }
+  },
+  {
+    "id": "play_5f4dfdb4-9f88-4a89-b1ff-a6d83d3fef2d",
+    "source": "play_store",
+    "content": "Seriously?? you guys are more pathetic than a Spotify...why? 10 seconds of a song...r u serious??? premium for evrything??? c'mon..grow up..",
+    "rating": 1,
+    "timestamp": "2026-06-24T07:41:14.860Z",
+    "author": "roshan shetty",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 0.9,
+      "discovery_friction": false,
+      "primary_frustration": "payment_issue",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": "a more flexible premium subscription model",
+      "key_phrase": "premium for everything"
+    }
+  },
+  {
+    "id": "play_f28ad1e3-786d-4ca9-ac80-2cbda4631c4f",
+    "source": "play_store",
+    "content": "waste app don't install it",
+    "rating": 1,
+    "timestamp": "2026-06-24T03:06:03.502Z",
+    "author": "zıllʊ",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "other",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": null,
+      "key_phrase": "waste app"
+    }
+  },
+  {
+    "id": "play_d08bbb3e-2440-4a7b-8bdc-54a5e20508af",
+    "source": "play_store",
+    "content": "Absolutely terrible music app experience. The number of ads is beyond ridiculous—an ad seems to play every few seconds, completely ruining the listening experience. Instead of enjoying music, I spend more time closing ads than actually listening to songs. The app feels more like an advertisement platform than a music platform. The user experience is frustrating, intrusive, and disappointing. I have tried using this app multiple times, hoping it would improve, but it keeps getting worse.",
+    "rating": 1,
+    "timestamp": "2026-06-23T19:49:26.468Z",
+    "author": "Rudraksha Piyush",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 0.95,
+      "discovery_friction": false,
+      "primary_frustration": "other",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": "an ad-free or less intrusive listening experience",
+      "key_phrase": "ridiculous number of ads"
+    }
+  },
+  {
+    "id": "play_7f2175fb-ccc0-4444-8b61-a5c19a9a677b",
+    "source": "play_store",
+    "content": "very bad performance and not new song available in this ap and this ap change the music lyrics",
+    "rating": 1,
+    "timestamp": "2026-06-23T16:24:20.100Z",
+    "author": "POWER XNOVA",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 0.9,
+      "discovery_friction": true,
+      "primary_frustration": "content_library_gaps",
+      "listening_intent": "none",
+      "repetition_cause": "limited_content_variety",
+      "user_segment": "general_user",
+      "unmet_need": "the ability to access new songs and accurate music lyrics",
+      "key_phrase": "not new song available"
+    }
+  },
+  {
+    "id": "play_ec117e26-c520-40ec-a0c8-af1075c7f78a",
+    "source": "play_store",
+    "content": "worst app ever ! Only Ads...No music...",
+    "rating": 1,
+    "timestamp": "2026-06-23T16:10:43.361Z",
+    "author": "Abhay Anand",
+    "processing_status": "done",
+    "claude_output": {
+      "sentiment": "negative",
+      "sentiment_confidence": 1,
+      "discovery_friction": false,
+      "primary_frustration": "other",
+      "listening_intent": "none",
+      "repetition_cause": "none",
+      "user_segment": "general_user",
+      "unmet_need": "an ad-free music listening experience",
+      "key_phrase": "Only Ads...No music"
+    }
+  },
+  {
     "id": "play_ed8921e9-ce45-433c-aba5-903f69db3bf4",
     "source": "play_store",
     "content": "worst music app I have ever tried I have full year subscription of this app and still my downloaded songs get deleted automatically and this happened many. time",
@@ -750,9 +910,19 @@
     "claude_output": null
   },
   {
-    "id": "play_bd380aa5-042a-4840-868e-ae5178b7e11f",
+    "id": "play_e8b049db-4f6b-4217-acdd-a105778748f9",
     "source": "play_store",
-    "content": "this app ask money to play the app is not free",
+    "content": "The song collection covers everything from classics to the latest hits. 🇮🇳🔥",
+    "rating": 5,
+    "timestamp": "2026-06-19T14:53:08.395Z",
+    "author": "Himanshu Kumar",
+    "processing_status": "failed",
+    "claude_output": null
+  },
+  {
+    "id": "play_d2a82be1-9d70-4b60-9db8-63bc1968d20b",
+    "source": "play_store",
+    "content": "दोस्तों इस गाना एप्प को बिलकुल भी डाउनलोड मत करना ये फ्रॉड है। मैं 2024 मैं डाउनलोड किया था ट्राइल 1 रुपया दिया था। फिर मैंने एप्प को डिलीट कर दिया था फिर भी मेरा 299 करें 3 से 4 बार पैसे काट चुके है कॉस्टमर सपोर्ट भी कोई मदद नहीं करता इस फ्रॉड से बचे। धन्यवाद",
     "rating": 1,
     "timestamp": "2026-06-20T11:16:16.995Z",
     "author": "vishwas R",
@@ -760,9 +930,9 @@
     "claude_output": null
   },
   {
-    "id": "play_ea68d903-3fc9-432e-a0da-e94c2dec50f8",
+    "id": "play_62cc7bab-a4d9-4876-b7e4-625a8caeb00a",
     "source": "play_store",
-    "content": "The regional music section continues to impress me. 🇮🇳🌈",
+    "content": "I enjoy how easy it is to switch between genres and moods. 🌈🎵",
     "rating": 5,
     "timestamp": "2026-06-20T09:56:20.550Z",
     "author": "Raj Kumar Gupta",
@@ -770,9 +940,9 @@
     "claude_output": null
   },
   {
-    "id": "play_e0c0e892-4197-4989-98b1-d3773fb2d77c",
+    "id": "play_b1e68453-0a2b-49eb-9673-244d2d88af94",
     "source": "play_store",
-    "content": "The app makes it easy to keep up with current music trends. 🎵📲",
+    "content": "The app feels lightweight and doesn't slow down my device. 👌⭐",
     "rating": 5,
     "timestamp": "2026-06-20T09:16:05.578Z",
     "author": "Akash Singh",
@@ -1680,9 +1850,9 @@
     "claude_output": null
   },
   {
-    "id": "play_bdbb1526-cdc5-4d9b-b682-c6d0cd18472d",
+    "id": "play_caffd6c5-2575-465c-8e57-1ab7e1b9a99e",
     "source": "play_store",
-    "content": "Search accuracy is excellent, even for older tracks. 🎯👌",
+    "content": "The playlist import tool worked exactly as promised. Very useful feature. 📲📀",
     "rating": 5,
     "timestamp": "2026-06-18T15:55:12.743Z",
     "author": "Balaji G",
@@ -1690,9 +1860,9 @@
     "claude_output": null
   },
   {
-    "id": "play_5f6ff03b-781c-49de-889d-bf1d6de7a622",
+    "id": "play_bca32a4d-0dfc-45ad-b7ca-14fa092fc964",
     "source": "play_store",
-    "content": "I enjoy exploring new genres through Gaana's discovery tools. 🌈🎵",
+    "content": "The Dolby experience brings out details in songs I never noticed before. 🔊✨",
     "rating": 5,
     "timestamp": "2026-06-18T15:42:09.790Z",
     "author": "Suraj Bakale",
@@ -1700,9 +1870,9 @@
     "claude_output": null
   },
   {
-    "id": "play_b84827c2-addc-48b5-a6bb-c299f2577bf3",
+    "id": "play_9e4b53ce-6c63-4f47-8589-3b6756926e61",
     "source": "play_store",
-    "content": "Import Playlist is a feature I didn't know I needed until I used it. 📀📲",
+    "content": "Voice search works surprisingly well and helps me find songs instantly. 🎯👌",
     "rating": 5,
     "timestamp": "2026-06-18T15:03:16.154Z",
     "author": "Pratik Waghe",
@@ -1710,9 +1880,9 @@
     "claude_output": null
   },
   {
-    "id": "play_f16e0e3a-5369-4e78-9f9e-aa924f938ded",
+    "id": "play_ff67d064-1c52-44f0-a969-575edd8cd779",
     "source": "play_store",
-    "content": "The wide variety of Indian music keeps me engaged daily. 🇮🇳🙌",
+    "content": "The interface is simple, clean, and easy to navigate. Finding music feels effortless. ⭐👌",
     "rating": 5,
     "timestamp": "2026-06-18T14:49:53.124Z",
     "author": "अखिलेश पाण्डेय, प्रधानाचार्य,स. वि.मं , गोशाला कहलगाँव",
@@ -1720,9 +1890,9 @@
     "claude_output": null
   },
   {
-    "id": "play_b71740a0-e156-4c73-85a6-eec196ccb99a",
+    "id": "play_3c0b0975-0820-4484-8c21-aec450214b38",
     "source": "play_store",
-    "content": "The recommendations are relevant and rarely repetitive. 🎯🌈",
+    "content": "The app loads quickly and delivers uninterrupted streaming throughout the day. 🎵👌",
     "rating": 5,
     "timestamp": "2026-06-18T14:32:43.251Z",
     "author": "Sourav Banerjee",
