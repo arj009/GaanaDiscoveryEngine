@@ -11,8 +11,12 @@ const apiKeys = [
   process.env.GROQ_API_KEY_2,
   process.env.GROQ_API_KEY_3,
   process.env.GROQ_API_KEY_4,
-  process.env.GROQ_API_KEY_5
-].filter(k => k); // Keep only defined keys
+  process.env.GROQ_API_KEY_5,
+  process.env.GROQ_API_KEY_6,
+  process.env.GROQ_API_KEY_7,
+  process.env.GROQ_API_KEY_8,
+  process.env.GROQ_API_KEY_9
+].filter(k => k).reverse(); // Reverse so synthesis uses freshest keys first
 
 if (apiKeys.length === 0) {
     console.error("No GROQ API keys found in environment.");
@@ -90,14 +94,14 @@ Respond ONLY with a valid JSON object matching this exact schema:
 }
 `;
 
-  console.log("Synthesizing final top 5 unmet needs using Groq's llama-3.1-8b-instant...");
+  console.log("Synthesizing final top 5 unmet needs using Groq's llama-3.3-70b-versatile...");
   
   let success = false;
   for (let i = 0; i < apiKeys.length; i++) {
       try {
           const client = new Groq({ apiKey: apiKeys[i] });
           const response = await client.chat.completions.create({
-              model: 'llama-3.1-8b-instant',
+              model: 'llama-3.3-70b-versatile',
               messages: [{ role: 'user', content: FINAL_PROMPT }],
               temperature: 0.2,
               response_format: { type: "json_object" }

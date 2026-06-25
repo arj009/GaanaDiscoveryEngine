@@ -11,7 +11,11 @@ const apiKeys = [
   process.env.GROQ_API_KEY_2,
   process.env.GROQ_API_KEY_3,
   process.env.GROQ_API_KEY_4,
-  process.env.GROQ_API_KEY_5
+  process.env.GROQ_API_KEY_5,
+  process.env.GROQ_API_KEY_6,
+  process.env.GROQ_API_KEY_7,
+  process.env.GROQ_API_KEY_8,
+  process.env.GROQ_API_KEY_9
 ].filter(k => k); // Keep only defined keys
 
 if (apiKeys.length === 0) {
@@ -64,40 +68,54 @@ async function classifyReviews() {
   reviews = reviews.slice(0, limit);
   
   const results = [];
-  const DELAY_MS = 1500; 
+  const DELAY_MS = 2100; // Increased delay for strict 70B free tier limits (30 RPM)
 
   console.log(`Classifying ${reviews.length} reviews utilizing ${apiKeys.length} API keys...`);
 
+  let availableKeys = [...apiKeys];
   let keyIndex = 0;
 
   for (let i = 0; i < reviews.length; i++) {
     const review = reviews[i];
+    let success = false;
     
-    // Rotate key
-    const currentKey = apiKeys[keyIndex % apiKeys.length];
-    const client = new Groq({ apiKey: currentKey });
-    
-    try {
-      const response = await client.chat.completions.create({
-        model: 'llama-3.1-8b-instant',
-        messages: [{ role: 'user', content: CLASSIFICATION_PROMPT(review) }],
-        temperature: 0.1,
-        response_format: { type: "json_object" }
-      });
+    while (!success && availableKeys.length > 0) {
+      // Rotate key
+      const currentKey = availableKeys[keyIndex % availableKeys.length];
+      const client = new Groq({ apiKey: currentKey });
+      
+      try {
+        const response = await client.chat.completions.create({
+          model: 'llama-3.3-70b-versatile',
+          messages: [{ role: 'user', content: CLASSIFICATION_PROMPT(review) }],
+          temperature: 0.1,
+          response_format: { type: "json_object" }
+        });
 
-      let raw = response.choices[0].message.content.trim();
-      const parsed = JSON.parse(raw);
-      results.push({ ...review, claude_output: parsed, processing_status: 'done' });
-      keyIndex++; // Only rotate to next key on success to balance load
-    } catch (err) {
-      if (err.message.includes('rate_limit')) {
-         keyIndex++; // If a key hits a rate limit early, jump to the next key
+        let raw = response.choices[0].message.content.trim();
+        const parsed = JSON.parse(raw);
+        results.push({ ...review, claude_output: parsed, processing_status: 'done' });
+        success = true;
+        keyIndex++; // Only rotate to next key on success to balance load
+      } catch (err) {
+        if (err.message.includes('rate_limit') || err.message.includes('429')) {
+           // Key exhausted, remove it from the available pool
+           availableKeys.splice(keyIndex % availableKeys.length, 1);
+        } else {
+           // Parse error or other issue, don't retry, just fail this specific review
+           break;
+        }
       }
+    }
+
+    if (!success) {
       results.push({ ...review, processing_status: 'failed', claude_output: null });
     }
 
-    process.stdout.write(`\rProgress: ${i + 1}/${reviews.length} reviews classified`);
-    await new Promise(r => setTimeout(r, DELAY_MS));
+    process.stdout.write(`\rProgress: ${i + 1}/${reviews.length} reviews classified. Active keys: ${availableKeys.length}`);
+    if (availableKeys.length > 0) {
+      await new Promise(r => setTimeout(r, DELAY_MS));
+    }
   }
 
   if (!fs.existsSync('data')) fs.mkdirSync('data');

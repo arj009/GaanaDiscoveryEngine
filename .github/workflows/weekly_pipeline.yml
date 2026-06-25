@@ -34,6 +34,10 @@ jobs:
         GROQ_API_KEY_3: ${{ secrets.GROQ_API_KEY_3 }}
         GROQ_API_KEY_4: ${{ secrets.GROQ_API_KEY_4 }}
         GROQ_API_KEY_5: ${{ secrets.GROQ_API_KEY_5 }}
+        GROQ_API_KEY_6: ${{ secrets.GROQ_API_KEY_6 }}
+        GROQ_API_KEY_7: ${{ secrets.GROQ_API_KEY_7 }}
+        GROQ_API_KEY_8: ${{ secrets.GROQ_API_KEY_8 }}
+        GROQ_API_KEY_9: ${{ secrets.GROQ_API_KEY_9 }}
         TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
       run: |
         cd gaana-discovery-engine

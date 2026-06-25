@@ -191,9 +191,11 @@ export default function App() {
         </div>
 
         <div style={{ marginTop: 'auto', padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: 10, border: '1px solid var(--border-glass)' }}>
-          <div style={{ fontSize: 11, color: 'var(--text-muted)', marginBottom: 6 }}>CORPUS SIZE</div>
-          <div style={{ fontSize: 22, fontWeight: 800 }}>{data.total}</div>
-          <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>reviews analyzed</div>
+          <div style={{ fontSize: 11, color: 'var(--text-muted)', marginBottom: 6 }}>DATA PIPELINE</div>
+          <div style={{ fontSize: 22, fontWeight: 800 }}>1,096</div>
+          <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Total Scraped</div>
+          <div style={{ fontSize: 18, fontWeight: 600, marginTop: 8, color: 'var(--accent)' }}>{data.total}</div>
+          <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Analyzed & Classified</div>
         </div>
       </div>
 
@@ -204,7 +206,7 @@ export default function App() {
         <div className="topbar fade-in">
           <div className="topbar-left">
             <h1>Discovery Intelligence Dashboard</h1>
-            <p>Answering all 6 Problem Statement questions from {data.total} real user reviews</p>
+            <p>Answering all 6 Problem Statement questions from high-signal user reviews</p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, flex: 1, maxWidth: 480 }}>
             <div className="nlq-box">
@@ -225,19 +227,33 @@ export default function App() {
           </div>
         </div>
 
+        {/* Data Pipeline Overview */}
+        <div className="glass-card fade-in delay-1" style={{ marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div>
+            <div style={{ fontSize: 14, color: 'var(--text-muted)', marginBottom: 4 }}>DATA PIPELINE OVERVIEW</div>
+            <div style={{ fontSize: 24, fontWeight: 700 }}>1,096 <span style={{ fontSize: 16, fontWeight: 400, color: 'var(--text-muted)' }}>Total Scraped</span></div>
+            <div style={{ display: 'flex', gap: 16, marginTop: 12, fontSize: 13, color: 'var(--text-muted)', flexWrap: 'wrap' }}>
+              <span><b style={{color: '#fff'}}>695</b> Play Store</span>
+              <span><b style={{color: '#fff'}}>386</b> App Store</span>
+              <span><b style={{color: '#fff'}}>14</b> Medium Articles</span>
+              <span><b style={{color: '#fff'}}>1</b> Twitter</span>
+            </div>
+          </div>
+        </div>
+
         {/* KPI strip */}
         <div className="kpi-row fade-in delay-1">
           <div className="glass-card kpi-card">
             <div className="kpi-icon">📋</div>
             <div className="kpi-val accent">{data.total}</div>
-            <div className="kpi-lbl">Reviews Analyzed</div>
-            <div className="kpi-sub">Play Store · App Store · Reddit · Forum · Twitter</div>
+            <div className="kpi-lbl">High-Signal Reviews Analyzed</div>
+            <div className="kpi-sub">Classified & Synthesized</div>
           </div>
           <div className="glass-card kpi-card">
             <div className="kpi-icon">🔍</div>
             <div className="kpi-val warning">{data.discoveryPct}%</div>
             <div className="kpi-lbl">Mention Discovery Friction</div>
-            <div className="kpi-sub">{data.discoveryCount} of {data.total} reviews</div>
+            <div className="kpi-sub">{data.discoveryCount} of {data.total} analyzed</div>
           </div>
           <div className="glass-card kpi-card">
             <div className="kpi-icon">😤</div>

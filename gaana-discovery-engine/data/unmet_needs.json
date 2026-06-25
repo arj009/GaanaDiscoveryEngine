@@ -1,42 +1,42 @@
 [
   {
-    "name": "Personalized Recommendation",
-    "description": "Users want music recommendations tailored to their tastes and preferences, not repetitive suggestions.",
+    "name": "Diverse Music Library",
+    "description": "Users want a more extensive music library with diverse recommendations to reduce repetitive listening behavior. This need is evident from reviews complaining about the same songs being played repeatedly.",
     "primary_segment": "discovery_seeker",
-    "mention_pct": 60,
-    "example_phrase": "painfully repetitive recommendations",
-    "opportunity_score": 9
-  },
-  {
-    "name": "Intuitive Discovery UI",
-    "description": "Users struggle with the app's cluttered design, making it hard to find new music and artists.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 40,
-    "example_phrase": "confusing design with too many buttons",
+    "mention_pct": 15,
+    "example_phrase": "more than just 10 songs",
     "opportunity_score": 8
   },
   {
-    "name": "Conversational Discovery",
-    "description": "Users want to discover music by describing their mood, activity, or preferences, not just browsing through categories.",
+    "name": "Intuitive Discovery UI",
+    "description": "Users desire a simpler and more intuitive user interface for music discovery, allowing them to easily find new music. Reviews highlight the current UI as confusing and cluttered.",
+    "primary_segment": "general_user",
+    "mention_pct": 12,
+    "example_phrase": "clean layout that is easy",
+    "opportunity_score": 9
+  },
+  {
+    "name": "Transparent Recommendation",
+    "description": "Users want to understand why certain songs are recommended to them, seeking transparency in the recommendation algorithm. This need is reflected in reviews criticizing the repetitive and unexplained recommendations.",
     "primary_segment": "discovery_seeker",
-    "mention_pct": 20,
-    "example_phrase": "I want something like Arijit but more upbeat",
+    "mention_pct": 8,
+    "example_phrase": "recommendation logic and overall",
     "opportunity_score": 7
   },
   {
-    "name": "Diverse Music Library",
-    "description": "Users feel the app lacks a wide range of music, leading to repetitive listening and a lack of discovery.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 30,
-    "example_phrase": "only 10 songs in the library",
-    "opportunity_score": 6
+    "name": "Mood-Based Discovery",
+    "description": "Users wish for a feature that allows them to discover music based on their current mood or activity, seeking a more personalized experience. Reviews mention the desire for music that fits their specific situations.",
+    "primary_segment": "general_user",
+    "mention_pct": 6,
+    "example_phrase": "listen based on mood",
+    "opportunity_score": 8
   },
   {
-    "name": "Real-time Feedback Loop",
-    "description": "Users want the app to learn from their listening habits and adapt recommendations in real-time.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 10,
-    "example_phrase": "algorithmic maturity of leaders like Spotify",
-    "opportunity_score": 5
+    "name": "Social Music Sharing",
+    "description": "Users want an intuitive music sharing feature with social discovery capabilities, enabling them to share and discover music with friends easily. Reviews suggest the current sharing process is clunky and manual.",
+    "primary_segment": "general_user",
+    "mention_pct": 5,
+    "example_phrase": "share music with friends",
+    "opportunity_score": 6
   }
 ]
