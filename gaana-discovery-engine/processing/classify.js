@@ -98,21 +98,33 @@ async function classifyReviews() {
         success = true;
         keyIndex++; // Only rotate to next key on success to balance load
       } catch (err) {
-        if (err.message.includes('rate_limit') || err.message.includes('429')) {
-           // Key exhausted, remove it from the available pool
-           availableKeys.splice(keyIndex % availableKeys.length, 1);
+        if (err.message && (err.message.includes('rate_limit') || err.message.includes('429'))) {
+           console.log(`\nRate limit hit: ${err.message}`);
+           if (err.message.includes('per_day') || err.message.includes('day')) {
+             // Key exhausted for the day, remove it from the available pool
+             console.log(`Key exhausted for day. Remaining keys: ${availableKeys.length - 1}`);
+             availableKeys.splice(keyIndex % availableKeys.length, 1);
+           } else {
+             // Transient limit (per minute). Rotate to next key and wait a bit.
+             keyIndex++;
+             await new Promise(r => setTimeout(r, 6000)); // Wait 6 seconds to let rate limit reset
+           }
         } else {
            // Parse error or other issue, don't retry, just fail this specific review
+           console.log(`\nError: ${err.message}`);
            break;
         }
       }
     }
 
     if (!success) {
+      console.log(`\nFailed to classify review ${i}`);
       results.push({ ...review, processing_status: 'failed', claude_output: null });
     }
 
-    process.stdout.write(`\rProgress: ${i + 1}/${reviews.length} reviews classified. Active keys: ${availableKeys.length}`);
+    if ((i + 1) % 10 === 0) {
+      console.log(`Progress: ${i + 1}/${reviews.length} reviews classified. Active keys: ${availableKeys.length}`);
+    }
     if (availableKeys.length > 0) {
       await new Promise(r => setTimeout(r, DELAY_MS));
     }
