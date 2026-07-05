@@ -73,6 +73,18 @@ export default function App() {
   const [loading, setLoading] = useState(true)
   const [nlqInput, setNlqInput] = useState('')
   const [nlqAnswer, setNlqAnswer] = useState('')
+  const [activeTab, setActiveTab] = useState('all')
+
+  const scrollToSection = (id) => {
+    setActiveTab(id)
+    if (id === 'all') {
+      window.scrollTo({ top: 0, behavior: 'smooth' }) // for window scrolling
+      document.querySelector('.main')?.scrollTo({ top: 0, behavior: 'smooth' }) // for container scrolling
+      document.getElementById('top-bar')?.scrollIntoView({ behavior: 'smooth' }) // fallback to top element
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   useEffect(() => {
     fetch('http://localhost:8000/api/insights')
@@ -180,30 +192,22 @@ export default function App() {
         </div>
 
         <div>
-          <div className="nav-section-label">Problem Statement</div>
-          <div className="nav-item active">📊 All Insights</div>
-          <div className="nav-item">❓ Why Struggle to Discover</div>
-          <div className="nav-item">😤 Top Frustrations</div>
-          <div className="nav-item">🎧 Listening Behaviours</div>
-          <div className="nav-item">🔁 Repetition Causes</div>
-          <div className="nav-item">👥 Segment Challenges</div>
-          <div className="nav-item">💡 Unmet Needs</div>
+          <div className={`nav-item ${activeTab === 'all' ? 'active' : ''}`} onClick={() => scrollToSection('all')}>📊 All Insights</div>
+          <div className={`nav-item ${activeTab === 'q1' ? 'active' : ''}`} onClick={() => scrollToSection('q1')}>❓ Why Struggle to Discover</div>
+          <div className={`nav-item ${activeTab === 'q2' ? 'active' : ''}`} onClick={() => scrollToSection('q2')}>😤 Top Frustrations</div>
+          <div className={`nav-item ${activeTab === 'q3' ? 'active' : ''}`} onClick={() => scrollToSection('q3')}>🎧 Listening Behaviours</div>
+          <div className={`nav-item ${activeTab === 'q4' ? 'active' : ''}`} onClick={() => scrollToSection('q4')}>🔁 Repetition Causes</div>
+          <div className={`nav-item ${activeTab === 'q5' ? 'active' : ''}`} onClick={() => scrollToSection('q5')}>👥 Segment Challenges</div>
+          <div className={`nav-item ${activeTab === 'q6' ? 'active' : ''}`} onClick={() => scrollToSection('q6')}>💡 Unmet Needs</div>
         </div>
 
-        <div style={{ marginTop: 'auto', padding: '12px', background: 'rgba(255,255,255,0.02)', borderRadius: 10, border: '1px solid var(--border-glass)' }}>
-          <div style={{ fontSize: 11, color: 'var(--text-muted)', marginBottom: 6 }}>DATA PIPELINE</div>
-          <div style={{ fontSize: 22, fontWeight: 800 }}>1,096</div>
-          <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Total Scraped</div>
-          <div style={{ fontSize: 18, fontWeight: 600, marginTop: 8, color: 'var(--accent)' }}>{data.total}</div>
-          <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Analyzed & Classified</div>
-        </div>
       </div>
 
       {/* ── Main Content ── */}
       <div className="main">
 
         {/* Top bar */}
-        <div className="topbar fade-in">
+        <div id="top-bar" className="topbar fade-in">
           <div className="topbar-left">
             <h1>Discovery Intelligence Dashboard</h1>
             <p>Answering all 6 Problem Statement questions from high-signal user reviews</p>
@@ -271,7 +275,7 @@ export default function App() {
         </div>
 
         {/* ── Q1: Is discovery friction a real problem? ── */}
-        <div className="section fade-in delay-2">
+        <div id="q1" className="section fade-in delay-2">
           <SectionHeader
             num="Q1"
             title="Why do users struggle to discover new music? (Is Discovery Friction a Major Problem?)"
@@ -315,7 +319,7 @@ export default function App() {
         </div>
 
         {/* ── Q2: Most common frustrations with recommendations ── */}
-        <div className="section fade-in delay-2">
+        <div id="q2" className="section fade-in delay-2">
           <SectionHeader
             num="Q2"
             title="What are the most common frustrations with recommendations?"
@@ -342,7 +346,7 @@ export default function App() {
         </div>
 
         {/* ── Q3: Listening behaviours ── */}
-        <div className="section fade-in delay-3">
+        <div id="q3" className="section fade-in delay-3">
           <SectionHeader
             num="Q3"
             title="What listening behaviours are users trying to achieve?"
@@ -365,7 +369,7 @@ export default function App() {
         </div>
 
         {/* ── Q4: Repetition causes ── */}
-        <div className="section fade-in delay-3">
+        <div id="q4" className="section fade-in delay-3">
           <SectionHeader
             num="Q4"
             title="What causes users to repeatedly listen to the same content?"
@@ -404,7 +408,7 @@ export default function App() {
         </div>
 
         {/* ── Q5: User segment challenges ── */}
-        <div className="section fade-in delay-4">
+        <div id="q5" className="section fade-in delay-4">
           <SectionHeader
             num="Q5"
             title="Which user segments experience different discovery challenges?"
@@ -438,7 +442,7 @@ export default function App() {
         </div>
 
         {/* ── Q6: Unmet needs ── */}
-        <div className="section fade-in delay-5">
+        <div id="q6" className="section fade-in delay-5">
           <SectionHeader
             num="Q6"
             title="What unmet needs emerge consistently across reviews?"
