@@ -210,7 +210,6 @@ export default function App() {
         <div id="top-bar" className="topbar fade-in">
           <div className="topbar-left">
             <h1>Discovery Intelligence Dashboard</h1>
-            <p>Answering all 6 Problem Statement questions from high-signal user reviews</p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, flex: 1, maxWidth: 480 }}>
             <div className="nlq-box">
