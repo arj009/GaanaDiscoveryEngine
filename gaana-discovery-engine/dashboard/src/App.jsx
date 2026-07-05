@@ -74,6 +74,7 @@ export default function App() {
   const [nlqInput, setNlqInput] = useState('')
   const [nlqAnswer, setNlqAnswer] = useState('')
   const [activeTab, setActiveTab] = useState('all')
+  const [lastRefresh, setLastRefresh] = useState('')
 
   const scrollToSection = (id) => {
     setActiveTab(id)
@@ -91,6 +92,7 @@ export default function App() {
       .then(r => r.json())
       .then(json => {
         setData(processAggregatedData(json.aggregated, json.unmetNeeds, json.classifiedReviews))
+        setLastRefresh(new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }))
         setLoading(false)
       })
       .catch((err) => {
@@ -102,6 +104,7 @@ export default function App() {
         ])
         .then(([agg, unmet, classified]) => {
           setData(processAggregatedData(agg, unmet, classified))
+          setLastRefresh(new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }))
           setLoading(false)
         })
         .catch(fallbackErr => {
@@ -210,6 +213,9 @@ export default function App() {
         <div id="top-bar" className="topbar fade-in">
           <div className="topbar-left">
             <h1>Discovery Intelligence Dashboard</h1>
+            <p style={{ color: 'var(--text-muted)', fontSize: 14, marginTop: 4 }}>
+              Runs every Monday at 7:00 AM IST - Last refreshed: {lastRefresh || 'Loading...'}
+            </p>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8, flex: 1, maxWidth: 480 }}>
             <div className="nlq-box">
