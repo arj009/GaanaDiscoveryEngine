@@ -1,32 +1,32 @@
 {
-  "total_reviews": 556,
-  "discovery_friction_pct": 3.4,
+  "total_reviews": 620,
+  "discovery_friction_pct": 3.1,
   "sentiment": {
-    "negative": 425,
-    "positive": 121,
+    "negative": 478,
+    "positive": 132,
     "neutral": 10
   },
   "frustrations": {
-    "content_library_gaps": 30,
+    "content_library_gaps": 24,
     "repetitive_recommendations": 2,
     "poor_discovery_ui": 2
   },
   "listening_intents": {
-    "playlist_curation": 18,
-    "seek_new_music": 17,
-    "mood_listening": 9,
-    "background_listening": 8,
+    "seek_new_music": 19,
+    "background_listening": 13,
+    "mood_listening": 12,
+    "playlist_curation": 9,
     "artist_deep_dive": 2
   },
   "repetition_causes": {
-    "limited_content_variety": 7,
+    "limited_content_variety": 6,
     "algorithm_overfits_history": 1
   },
   "segments": {
-    "general_user": 465,
-    "casual_listener": 41,
-    "audiophile": 21,
-    "power_user": 17,
-    "discovery_seeker": 12
+    "general_user": 515,
+    "casual_listener": 58,
+    "audiophile": 20,
+    "power_user": 14,
+    "discovery_seeker": 13
   }
 }
