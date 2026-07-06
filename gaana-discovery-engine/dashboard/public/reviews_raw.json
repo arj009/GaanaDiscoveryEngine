@@ -70,6 +70,26 @@
     "claude_output": null
   },
   {
+    "id": "play_6dcadc89-bcc4-4da3-b58c-985bfed4c814",
+    "source": "play_store",
+    "content": "अँप ठीक है, लेकिन इसमे delete का ऑपशन ही available नही है..... 🤔🤔",
+    "rating": 3,
+    "timestamp": "2026-07-05T05:19:11.341Z",
+    "author": "Sushant Nawkar",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "play_af361173-cc72-4dc1-972a-91b7e86968fb",
+    "source": "play_store",
+    "content": "refund my amount reply me in text west app is gaana",
+    "rating": 1,
+    "timestamp": "2026-07-05T04:48:48.443Z",
+    "author": "Manu Gowda",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
     "id": "play_29c2991a-abca-42e6-a1e7-e550816bbc13",
     "source": "play_store",
     "content": "no good this application😠😠😠😠😠🤮",
@@ -650,12 +670,22 @@
     "claude_output": null
   },
   {
-    "id": "play_32f0fadc-a901-4320-bae3-2e357af3ac31",
+    "id": "play_4cae3810-9b6a-4013-b3ac-ba4c9d35d178",
     "source": "play_store",
-    "content": "at least provide some song options for free listeners.",
+    "content": "Pathetic. Subscribe and play..No free music Service at all.Who is going to pay to just play a MP3 song?",
     "rating": 1,
-    "timestamp": "2026-06-27T14:28:31.753Z",
-    "author": "Srimanti Sapui",
+    "timestamp": "2026-06-23T13:49:24.437Z",
+    "author": "Tejas Tezz",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "play_b589d3f0-5f89-4aa4-8f4f-f1a5edb31f20",
+    "source": "play_store",
+    "content": "do not install this app 👎",
+    "rating": 1,
+    "timestamp": "2026-06-23T10:08:23.525Z",
+    "author": "ravindra Choudhary",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -1390,22 +1420,22 @@
     "claude_output": null
   },
   {
-    "id": "play_3dbd05d8-98de-411e-a136-6a037623148d",
+    "id": "play_0e4dd05f-f343-41fa-abe2-5da897370723",
     "source": "play_store",
-    "content": "Dolby Atmos brings a cinematic feel to everyday listening. 🔊✨",
+    "content": "Importing my playlists was surprisingly easy. I switched without losing my favorite songs and playlists. 📲📀",
     "rating": 5,
-    "timestamp": "2026-06-19T07:58:12.274Z",
-    "author": "Niraj Chaudhary",
+    "timestamp": "2026-06-18T07:14:00.172Z",
+    "author": "Sumit Phalphale",
     "processing_status": "pending",
     "claude_output": null
   },
   {
-    "id": "play_365902af-c2f8-41e8-85e2-48a7ae41cd31",
+    "id": "play_c61f745f-bdf7-47c4-9c5c-32b1e262e447",
     "source": "play_store",
-    "content": "\"Gaana makes it easy to find my favourite songs and podcasts in one place. The music quality is good and the recommendations match my taste very well. ..😊\"",
+    "content": "The Dolby Atmos upgrade completely transformed my listening experience. Every song feels richer, clearer, and more immersive than ever before. 🔊✨",
     "rating": 5,
-    "timestamp": "2026-06-19T07:51:07.875Z",
-    "author": "Ayush kumar Sah",
+    "timestamp": "2026-06-18T07:03:56.967Z",
+    "author": "Ghansham Sonune",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -2180,22 +2210,12 @@
     "claude_output": null
   },
   {
-    "id": "play_817b56df-dad0-43bb-8518-4a3ebbde4c53",
+    "id": "play_d10930c5-f0f9-4bb1-a759-bdeacd52207b",
     "source": "play_store",
-    "content": "dhokebaj aap h ye bina msg mail ke Autopay se payment leta h",
+    "content": "bhai log yah app bhut khrab hai koe bhi song download karne par 1 rupye lag raha hai fir autope start ho jayega",
     "rating": 1,
-    "timestamp": "2026-06-16T05:41:37.726Z",
-    "author": "Roshni Roshni",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_29ee7dc2-885e-45f2-ab3f-1fbc1d1c4768",
-    "source": "play_store",
-    "content": "not good this app. over charges rate and quality so bad..",
-    "rating": 1,
-    "timestamp": "2026-06-16T04:36:31.260Z",
-    "author": "Pravin Khot",
+    "timestamp": "2026-06-13T10:38:22.805Z",
+    "author": "ANKIT RAJ Rajbhar",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -2810,22 +2830,22 @@
     "claude_output": null
   },
   {
-    "id": "play_3fdc1e02-d855-431a-a837-7d842c7197d1",
+    "id": "play_6ee0aa63-94d2-4ecd-bc3d-21b42fed8e7f",
     "source": "play_store",
-    "content": "⭐ \"Very, very poor app. Songs take forever to load, the app lags often, and the experience keeps getting worse with every update.\"",
+    "content": "very bad no download option",
     "rating": 1,
-    "timestamp": "2026-06-07T16:26:15.770Z",
-    "author": "Dushyant Kumar",
+    "timestamp": "2026-06-05T04:13:18.752Z",
+    "author": "Yash Rajput",
     "processing_status": "pending",
     "claude_output": null
   },
   {
-    "id": "play_abf87809-83cb-498b-934e-ecdd4fe46afe",
+    "id": "play_38c7cbf6-a36e-43c9-8d66-d13b600d8424",
     "source": "play_store",
-    "content": "worst experience ever..today my father got scammed by gaana app..he haven't purchased anything still got 799rs deducted from his account..its totally worst..i tried to reach customer service and guess wat i got poor repsonse from a stupid bot..no response from the gaana app team..i didn't expected a scamming app in 2026?",
+    "content": "khass ni paise lete spotify best h",
     "rating": 1,
-    "timestamp": "2026-06-07T13:25:30.777Z",
-    "author": "Sobiya",
+    "timestamp": "2026-06-05T03:41:59.481Z",
+    "author": "Amit Patel",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -3450,22 +3470,12 @@
     "claude_output": null
   },
   {
-    "id": "play_b62e94e2-52c0-4318-8e28-80f514be1f49",
+    "id": "play_5ab38ab7-acfd-4f62-9380-8b81fe4ea20d",
     "source": "play_store",
-    "content": "worst 🤮🤮🤮🤢🤢🤢🤢🤢",
+    "content": "bakwas, after cancelled, auto cut my money",
     "rating": 1,
-    "timestamp": "2026-05-29T18:00:35.721Z",
-    "author": "Kuldeep Sharma",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_95b361ff-a3a6-4a1b-88f3-62aecd662d8d",
-    "source": "play_store",
-    "content": "worst app took my 800rs very worst",
-    "rating": 1,
-    "timestamp": "2026-05-29T17:23:28.531Z",
-    "author": "Umme Salma",
+    "timestamp": "2026-05-26T05:26:18.950Z",
+    "author": "kunu k",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -4070,22 +4080,22 @@
     "claude_output": null
   },
   {
-    "id": "play_f396b45f-3b9a-4e2a-8405-e32b5b303f80",
+    "id": "play_984b763c-1105-400d-9b53-a5a89cb1db3c",
     "source": "play_store",
-    "content": "worst music app. Very disappoint.",
+    "content": "only for adds not for aongs",
     "rating": 1,
-    "timestamp": "2026-05-18T06:59:48.549Z",
-    "author": "Mohd Saleem",
+    "timestamp": "2026-05-15T13:49:14.557Z",
+    "author": "Chaman Lal",
     "processing_status": "pending",
     "claude_output": null
   },
   {
-    "id": "play_ab547a95-1db2-4293-96d7-771057f6f954",
+    "id": "play_3070da9a-5ebc-4a39-9c6c-04cf4cf283f1",
     "source": "play_store",
-    "content": "bahut hi kharab hai mere 599 rupee kat liyye bina matlab autopay bina koi message ke woh bhi iss phaltu aap ke liye abb refund bhi nhi kar rahe bahut hi waahiyaat aap hai",
-    "rating": 1,
-    "timestamp": "2026-05-18T05:05:35.900Z",
-    "author": "Nishant singh Gaur",
+    "content": "gana has provided us a vast number of songs of our choice.",
+    "rating": 5,
+    "timestamp": "2026-05-15T11:08:00.526Z",
+    "author": "Pravin Verma",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -4666,16 +4676,6 @@
     "rating": 1,
     "timestamp": "2026-05-08T05:33:37.433Z",
     "author": "Saba Saad",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_4d2b93c9-bbd8-41a8-9140-d1649e6da38b",
-    "source": "play_store",
-    "content": "i am not subscribed but why debit my money whithout my permission please refund my money 299 it's not a your money it's my money please refund me i kindly request",
-    "rating": 1,
-    "timestamp": "2026-05-08T03:33:24.200Z",
-    "author": "Bidisha Ramesh mili",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -5270,12 +5270,12 @@
     "claude_output": null
   },
   {
-    "id": "play_3fdb9320-0bb2-4879-85d6-a95dca5a0013",
+    "id": "play_8b154cfd-937c-451e-a1c8-1814d7e2a60b",
     "source": "play_store",
-    "content": "all song is 10 secund not free",
+    "content": "bekar aap h bar bar add aate h 1 gaana bhi nhi pura hota usse phle 10 add aa jate h",
     "rating": 1,
-    "timestamp": "2026-04-23T10:00:34.243Z",
-    "author": "vivek vaishnav",
+    "timestamp": "2026-04-18T17:25:01.616Z",
+    "author": "Suhani Sharma",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -5896,26 +5896,6 @@
     "rating": 1,
     "timestamp": "2026-04-11T04:12:35.656Z",
     "author": "Nitin Gupta",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_575fb030-637e-42fa-89df-d051618d218f",
-    "source": "play_store",
-    "content": "waste without subscription not working",
-    "rating": 1,
-    "timestamp": "2026-04-11T03:03:32.796Z",
-    "author": "Himanshu Upadhyay",
-    "processing_status": "pending",
-    "claude_output": null
-  },
-  {
-    "id": "play_c76356b8-1177-459a-98a6-03e1492dc9d1",
-    "source": "play_store",
-    "content": "sbse bekar app hai bina btaye paise kaat leta hai mere 599 rs kaat liye hai mere sai bina permission kai",
-    "rating": 1,
-    "timestamp": "2026-04-11T02:34:49.700Z",
-    "author": "Ankit Babu Om",
     "processing_status": "pending",
     "claude_output": null
   },
@@ -6580,22 +6560,1162 @@
     "claude_output": null
   },
   {
-    "id": "play_55f3fd6d-50fc-4f65-8e8b-cdf144fb76df",
-    "source": "play_store",
-    "content": "worst langa app. dont use.",
-    "rating": 1,
-    "timestamp": "2026-04-02T12:17:34.588Z",
-    "author": "surya narayana vangara",
+    "id": "appstore_14256388657",
+    "source": "app_store",
+    "content": "Very good service at command of click",
+    "rating": 5,
+    "timestamp": "2026-07-02T20:51:27-07:00",
+    "author": "tej 2",
     "processing_status": "pending",
     "claude_output": null
   },
   {
-    "id": "play_9b65ffab-0291-4cd1-a907-5deaf3f7d84f",
-    "source": "play_store",
-    "content": "This application contains more advertisements than songs and does not even contain good songs. It also consumes a lot of storage. It is better that you do not install it right now 😡🤬😡🤡",
+    "id": "appstore_14241238677",
+    "source": "app_store",
+    "content": "I bought this coupon through Zepto, where it was mentioned two months free subscription, and it is not working.",
     "rating": 1,
-    "timestamp": "2026-04-02T12:11:11.765Z",
-    "author": "Ap king",
+    "timestamp": "2026-06-29T07:55:12-07:00",
+    "author": "sonia jain",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14237975416",
+    "source": "app_store",
+    "content": "songs are available on this app but most of the songs’ lyrics not available",
+    "rating": 2,
+    "timestamp": "2026-06-28T11:59:37-07:00",
+    "author": "prebaran",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14225627151",
+    "source": "app_store",
+    "content": "I had 2 months free subscription but it’s not showing on app",
+    "rating": 1,
+    "timestamp": "2026-06-25T11:29:33-07:00",
+    "author": "Dinoo977",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14220604584",
+    "source": "app_store",
+    "content": "My gaana app is not working properly & gets swich off again & again. Ginni is not helpful .",
+    "rating": 5,
+    "timestamp": "2026-06-24T06:24:38-07:00",
+    "author": "Trouble hi trouble",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14215702278",
+    "source": "app_store",
+    "content": "every time when i start the app getting the low quality sound",
+    "rating": 1,
+    "timestamp": "2026-06-22T23:46:44-07:00",
+    "author": "DDsplay",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14204899401",
+    "source": "app_store",
+    "content": "It’s fake not working",
+    "rating": 1,
+    "timestamp": "2026-06-20T04:37:12-07:00",
+    "author": "Kuldeep@1407",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14198339941",
+    "source": "app_store",
+    "content": "I installed this app on new device and trying to activate my one year subscription but this app doesn't allow me register it and It's not letting me open do anything just opens and then asks me to subscribe again. Now, I am feeling like I have been cheated, please look into this and fix the problem.",
+    "rating": 1,
+    "timestamp": "2026-06-18T11:22:35-07:00",
+    "author": "Amíť",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14197314593",
+    "source": "app_store",
+    "content": "As I ordered in Zepto they gave me coupon for 2 months free subscription but this app is not at all responding",
+    "rating": 1,
+    "timestamp": "2026-06-18T06:18:38-07:00",
+    "author": "Mr Tom Gowtham",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14188818529",
+    "source": "app_store",
+    "content": "I forgot to cancel my subscription they do not have any customer support channel to cancel and refund.\nPls the service is quite laggy and terrible in comparison with Spotify and Apple Music.",
+    "rating": 1,
+    "timestamp": "2026-06-16T02:24:39-07:00",
+    "author": "Tumhare BAAP",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14185608275",
+    "source": "app_store",
+    "content": "Unable to cancel auto renewal from app",
+    "rating": 1,
+    "timestamp": "2026-06-15T06:25:23-07:00",
+    "author": "Rahulmcmcg@gmail",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14178752541",
+    "source": "app_store",
+    "content": "I cant find trending music in this app example - guruji ka chela song is not available",
+    "rating": 2,
+    "timestamp": "2026-06-13T10:59:28-07:00",
+    "author": "Mohit Israni",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14177200141",
+    "source": "app_store",
+    "content": "Payment done yesterday and today still can’t enjoy songs on app",
+    "rating": 1,
+    "timestamp": "2026-06-13T02:40:37-07:00",
+    "author": "Shubhay naik",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14157386794",
+    "source": "app_store",
+    "content": "Please provide widget for ios",
+    "rating": 1,
+    "timestamp": "2026-06-08T00:00:53-07:00",
+    "author": "User 1397",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14154955495",
+    "source": "app_store",
+    "content": "Download kiya iss third class app ko ek gana nhi sun paya ads aa jata hai sala song ki beginning line tak start nhi hua subscription mangne aa jata h bhilhri app unistall kr rha hu worst experience",
+    "rating": 1,
+    "timestamp": "2026-06-07T08:22:26-07:00",
+    "author": "Donnyyyyyyyyyyyyyyyyzzzzzzz",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14151603432",
+    "source": "app_store",
+    "content": "We give an space in our phone then pay for listen music or songs how is it ridiculous.",
+    "rating": 1,
+    "timestamp": "2026-06-06T10:59:27-07:00",
+    "author": "Rishikesh kashyap",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14149320694",
+    "source": "app_store",
+    "content": "Only podcasts about gods and the ad’s don’t stop coming in 7 seconds boom ad",
+    "rating": 1,
+    "timestamp": "2026-06-05T21:25:02-07:00",
+    "author": "Rashombre",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14145407914",
+    "source": "app_store",
+    "content": "Payment option not good",
+    "rating": 1,
+    "timestamp": "2026-06-04T21:17:11-07:00",
+    "author": "An Bichal",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14142683903",
+    "source": "app_store",
+    "content": "Audio normalisation turning off automatically on Ios device. App turning off automatically. Buffering is not good, song stops for a long time.",
+    "rating": 1,
+    "timestamp": "2026-06-04T05:09:43-07:00",
+    "author": "Atul Pokh",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14139776213",
+    "source": "app_store",
+    "content": "My downloads are gone , just bec. I didn’t renew my plan ?.?",
+    "rating": 1,
+    "timestamp": "2026-06-03T09:49:08-07:00",
+    "author": "Nnnhhguyt",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14128531990",
+    "source": "app_store",
+    "content": "Worst app.it wont play music without any subscription,not fir trial also",
+    "rating": 1,
+    "timestamp": "2026-05-31T12:51:15-07:00",
+    "author": "L l.K.B",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14116504353",
+    "source": "app_store",
+    "content": "Third class zindagi main na loon main iska subscribe",
+    "rating": 1,
+    "timestamp": "2026-05-28T10:53:24-07:00",
+    "author": "Ravi11222",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14107185813",
+    "source": "app_store",
+    "content": "I’ve been using the Gaana app for a long time and even purchased the yearly subscription, but the experience has become very frustrating after the last few updates. The app has started lagging a lot, especially while playing or switching to the next song. Overall performance feels much slower than before, and the app often struggles during normal usage.\n\nAs a paid user, this is disappointing because the app was much smoother earlier. I’m giving 1 star for this issue and hope to update my review after the necessary fixes are made. I really hope the team resolves these performance problems soon in upcoming updates. Otherwise, many loyal users may start considering other music apps for a better experience.",
+    "rating": 1,
+    "timestamp": "2026-05-26T00:15:29-07:00",
+    "author": "GreatLMSApp",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14087524296",
+    "source": "app_store",
+    "content": "It’s versatility is amazing and fantastic",
+    "rating": 5,
+    "timestamp": "2026-05-20T17:37:11-07:00",
+    "author": "Skb76etw",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14084142576",
+    "source": "app_store",
+    "content": "I had downloaded the songs, but they got automatically deleted. Also, downloaded songs require streaming.",
+    "rating": 2,
+    "timestamp": "2026-05-19T19:32:31-07:00",
+    "author": "BhavikaSV",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14078062687",
+    "source": "app_store",
+    "content": "Good for listening songs",
+    "rating": 5,
+    "timestamp": "2026-05-18T04:23:41-07:00",
+    "author": "Omkardeo21",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14074228495",
+    "source": "app_store",
+    "content": "No music quality and lot of data consumption",
+    "rating": 1,
+    "timestamp": "2026-05-17T03:16:18-07:00",
+    "author": "Rajat221",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14060037301",
+    "source": "app_store",
+    "content": "Music is best quality",
+    "rating": 4,
+    "timestamp": "2026-05-13T07:19:54-07:00",
+    "author": "Luckydgjsj",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14058911620",
+    "source": "app_store",
+    "content": "The audio for the initial few seconds of a song is very distorted. This happens when we first open the app and play song.",
+    "rating": 1,
+    "timestamp": "2026-05-12T23:54:30-07:00",
+    "author": "Bhavya01",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14058391397",
+    "source": "app_store",
+    "content": "It crash every time in iPad.",
+    "rating": 2,
+    "timestamp": "2026-05-12T19:38:43-07:00",
+    "author": "Ripu123in",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14058371822",
+    "source": "app_store",
+    "content": "Gaana is worst app. These gaana bastereds cheated me twice . After paying also did not subscribe . They r worst . They r beggars",
+    "rating": 1,
+    "timestamp": "2026-05-12T19:30:13-07:00",
+    "author": "kundapi",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14052085918",
+    "source": "app_store",
+    "content": "Whithout premium we can’t play any song",
+    "rating": 1,
+    "timestamp": "2026-05-11T03:18:31-07:00",
+    "author": "Fartsixsevennn",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14028117806",
+    "source": "app_store",
+    "content": "Devs should improve tha lagginess of app and make it more buttery smooth and streaming is too slow even on 200 mbps speed .. when u download any song in specific library it while library starts stuttering while scrolling ..plz fix it or refund my all money",
+    "rating": 4,
+    "timestamp": "2026-05-04T10:28:11-07:00",
+    "author": "Prakhar The winner",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14026350259",
+    "source": "app_store",
+    "content": "Good collection and Music quality is too good",
+    "rating": 5,
+    "timestamp": "2026-05-03T23:04:12-07:00",
+    "author": "Vicky Maj",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14005945422",
+    "source": "app_store",
+    "content": "Very pathetic slow ridiculous and buffering all time !",
+    "rating": 1,
+    "timestamp": "2026-04-28T07:16:06-07:00",
+    "author": "gauravnamboodiri",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_14001239408",
+    "source": "app_store",
+    "content": "1. Bad bad bad UXD. \n2. Annoying and frustrating ads keeping on popping even though I am trial user with no subscription. At least allow one song to playfully then show ads. The owner  of the app is so desperate for revenue - Big no no. \n3. Since I wanted to compare how good it is along side with Spotify, but unfortunately your app failed. \n4. User journey is stressful from registering - selecting artist - final consumption.",
+    "rating": 1,
+    "timestamp": "2026-04-26T21:22:29-07:00",
+    "author": "Reach App Tester",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13953903416",
+    "source": "app_store",
+    "content": "Best app for music ni adds no limits only play hazzel songs one by one",
+    "rating": 5,
+    "timestamp": "2026-04-13T08:09:18-07:00",
+    "author": "Chahat❣️",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13949175972",
+    "source": "app_store",
+    "content": "So many ads when you are using free version",
+    "rating": 1,
+    "timestamp": "2026-04-12T00:10:10-07:00",
+    "author": "arjungoat",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13924177216",
+    "source": "app_store",
+    "content": "When we search any song in Gaan App Application will Work slowly and Forward next song App is Buffering For Some seconds please fix it",
+    "rating": 2,
+    "timestamp": "2026-04-04T23:24:04-07:00",
+    "author": "Denial D",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13921676416",
+    "source": "app_store",
+    "content": "Please stop my subscription and return the money",
+    "rating": 1,
+    "timestamp": "2026-04-04T07:00:19-07:00",
+    "author": "Bad 😇😇",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13917584483",
+    "source": "app_store",
+    "content": "I never recommend to use gaana i have requested cancellation before it’s subscription renewal but no action from them and amount has been deducted and when I asked for refund they are not doing the same.",
+    "rating": 1,
+    "timestamp": "2026-04-03T04:59:23-07:00",
+    "author": "‘Tggshj",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13893030679",
+    "source": "app_store",
+    "content": "Stupid app, even after the payment the plan is not getting activated and asking to subscribe time and again.",
+    "rating": 1,
+    "timestamp": "2026-03-27T08:58:29-07:00",
+    "author": "Gopal john",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13892450022",
+    "source": "app_store",
+    "content": "Where is equaliser bro?",
+    "rating": 1,
+    "timestamp": "2026-03-27T05:53:31-07:00",
+    "author": "irfanlesnar",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13891597699",
+    "source": "app_store",
+    "content": "Horrible and pathetic app. Despite paying a 1 year subscription not able to login with the registered credentials and no help from the support team",
+    "rating": 1,
+    "timestamp": "2026-03-26T23:38:58-07:00",
+    "author": "V20101",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13885219961",
+    "source": "app_store",
+    "content": "Ad-free music makes listening peaceful. 😌 🤩🤩",
+    "rating": 5,
+    "timestamp": "2026-03-25T05:22:17-07:00",
+    "author": "Sachinkky",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13885116674",
+    "source": "app_store",
+    "content": "From Bollywood to indie, everything is available. 🎧 🤩🤩",
+    "rating": 5,
+    "timestamp": "2026-03-25T04:44:36-07:00",
+    "author": "Mohitkrj",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13880725671",
+    "source": "app_store",
+    "content": "its a scam. how can you charge me 3 times for yearly subscription?? without my consent?? i can’t update my phone number. no support   invalid phone number. our query always answered by bot. it means your problem will not be solved",
+    "rating": 1,
+    "timestamp": "2026-03-23T20:55:18-07:00",
+    "author": "ShankarKC78",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13878599148",
+    "source": "app_store",
+    "content": "Ghatiya app hai ye .",
+    "rating": 1,
+    "timestamp": "2026-03-23T06:59:35-07:00",
+    "author": "amrita 🙋🏻‍♀️",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13877817247",
+    "source": "app_store",
+    "content": "One of wrost app. No support team available. My auto renewal fund has been debited but subscription not activated even after 2 months. Help option in ganna app is helpless. No official mail id or contact number for query resolve. All answers are system generated without listening to actual problem. Beware if your auto renewal is on.",
+    "rating": 1,
+    "timestamp": "2026-03-23T01:23:49-07:00",
+    "author": "Vasu60221",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13870702972",
+    "source": "app_store",
+    "content": "Have been using the app for more than 3 years, but recent updates have made app unusable and taken away all joy of uninterrupted music, even downloaded songs have lag.",
+    "rating": 3,
+    "timestamp": "2026-03-21T00:57:40-07:00",
+    "author": "vkonly1",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13870541992",
+    "source": "app_store",
+    "content": "Whenever I ask Siri to play music on Gaana from the lock screen, it prompts me to unlock my iPhone, even though all the necessary permissions have already been enabled. This behaviour is unexpected and interrupts the intended hands-free experience.",
+    "rating": 2,
+    "timestamp": "2026-03-20T23:38:36-07:00",
+    "author": "Shnks47",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13864093399",
+    "source": "app_store",
+    "content": "I give 1 star if option for -ve then I will , allow in download the songe  if u make a list after some time it will dis appears",
+    "rating": 1,
+    "timestamp": "2026-03-19T03:51:08-07:00",
+    "author": "Aman00162",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13861190012",
+    "source": "app_store",
+    "content": "Payment done but it’s not showing and again asking for payment",
+    "rating": 1,
+    "timestamp": "2026-03-18T07:04:02-07:00",
+    "author": "Shankar gupta b v",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13861095334",
+    "source": "app_store",
+    "content": "Pathetic, Greedy !!No prompt Support \nDon’t buy any free subscription that’s a trap only.",
+    "rating": 1,
+    "timestamp": "2026-03-18T06:32:08-07:00",
+    "author": "Karanjit095",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13850079363",
+    "source": "app_store",
+    "content": "It is so bad 🤮🤢🤢🤢",
+    "rating": 1,
+    "timestamp": "2026-03-15T01:51:26-07:00",
+    "author": "WaheJatt",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13844773773",
+    "source": "app_store",
+    "content": "Worst experience don’t download gaana",
+    "rating": 4,
+    "timestamp": "2026-03-13T13:11:17-07:00",
+    "author": "Ka1ff",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13844454963",
+    "source": "app_store",
+    "content": "Please don't subscribe this app",
+    "rating": 1,
+    "timestamp": "2026-03-13T11:09:47-07:00",
+    "author": "yourpainfulcustomer",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13839855053",
+    "source": "app_store",
+    "content": "After trail I want monthly subscription but automatically deducted for yearly subscription of 599/-",
+    "rating": 1,
+    "timestamp": "2026-03-12T04:09:09-07:00",
+    "author": "Srd_user",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13829933728",
+    "source": "app_store",
+    "content": "It’s an App for music, which isn’t allowing to play any song to me for playing as every time I am playing a song, whether new or old, it’s asking to take it’s premium subscription!\nFew Years back, I had taken premium subscription but after it expired, renewed it using UPI (Paytm App), which got wasted as my subscription couldn’t be renewed even after repeated complaints, so I deleted this app\n\nNow it’s not even allowing to play simple content like it’s other competition hence it’s a waste App for me!\nWill not recommend anyone to use it as they don’t really want you to use it for\nFree like other music Apps in the business",
+    "rating": 1,
+    "timestamp": "2026-03-09T05:04:05-07:00",
+    "author": "S K Pandey",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13821197683",
+    "source": "app_store",
+    "content": "In have premium. But. Song quality. Low. I set. Highest.  But.  Not i. Like. Add   song.  Don't have. So. Many. You. Song",
+    "rating": 2,
+    "timestamp": "2026-03-06T15:26:43-07:00",
+    "author": "DARSHAN@",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13811915897",
+    "source": "app_store",
+    "content": "There is nothing except advertisement.",
+    "rating": 1,
+    "timestamp": "2026-03-03T22:35:53-07:00",
+    "author": "chandreyee90",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13802546306",
+    "source": "app_store",
+    "content": "How you guys are managing payment services? I've taken yearly subscription but right after one month of taking it, same amount deducted again that is INR 299. Worst scenario with such big name in music apps.",
+    "rating": 1,
+    "timestamp": "2026-03-01T06:58:09-07:00",
+    "author": "devsharma525410",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13801926227",
+    "source": "app_store",
+    "content": "Gaana app is a good app very you find a various types of music from old to new various different verisons of songs and better quality",
+    "rating": 5,
+    "timestamp": "2026-03-01T03:25:38-07:00",
+    "author": "Bhargavd@9121",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13797448467",
+    "source": "app_store",
+    "content": "It is a Worst music app ever i have used",
+    "rating": 1,
+    "timestamp": "2026-02-27T21:58:22-07:00",
+    "author": "Dmadan07",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13788541826",
+    "source": "app_store",
+    "content": "Your Songs recommendation is very badly designed. You should improve your recommendations like JioSaavn and YouTube music. Also it’s very difficult to find any music I have to enter full song name to find if I typed 1 letter wrong song is not showing. And lastly plz upload some quality songs of bhojpuri not chip singer song also don’t recommended the song which is not popular.",
+    "rating": 1,
+    "timestamp": "2026-02-25T10:56:38-07:00",
+    "author": "YadavPulkitPK",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13777593051",
+    "source": "app_store",
+    "content": "In Gaana app, the volume of some songs is low, so we give 599 for that? So will we get the solution of this problem?",
+    "rating": 5,
+    "timestamp": "2026-02-22T09:21:24-07:00",
+    "author": "Rameshmeer",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13737041520",
+    "source": "app_store",
+    "content": "I paid for subscription, now it says this email ID already exist try with new one",
+    "rating": 1,
+    "timestamp": "2026-02-11T01:56:36-07:00",
+    "author": "Davinbro",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13735007212",
+    "source": "app_store",
+    "content": "Kuch kam ka nhi haiii isee achaaa toh spotify haiiii",
+    "rating": 1,
+    "timestamp": "2026-02-10T11:00:19-07:00",
+    "author": "Maniiiiiiiiiiiii1",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13732584077",
+    "source": "app_store",
+    "content": "So annoying promotions every second not even letting me choose what I want to listen",
+    "rating": 1,
+    "timestamp": "2026-02-09T18:44:17-07:00",
+    "author": "Vishakha23",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13721549014",
+    "source": "app_store",
+    "content": "They have no option for subscription cancellation in thier application.. i loose ₹1200/-",
+    "rating": 1,
+    "timestamp": "2026-02-06T19:25:54-07:00",
+    "author": "Abdulgany@3399",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13711081560",
+    "source": "app_store",
+    "content": "I am no longer want to use this app, there is no option to unsubscribe, so i sent email stating the same, requested to discontinue subscription manually. Still no help and paying monthly without using the app.\nThis is a spam",
+    "rating": 1,
+    "timestamp": "2026-02-03T23:49:40-07:00",
+    "author": "Arun Rokde",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13707673344",
+    "source": "app_store",
+    "content": "Seriously, unable to update email id or mobile no on gaana app. I have asked customer care to update my mobile no but they are unable to update.",
+    "rating": 1,
+    "timestamp": "2026-02-03T01:37:17-07:00",
+    "author": "Pratim world",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13695751831",
+    "source": "app_store",
+    "content": "When i have cancelled the autopay so why did you deduct money from my account how can you deduct money without giving any email",
+    "rating": 1,
+    "timestamp": "2026-01-30T22:49:02-07:00",
+    "author": "Ndbuend",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13691773788",
+    "source": "app_store",
+    "content": "I have been using this since last few days and when I play a playlist it just keep playing same song forever app shows different song is playing and it actually plays previous song \nAlso every 2 3 songs later I get track id null error in the app ui and I have to restart the app",
+    "rating": 1,
+    "timestamp": "2026-01-29T22:03:16-07:00",
+    "author": "Rishi Gaana plus user",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13685059025",
+    "source": "app_store",
+    "content": "Evry time  the app disconnects  worst is worst",
+    "rating": 1,
+    "timestamp": "2026-01-28T04:34:33-07:00",
+    "author": "Tinkuhari",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_13666368349",
+    "source": "app_store",
+    "content": "I have purchased Ganna premium but this app is too buggy and stop songs after playing 2/3 songs",
+    "rating": 1,
+    "timestamp": "2026-01-23T05:43:52-07:00",
+    "author": "Aniruddha01",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12260661698",
+    "source": "app_store",
+    "content": "Don’t download this app they are not cancelling order renewals, and they are charging you every time.",
+    "rating": 1,
+    "timestamp": "2025-02-02T00:50:26-07:00",
+    "author": "Branded Kamina17",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12257487453",
+    "source": "app_store",
+    "content": "Many time complaints to gaana timer option not seen but they are not replying",
+    "rating": 1,
+    "timestamp": "2025-02-01T07:02:04-07:00",
+    "author": "tabrez1805",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12255953656",
+    "source": "app_store",
+    "content": "Worst app downloaded today not a single played without subscription",
+    "rating": 1,
+    "timestamp": "2025-01-31T22:41:39-07:00",
+    "author": "Gymmy321",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12247896525",
+    "source": "app_store",
+    "content": "Lastest songs not add",
+    "rating": 1,
+    "timestamp": "2025-01-29T23:34:51-07:00",
+    "author": "Prince Karwal",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12245924542",
+    "source": "app_store",
+    "content": "They auto renew your subscription without any prior notice or notification of any kind and then tell the terms and conditions that it is non refundable. \nVery unfair means of providing any kind of service.",
+    "rating": 1,
+    "timestamp": "2025-01-29T10:39:58-07:00",
+    "author": "Dermatgirl",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12240958215",
+    "source": "app_store",
+    "content": "Redeem coupon is not there",
+    "rating": 1,
+    "timestamp": "2025-01-28T05:26:12-07:00",
+    "author": "Shivm121",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12232451435",
+    "source": "app_store",
+    "content": "Poor sound quality. Nowhere near HD",
+    "rating": 2,
+    "timestamp": "2025-01-26T02:08:43-07:00",
+    "author": "Amit-Bh",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12232150757",
+    "source": "app_store",
+    "content": "No proper response, blindly they are cutting amount with out using or not checking \nThey should gather customer information",
+    "rating": 1,
+    "timestamp": "2025-01-26T00:11:13-07:00",
+    "author": "Jj Diksha Handlooms",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12223216249",
+    "source": "app_store",
+    "content": "Very slow and hanging also not able to add playlists. Application getting crashed",
+    "rating": 1,
+    "timestamp": "2025-01-23T18:44:09-07:00",
+    "author": "Lucky maddy",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12221328371",
+    "source": "app_store",
+    "content": "Gana app achha nahi hai. Gana sunane ke time agar koi call aa gaya to call rakhne ke baad o song fir se shuru se chalu ho jata hai. Aur jitni baar call ayega utni baar ek hi gana baar baar bajega is app me agar sidhe se kahu to isme continuity nahi hai. Song kaha rukta hai waha se chalu na hokar shuru se chalu ho jata hai. Iska subscription faltu gaya mera isase achha to mai Spotify ka subscription le leta……….",
+    "rating": 1,
+    "timestamp": "2025-01-23T07:59:05-07:00",
+    "author": "sharmabharat87",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12216920716",
+    "source": "app_store",
+    "content": "Advertising irritation",
+    "rating": 1,
+    "timestamp": "2025-01-22T07:58:59-07:00",
+    "author": "FDarshan",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12215052088",
+    "source": "app_store",
+    "content": "Very bad experience with gaana \nAnd customer service also bad experience.",
+    "rating": 1,
+    "timestamp": "2025-01-21T23:42:45-07:00",
+    "author": "Darshan726",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12207639376",
+    "source": "app_store",
+    "content": "No DTS tracks are playing either on mobile or wifi data. When tried to contact support a stupid bot is the only option, it has a very limited list of issues from which we have to select. However managed to log a ticket and I was supposed to be contacted by the support team but even in 2 weeks nobody responded.",
+    "rating": 2,
+    "timestamp": "2025-01-20T05:15:25-07:00",
+    "author": "Some foodie",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12207626577",
+    "source": "app_store",
+    "content": "This app is for Adds not songs",
+    "rating": 1,
+    "timestamp": "2025-01-20T05:11:26-07:00",
+    "author": "visneh",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12197951259",
+    "source": "app_store",
+    "content": "As soon as I open the app it starts downloading songs which I never wanted and not initiated…this is really annoying why the songs are getting downloaded automatically",
+    "rating": 1,
+    "timestamp": "2025-01-17T21:30:56-07:00",
+    "author": "SatishReddyL",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12194697160",
+    "source": "app_store",
+    "content": "🚨🚨zero star🚨🚨..Very bad services by gana…i have paid rs 599 and subscription is only for one month..",
+    "rating": 1,
+    "timestamp": "2025-01-17T03:04:44-07:00",
+    "author": "Rakesh 6548",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12192409151",
+    "source": "app_store",
+    "content": "Worst app ever auto cut money every time",
+    "rating": 1,
+    "timestamp": "2025-01-16T11:34:45-07:00",
+    "author": "Anshulsharma0255",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12192006732",
+    "source": "app_store",
+    "content": "If you are not able to provide me royalty free song what for the people download your app. You fill with advertisements that is not an issue.",
+    "rating": 5,
+    "timestamp": "2025-01-16T09:22:12-07:00",
+    "author": "Ganeshtm",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12190136128",
+    "source": "app_store",
+    "content": "Very bad app, don’t download it 😠",
+    "rating": 1,
+    "timestamp": "2025-01-15T22:39:00-07:00",
+    "author": "Jo Jo saini",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12187502476",
+    "source": "app_store",
+    "content": "Took one year subscription,worked for only one month, and not even helping to sort this issue in the help and query zone,just we can answer in yes or no ,but not available for texting actually problem. Completely loss of money is the actually problem and no proper solution for this in this app",
+    "rating": 1,
+    "timestamp": "2025-01-15T06:47:02-07:00",
+    "author": "Kartikkz",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12186375297",
+    "source": "app_store",
+    "content": "Already paid for yearly subscription 3-4 days ago but still unable to listen to a single song",
+    "rating": 1,
+    "timestamp": "2025-01-15T00:07:14-07:00",
+    "author": "NMPPune",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12179349616",
+    "source": "app_store",
+    "content": "Not able to redeem my coupon",
+    "rating": 1,
+    "timestamp": "2025-01-13T05:28:19-07:00",
+    "author": "Vikramsahu44",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12176033842",
+    "source": "app_store",
+    "content": "Each song play is interrupted to purchase subscriptions…",
+    "rating": 1,
+    "timestamp": "2025-01-12T08:38:19-07:00",
+    "author": "sr.sumit",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12174152223",
+    "source": "app_store",
+    "content": "I have paid gaana account but cannot use it in another country when i travel.. asks\nMe to login with email and my account is registered on mobile number.",
+    "rating": 1,
+    "timestamp": "2025-01-11T21:39:15-07:00",
+    "author": "Rizwan D",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12159008531",
+    "source": "app_store",
+    "content": "Useless station never used such app like gana because using these app contaminate to we lose interest on music",
+    "rating": 1,
+    "timestamp": "2025-01-08T03:05:36-07:00",
+    "author": "KITTU 😉",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12137852350",
+    "source": "app_store",
+    "content": "Songs deleting policy is very bad, poor management and services",
+    "rating": 2,
+    "timestamp": "2025-01-02T17:46:50-07:00",
+    "author": "My original name",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12135608848",
+    "source": "app_store",
+    "content": "This is very disappointing app’s because of three resons.\n\n1: It will tempt you for free subscription for one month.\n2: It will deduct the amount for second month without any email/text notification which all the customers are entitled.\n3:No songs can be downloaded to the mobile or your storage with free subscriptions.\n\nIt is better to use youtube.",
+    "rating": 1,
+    "timestamp": "2025-01-02T05:58:36-07:00",
+    "author": "GaanaDisaster",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12133980189",
+    "source": "app_store",
+    "content": "The song quality and choice of song collection is fabulous\nMore option to download and HD version is awesome experience to celebrate this new-year",
+    "rating": 5,
+    "timestamp": "2025-01-01T19:34:58-07:00",
+    "author": "Charlesgidwink",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12109013050",
+    "source": "app_store",
+    "content": "Have a subscription and has selected Tamil as the primary language but when songs are selected only Hindi or Telugu are displayed. And very limited Tamil songs selection",
+    "rating": 1,
+    "timestamp": "2024-12-26T12:18:57-07:00",
+    "author": "Vjs2306",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12102642905",
+    "source": "app_store",
+    "content": "Always asking for Wi-Fi connections",
+    "rating": 1,
+    "timestamp": "2024-12-24T20:41:01-07:00",
+    "author": "pittukr",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12086042930",
+    "source": "app_store",
+    "content": "paid twice for same renewal",
+    "rating": 1,
+    "timestamp": "2024-12-20T12:03:50-07:00",
+    "author": "bittu7890",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12085777395",
+    "source": "app_store",
+    "content": "If u can’t takr ganns plus then they won’t let listen u music, i m deleting the app and will never ever download, waste of time rubbish app.",
+    "rating": 1,
+    "timestamp": "2024-12-20T10:30:34-07:00",
+    "author": "Rajibchak",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12083687131",
+    "source": "app_store",
+    "content": "There is no option for entering coupon",
+    "rating": 1,
+    "timestamp": "2024-12-19T21:50:49-07:00",
+    "author": "Dhanushgoel",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12077412384",
+    "source": "app_store",
+    "content": "Mane subscription liya 1 year ka or 1 month hi chala ye",
+    "rating": 1,
+    "timestamp": "2024-12-18T05:27:38-07:00",
+    "author": "Dbhejbs",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12077037933",
+    "source": "app_store",
+    "content": "I have paid the amount for 1 year and it is still showing as account not active and I’m not getting any response from chat customer care. Pathetic app and service",
+    "rating": 1,
+    "timestamp": "2024-12-18T03:21:03-07:00",
+    "author": "Naina2507",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12069241956",
+    "source": "app_store",
+    "content": "Worst. Adds more than songs idiots",
+    "rating": 1,
+    "timestamp": "2024-12-16T00:02:09-07:00",
+    "author": "Parag.dhole",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12068849522",
+    "source": "app_store",
+    "content": "Junked, flawed and doomed.. probably this is the reason most of the apps like gaana does not scale up to become global brands due to bhasmasur attitude. \nPlease don’t waste your time, effort, money on this app.",
+    "rating": 1,
+    "timestamp": "2024-12-15T20:46:11-07:00",
+    "author": "Ravi733",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12068374245",
+    "source": "app_store",
+    "content": "I took gana plus subscription but it’s useless lots of songs and authors singers are not added new songs are missing also including some\nFamous old\nSongs",
+    "rating": 2,
+    "timestamp": "2024-12-15T17:16:04-07:00",
+    "author": "dil_p",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12067535629",
+    "source": "app_store",
+    "content": "This app doesn’t support sleep timer, its very difficulty to me",
+    "rating": 1,
+    "timestamp": "2024-12-15T11:49:45-07:00",
+    "author": "diagobean",
+    "processing_status": "pending",
+    "claude_output": null
+  },
+  {
+    "id": "appstore_12065308743",
+    "source": "app_store",
+    "content": "Downloaded songs i can not delete all songs together",
+    "rating": 2,
+    "timestamp": "2024-12-14T23:19:37-07:00",
+    "author": "Drms1105",
     "processing_status": "pending",
     "claude_output": null
   },
