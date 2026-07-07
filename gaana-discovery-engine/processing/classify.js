@@ -143,7 +143,8 @@ async function classifyReviews() {
            } else {
              // Transient limit (per minute). Rotate to next client and wait a bit.
              keyIndex++;
-             await new Promise(r => setTimeout(r, 6000)); // Wait 6 seconds to let rate limit reset
+             const waitTime = currentClient.provider === 'cerebras' ? 15000 : 6000;
+             await new Promise(r => setTimeout(r, waitTime));
            }
         } else {
            // Parse error or other issue, don't retry, just fail this specific review

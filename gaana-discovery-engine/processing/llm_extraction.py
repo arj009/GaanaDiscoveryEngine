@@ -155,7 +155,8 @@ class LLMExtractor:
                             break
                     else:
                         client_idx += 1
-                        time.sleep(5)
+                        wait_time = 15 if current_client["provider"] == "cerebras" else 5
+                        time.sleep(wait_time)
                 else:
                     client_idx += 1
         return None
