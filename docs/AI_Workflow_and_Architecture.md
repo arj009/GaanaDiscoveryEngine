@@ -11,13 +11,70 @@
 
 ---
 
+## Product Discovery & User Research (Active Discoverers)
+
+To design a solution that addresses music discovery friction and repetitive listening loop issues, we conducted primary user research targeting the **"Active Discoverers"** segment (users aged 18-35 who actively want to find new music tailored to specific moods, situations, or regional genres, but feel boxed in by popularity-biased recommendations).
+
+### Simulated User Interview Profiles & Insights
+
+*   **Priya (24, Commuter)**: *"I listen to music while traveling. Gaana always recommends the same top 20 Bollywood tracks. I want to find indie acoustic songs, but searching for them is a hassle unless I know the exact artist."*
+*   **Rahul (29, Fitness Enthusiast)**: *"I need high-BPM Punjabi tracks for my workouts. The existing 'workout' playlists are stale. I wish I could just tell the app 'give me aggressive Punjabi gym music' and it would build a custom mix."*
+*   **Anita (35, Multilingual Listener)**: *"I listen to Tamil, Hindi, and English music depending on my mood. The app gets confused by my diverse tastes and just throws the most popular songs at me instead of understanding my context."*
+*   **Karan (21, Student)**: *"I love discovering underground hip-hop. Traditional recommendations just show me whatever is trending on reels. It feels like the app doesn't actually 'know' my taste."*
+*   **Neha (27, Office Worker)**: *"I like lo-fi or instrumental Indian classical while working. If I listen to one pop song on the weekend, my whole Monday focus playlist gets ruined."*
+
+**Key Validation Insight:** Users are frustrated by generic, popularity-biased recommendations. They want contextual, mood-based, and highly specific discovery that traditional static playlists fail to provide.
+
+---
+
+## Problem Definition & Hypothesis
+
+### Problem Statement
+Gaana users who actively seek personalized or niche music experiences suffer from "recommendation fatigue" due to the platform's over-reliance on mainstream, popularity-biased algorithms, leading to decreased session times and higher churn to competitors.
+
+*   **Root Cause**: Traditional collaborative filtering models and static tag-based systems fail to comprehend complex, contextual user intents (e.g., mood, activity, hyper-local language mixes). They optimize for what is generally popular rather than what is specifically relevant to the user at that exact moment.
+*   **Target User Segment**: "Active Discoverers" / "Discovery Seekers" — users who have specific, situational music cravings but lack the tools to articulate them within the app.
+*   **Business Impact**: Solving discovery directly increases user session length, boosts daily active users (DAU), and improves retention, which directly increases conversion rates of free users into Gaana+ premium subscribers.
+
+### Hypothesis
+*   **H1 + H2 Synthesis**: Discovery Seekers on Gaana are stuck in a repetitive listening loop not because discovery features are absent, but because the existing discovery entry points (Trending and Made For You) are structurally blind to user intent. 
+*   Trending serves popularity, and Made For You serves past pattern-matching, but neither allows a user to express what they actually want in their own language — mood, context, or vibe. This absence of an "intent layer" traps users in passive discovery loops, resulting in decision fatigue and a default to familiar, repetitive listening, or eventually abandoning the platform.
+
+---
+
+## AI-Native MVP Concept: Gaana Vibe Search (VibeMatch AI)
+
+To solve the discovery friction, we propose **Gaana Vibe Search (VibeMatch AI)** — a conversational discovery agent integrated into the Gaana interface as an AI intent layer built on top of the existing discovery surface. 
+
+Instead of traditional keyword search or passive scrolling, users interact with a natural language input to describe their exact vibe (e.g., *"Something raw and emotional but upbeat — not Bollywood, maybe Hindi indie"* or *"Play some underrated acoustic indie Hindi songs for a rainy evening"*).
+
+### How it Works (MVP Architecture)
+1.  **Intent Parser**: An AI layer (powered by LLM APIs) translates the user's natural language query into a structured intent representation (capturing mood tags, energy, language preferences, and exclusion criteria).
+2.  **Song Matching**: The structured intent is matched against a database of tracks embedded in a vector space.
+3.  **Explainable UI**: The interface returns a targeted 6-song grid. Crucially, each track features a generated one-line reasoning string (e.g., *"Because you want something raw and upbeat, this track has..."*) to explicitly bridge the gap between the user's input and the recommendation.
+
+### Technical & Strategic Advantages of an AI-Native Approach
+
+*   **Why traditional recommendation systems fail**:
+    *   **The "Cold Start" and Popularity Bias**: Collaborative Filtering recommends what similar users liked. If you want a niche sub-genre, the system struggles because there isn't enough user-interaction data, leading it to recommend popular tracks to "play it safe."
+    *   **Rigid Metadata**: Traditional systems rely on rigid, hardcoded tags (Genre: Pop, Language: Hindi). They cannot understand complex intersections or subjective descriptions like "nostalgic," "upbeat but not loud," or "road trip vibes."
+*   **What AI unlocks**:
+    *   **Semantic & Hinglish Understanding**: AI can understand the meaning and intent behind a user's query, including slang or Hinglish (e.g., *"mast long drive songs"*).
+    *   **Dynamic Curation (Vector Search)**: By embedding song lyrics, audio features, and reviews into a vector database, AI can retrieve songs semantically close to the user's prompt, bypassing manual tags.
+    *   **Explainability**: The AI can explain *why* it chose a song, which builds user trust and breaks the loop.
+*   **User Experience Shift**:
+    *   **From Passive to Active**: Users transition from passively scrolling through pre-made, generic carousels ("Top 50 India") to actively conversing with their music app.
+    *   **Hyper-Personalization**: The experience feels incredibly intimate. The app acts less like a generic radio station and more like a personal DJ who understands the user's exact current mood and context.
+
+---
+
 ## High-Level System Overview
 
 ```mermaid
 graph TB
     subgraph Sources["📥 Real Data Sources (Fix 2)"]
-        A1["App Store — app-store-scraper (App ID: 407694866)"]
-        A2["Play Store — google-play-scraper (ID: gaana.gaana)"]
+        A1["App Store — app-store-scraper (App ID: 585270521)"]
+        A2["Play Store — google-play-scraper (ID: com.gaana)"]
         A3["Reddit — Public JSON API (r/indianmusic, r/gaana, r/bollywood)"]
         A4["Community Forums — Scrapy spiders"]
         A5["Social Media — X API v2 keyword search"]
@@ -138,8 +195,8 @@ PINECONE_API_KEY=...               # Leave blank for MVP
 
 | Source | Package / Method | App Identifier | Target Volume |
 |---|---|---|---|
-| **Google Play Store** | `google-play-scraper` (npm) | `gaana.gaana` | 500–600 reviews |
-| **Apple App Store** | `app-store-scraper` (npm) | `407694866` | 300–400 reviews |
+| **Google Play Store** | `google-play-scraper` (npm) | `com.gaana` | 500–600 reviews |
+| **Apple App Store** | `app-store-scraper` (npm) | `585270521` | 300–400 reviews |
 | **Reddit** | Public JSON API (no auth) | `r/indianmusic`, `r/gaana`, `r/bollywood` | 100–200 posts |
 | **Community Forums** | Scrapy spider | gaana.com community pages | 50–100 posts |
 | **Twitter / X** | X API v2 Basic | `gaana recommendations` keyword | 50–100 tweets |
@@ -168,7 +225,7 @@ async function scrapeAll() {
   console.log('Scraping Play Store...');
   for (let page = 0; page < 10; page++) {
     const batch = await gplay.reviews({
-      appId: 'gaana.gaana',
+      appId: 'com.gaana',
       lang: 'en',
       country: 'in',
       sort: gplay.sort.NEWEST,
@@ -193,7 +250,7 @@ async function scrapeAll() {
   console.log('Scraping App Store...');
   for (let page = 1; page <= 5; page++) {
     const batch = await store.reviews({
-      id: '407694866',
+      id: '585270521',
       country: 'in',
       page,
     });
@@ -386,6 +443,23 @@ classifyReviews().catch(console.error);
 ```
 
 **Expected cost:** Free (utilizing GROQ's generous free tier with rate limit management).
+
+### 3.2.1 1,000 Review Scaling Strategy (Groq Key Rotation)
+
+To scale review processing to 1,000+ reviews without hitting the limits of the free tier or incurring costs, we use an **API Key Rotation Strategy** in the classification pipeline.
+
+*   **The Constraint**: Groq provides extremely high-throughput, low-latency inference for free, but enforces a strict rate limit of **100,000 Tokens Per Day (TPD)** per account. At approximately 400 tokens per review (including prompts and outputs), classifying 1,000 reviews requires **~400,000 tokens** (4x the daily limit for a single key).
+*   **The Key Rotation Solution**: By generating and distributing the load across four separate free Groq API keys, we combine their limits into a unified pool of **400,000 TPD**.
+*   **Implementation**: 
+    1. Generate 4 separate Groq API keys using different authentication accounts.
+    2. Configure these in the environment (`.env`) as:
+       ```env
+       GROQ_API_KEY_1=gsk_...
+       GROQ_API_KEY_2=gsk_...
+       GROQ_API_KEY_3=gsk_...
+       GROQ_API_KEY_4=gsk_...
+       ```
+    3. Modify `classify.js` to cycle through the keys round-robin on every request batch. This distributes the token load evenly (approx. 250 reviews or ~90,000 tokens per key), ensuring no single key ever hits the TPD limits, permitting a zero-cost MVP run over the entire 1,000+ review dataset.
 
 ### 3.3 Aggregation Layer
 

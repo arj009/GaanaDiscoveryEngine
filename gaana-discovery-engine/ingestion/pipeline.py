@@ -11,7 +11,7 @@ class IngestionPipeline:
     def __init__(self):
         self.scrapers_with_limits = {
             PlayStoreScraper(app_id="com.gaana"): 600,
-            AppleStoreScraper(app_name="gaana", app_id="407694866"): 400,
+            AppleStoreScraper(app_name="gaana", app_id="585270521"): 400,
             RedditScraper(subreddits=["gaana", "indianmusic", "bollywood"]): 200,
             ForumScraper(): 50,
             TwitterScraper(): 50

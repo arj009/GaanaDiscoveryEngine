@@ -7,46 +7,67 @@
 ## High-Level System Overview
 
 ```mermaid
-graph TB
-    subgraph Sources["📥 Data Sources"]
-        A1["App Store Reviews"]
-        A2["Play Store Reviews"]
-        A3["Reddit Discussions"]
-        A4["Community Forums"]
-        A5["Social Media (X/Twitter, Instagram)"]
+flowchart LR
+    %% Styling
+    classDef start fill:#1f2937,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef step fill:#f3f4f6,stroke:#9ca3af,stroke-width:2px,color:#000;
+    classDef storage fill:#fef3c7,stroke:#f59e0b,stroke-width:2px,color:#000;
+    classDef ai fill:#dcfce7,stroke:#22c55e,stroke-width:2px,color:#000;
+    classDef db fill:#f3e8ff,stroke:#a855f7,stroke-width:2px,color:#000;
+    
+    %% 0. Orchestrator
+    A(["🚀 GitHub Actions (Orchestrator)\nRuns Every Monday 7 AM IST"]):::start
+    
+    %% 1. Scraping
+    subgraph Step1 ["1. Scraping Layer (External)"]
+        direction TB
+        B1["Reddit Scraper"]:::step
+        B2["Twitter Scraper"]:::step
+        B3["Play Store Scraper"]:::step
+        B4["App Store Scraper"]:::step
+        B5["Medium Scraper"]:::step
     end
-
-    subgraph Ingestion["⚙️ Ingestion & ETL"]
-        B1["Scraper / API Connectors"]
-        B2["Rate Limiter & Scheduler"]
-        B3["Raw Data Lake (S3 / GCS)"]
+    
+    %% 2. Ingestion
+    subgraph Step2 ["2. Ingestion Layer (Local)"]
+        direction LR
+        C1["Data Deduplication & Cleaning"]:::step
+        C2[/"raw_reviews_dump.json\n(Unified Local Data)"/]:::storage
     end
-
-    subgraph Processing["🧠 AI Processing Pipeline"]
-        C1["Text Preprocessing & Cleaning"]
-        C2["Sentiment Analysis (LLM / BERT)"]
-        C3["Topic Modeling (BERTopic / LDA)"]
-        C4["Intent & Need Extraction (GPT-4o)"]
-        C5["User Segment Classifier"]
+    
+    %% 3. AI
+    subgraph Step3 ["3. AI Processing Layer"]
+        direction LR
+        D1["🧠 Groq API (Llama 3.1)\nExtracts Needs & Classifies Sentiment"]:::ai
+        D2["🔢 Sentence-Transformers\nTranslates text into 384D Embeddings"]:::ai
     end
-
-    subgraph Storage["🗄️ Storage & Indexing"]
-        D1["Structured DB (PostgreSQL)"]
-        D2["Vector Store (Pinecone / Qdrant)"]
-        D3["Search Index (Elasticsearch)"]
+    
+    %% 4. Indexing & Storage
+    subgraph Step4 ["4. Storage & Indexing Layer"]
+        direction LR
+        E1[/"📊 synthesized_needs.json\n(Structured UI Insights)"/]:::storage
+        E2[("🗄️ Pinecone Vector DB\n(Indexed Embeddings DB)")]:::db
     end
-
-    subgraph Insights["📊 Insights & Delivery"]
-        E1["Interactive Dashboard (React)"]
-        E2["Natural Language Query Interface"]
-        E3["Automated Weekly Reports"]
-        E4["Alerting System (Slack / Email)"]
+    
+    %% 5. Output Layer
+    subgraph Step5 ["5. Output Layer"]
+        F["🖥️ React Dashboard\n(Gaana AI Discovery Engine)"]:::step
     end
-
-    Sources --> Ingestion
-    Ingestion --> Processing
-    Processing --> Storage
-    Storage --> Insights
+    
+    %% Flow Connections
+    A -->|"Triggers Scraper Scripts"| Step1
+    
+    B1 & B2 & B3 & B4 & B5 -->|"Raw Data Streams"| C1
+    C1 -->|"Aggregates into"| C2
+    
+    C2 -->|"Sends Text for Analysis"| D1
+    C2 -->|"Sends Text for Math"| D2
+    
+    D1 -->|"Saves JSON output"| E1
+    D2 -->|"Upserts & Indexes Vectors"| E2
+    
+    E1 -->|"Feeds Charts & Metrics"| F
+    E2 -->|"Powers Semantic Search"| F
 ```
 
 ---
