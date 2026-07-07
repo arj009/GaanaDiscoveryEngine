@@ -41,6 +41,8 @@ jobs:
         Cerebras_API_Key_1: ${{ secrets.CEREBRAS_API_KEY_1 }}
         Cerebras_API_Key_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
         Cerebras_API_Key_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
+        Cerebras_API_Key_4: ${{ secrets.CEREBRAS_API_KEY_4 }}
+        Cerebras_API_Key_5: ${{ secrets.CEREBRAS_API_KEY_5 }}
         TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
       run: |
         cd gaana-discovery-engine
