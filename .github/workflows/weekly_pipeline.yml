@@ -38,6 +38,12 @@ jobs:
         GROQ_API_KEY_7: ${{ secrets.GROQ_API_KEY_7 }}
         GROQ_API_KEY_8: ${{ secrets.GROQ_API_KEY_8 }}
         GROQ_API_KEY_9: ${{ secrets.GROQ_API_KEY_9 }}
+        Cerebras_API_Key_1: ${{ secrets.CEREBRAS_API_KEY_1 }}
+        Cerebras_API_Key_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
+        Cerebras_API_Key_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
+        CEREBRAS_API_KEY_1: ${{ secrets.CEREBRAS_API_KEY_1 }}
+        CEREBRAS_API_KEY_2: ${{ secrets.CEREBRAS_API_KEY_2 }}
+        CEREBRAS_API_KEY_3: ${{ secrets.CEREBRAS_API_KEY_3 }}
         TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
       run: |
         cd gaana-discovery-engine

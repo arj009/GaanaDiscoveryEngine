@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import urllib.request
 from groq import Groq
 from dotenv import load_dotenv
 
@@ -41,20 +42,46 @@ Rules:
 
 class LLMExtractor:
     def __init__(self):
-        self.api_key = os.getenv("GROQ_API_KEY")
-        if self.api_key and len(self.api_key) > 10 and self.api_key != "your_groq_api_key_here":
-            self.client = Groq(api_key=self.api_key)
-            print("✅ Groq LLM client initialized")
-        else:
-            self.client = None
-            print("⚠️ No GROQ_API_KEY found")
+        # Load Groq keys
+        self.groq_keys = []
+        for i in range(1, 10):
+            k = os.getenv(f"GROQ_API_KEY_{i}") or os.getenv(f"Groq_API_Key_{i}") or os.getenv(f"groq_api_key_{i}")
+            if k:
+                self.groq_keys.append(k)
+        
+        main_groq = os.getenv("GROQ_API_KEY") or os.getenv("Groq_API_Key") or os.getenv("groq_api_key")
+        if main_groq and main_groq not in self.groq_keys:
+            self.groq_keys.insert(0, main_groq)
+
+        # Load Cerebras keys
+        self.cerebras_keys = []
+        for i in range(1, 10):
+            k = os.getenv(f"CEREBRAS_API_KEY_{i}") or os.getenv(f"Cerebras_API_Key_{i}") or os.getenv(f"cerebras_api_key_{i}")
+            if k:
+                self.cerebras_keys.append(k)
+                
+        main_cerebras = os.getenv("CEREBRAS_API_KEY") or os.getenv("Cerebras_API_Key") or os.getenv("cerebras_api_key")
+        if main_cerebras and main_cerebras not in self.cerebras_keys:
+            self.cerebras_keys.insert(0, main_cerebras)
+
+        self.clients = []
+        for key in self.groq_keys:
+            if len(key) > 10 and key != "your_groq_api_key_here":
+                self.clients.append({"provider": "groq", "key": key, "model": "llama-3.3-70b-versatile"})
+                
+        for key in self.cerebras_keys:
+            if len(key) > 10 and key != "your_cerebras_api_key_here":
+                self.clients.append({"provider": "cerebras", "key": key, "model": "gpt-oss-120b"})
+                
+        print(f"✅ LLM Extraction clients initialized: {len(self.clients)} clients found ({len(self.groq_keys)} Groq, {len(self.cerebras_keys)} Cerebras)")
 
     def extract_insights(self, review: dict) -> dict:
         text = review.get("content", "")
         if not text or len(text.strip()) < 20:
             return None
 
-        if not self.client:
+        if not self.clients:
+            print("⚠️ No valid LLM clients initialized")
             return None
 
         rating = review.get("rating")
@@ -63,28 +90,72 @@ class LLMExtractor:
 
         prompt = USER_PROMPT_TEMPLATE.format(review_text=text[:800], rating=rating_str, source=source)
 
-        max_retries = 3
-        for attempt in range(max_retries):
+        available_clients = list(self.clients)
+        client_idx = 0
+        
+        while available_clients:
+            current_client = available_clients[client_idx % len(available_clients)]
             try:
-                response = self.client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
-                    messages=[
-                        {"role": "system", "content": SYSTEM_PROMPT},
-                        {"role": "user", "content": prompt}
-                    ],
-                    temperature=0.1,
-                    max_tokens=400,
-                    response_format={"type": "json_object"}
-                )
-                raw = response.choices[0].message.content
-                return json.loads(raw)
+                if current_client["provider"] == "groq":
+                    if not hasattr(self, "_groq_instances"):
+                        self._groq_instances = {}
+                    if current_client["key"] not in self._groq_instances:
+                        self._groq_instances[current_client["key"]] = Groq(api_key=current_client["key"])
+                    
+                    groq_client = self._groq_instances[current_client["key"]]
+                    response = groq_client.chat.completions.create(
+                        model=current_client["model"],
+                        messages=[
+                            {"role": "system", "content": SYSTEM_PROMPT},
+                            {"role": "user", "content": prompt}
+                        ],
+                        temperature=0.1,
+                        max_tokens=400,
+                        response_format={"type": "json_object"}
+                    )
+                    raw = response.choices[0].message.content
+                    return json.loads(raw)
+                    
+                elif current_client["provider"] == "cerebras":
+                    url = "https://api.cerebras.ai/v1/chat/completions"
+                    headers = {
+                        "Content-Type": "application/json",
+                        "Authorization": f"Bearer {current_client['key']}"
+                    }
+                    data = {
+                        "model": current_client["model"],
+                        "messages": [
+                            {"role": "system", "content": SYSTEM_PROMPT},
+                            {"role": "user", "content": prompt}
+                        ],
+                        "temperature": 0.1,
+                        "max_tokens": 400,
+                        "response_format": {"type": "json_object"}
+                    }
+                    req = urllib.request.Request(
+                        url,
+                        data=json.dumps(data).encode("utf-8"),
+                        headers=headers,
+                        method="POST"
+                    )
+                    with urllib.request.urlopen(req, timeout=30) as response:
+                        res_data = response.read().decode("utf-8")
+                        parsed = json.loads(res_data)
+                        raw = parsed["choices"][0]["message"]["content"]
+                        return json.loads(raw)
+                        
             except Exception as e:
                 err_msg = str(e).lower()
-                if "rate limit" in err_msg or "429" in err_msg:
-                    sleep_time = 15 * (attempt + 1)
-                    print(f"Rate limit hit. Sleeping for {sleep_time} seconds (attempt {attempt+1}/{max_retries})...")
-                    time.sleep(sleep_time)
+                print(f"Error on {current_client['provider']}: {e}")
+                if "rate limit" in err_msg or "429" in err_msg or "resource_exhausted" in err_msg or "exhausted" in err_msg:
+                    if "day" in err_msg or "limit exceeded" in err_msg or "exhausted" in err_msg:
+                        print(f"Client {current_client['provider']} exhausted for day. Removing client.")
+                        available_clients.remove(current_client)
+                        if not available_clients:
+                            break
+                    else:
+                        client_idx += 1
+                        time.sleep(5)
                 else:
-                    print(f"Groq API error: {e}")
-                    return None
+                    client_idx += 1
         return None

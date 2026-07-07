@@ -6,21 +6,65 @@ import dotenv from 'dotenv';
 const envPath = path.resolve(process.cwd(), '.env');
 dotenv.config({ path: envPath });
 
-const apiKeys = [
-  process.env.GROQ_API_KEY_1 || process.env.GROQ_API_KEY,
-  process.env.GROQ_API_KEY_2,
-  process.env.GROQ_API_KEY_3,
-  process.env.GROQ_API_KEY_4,
-  process.env.GROQ_API_KEY_5,
-  process.env.GROQ_API_KEY_6,
-  process.env.GROQ_API_KEY_7,
-  process.env.GROQ_API_KEY_8,
-  process.env.GROQ_API_KEY_9
-].filter(k => k); // Keep only defined keys
+const groqKeys = [];
+for (let i = 1; i <= 9; i++) {
+  const k = process.env[`GROQ_API_KEY_${i}`] || process.env[`Groq_API_Key_${i}`] || process.env[`groq_api_key_${i}`];
+  if (k) groqKeys.push(k);
+}
+if (groqKeys.length === 0 && process.env.GROQ_API_KEY) {
+  groqKeys.push(process.env.GROQ_API_KEY);
+}
 
-if (apiKeys.length === 0) {
-    console.error("No GROQ API keys found in environment.");
+const cerebrasKeys = [];
+for (let i = 1; i <= 9; i++) {
+  const k = process.env[`CEREBRAS_API_KEY_${i}`] || process.env[`Cerebras_API_Key_${i}`] || process.env[`cerebras_api_key_${i}`];
+  if (k) cerebrasKeys.push(k);
+}
+if (cerebrasKeys.length === 0 && (process.env.CEREBRAS_API_KEY || process.env.Cerebras_API_Key)) {
+  cerebrasKeys.push(process.env.CEREBRAS_API_KEY || process.env.Cerebras_API_Key);
+}
+
+const apiClients = [
+  ...groqKeys.map(key => ({ provider: 'groq', key, model: 'llama-3.3-70b-versatile' })),
+  ...cerebrasKeys.map(key => ({ provider: 'cerebras', key, model: 'gpt-oss-120b' }))
+];
+
+if (apiClients.length === 0) {
+    console.error("No GROQ or CEREBRAS API keys found in environment.");
     process.exit(1);
+}
+
+async function callLlm(clientInfo, messages, temperature = 0.1) {
+  if (clientInfo.provider === 'groq') {
+    const client = new Groq({ apiKey: clientInfo.key });
+    const response = await client.chat.completions.create({
+      model: clientInfo.model,
+      messages: messages,
+      temperature: temperature,
+      response_format: { type: "json_object" }
+    });
+    return response.choices[0].message.content;
+  } else if (clientInfo.provider === 'cerebras') {
+    const response = await fetch('https://api.cerebras.ai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${clientInfo.key}`
+      },
+      body: JSON.stringify({
+        model: clientInfo.model,
+        messages: messages,
+        temperature: temperature,
+        response_format: { type: "json_object" }
+      })
+    });
+    if (!response.ok) {
+      const errText = await response.text();
+      throw new Error(`Cerebras API error: ${response.status} ${errText}`);
+    }
+    const data = await response.json();
+    return data.choices[0].message.content;
+  }
 }
 
 const CLASSIFICATION_PROMPT = (review) => `
@@ -63,55 +107,47 @@ async function classifyReviews() {
   const rawData = fs.readFileSync('data/reviews_raw.json', 'utf8');
   let reviews = JSON.parse(rawData);
   
-  // Dynamic scaling: 200 reviews per available API key to bypass strict 100k free tier limits!
-  const limit = Math.min(apiKeys.length * 200, 1000);
+  // Dynamic scaling: 200 reviews per available API client to bypass strict limits!
+  const limit = Math.min(apiClients.length * 200, 1000);
   reviews = reviews.slice(0, limit);
   
   const results = [];
   const DELAY_MS = 2100; // Increased delay for strict 70B free tier limits (30 RPM)
 
-  console.log(`Classifying ${reviews.length} reviews utilizing ${apiKeys.length} API keys...`);
+  console.log(`Classifying ${reviews.length} reviews utilizing ${apiClients.length} API clients...`);
 
-  let availableKeys = [...apiKeys];
+  let availableClients = [...apiClients];
   let keyIndex = 0;
 
   for (let i = 0; i < reviews.length; i++) {
     const review = reviews[i];
     let success = false;
     
-    while (!success && availableKeys.length > 0) {
-      // Rotate key
-      const currentKey = availableKeys[keyIndex % availableKeys.length];
-      const client = new Groq({ apiKey: currentKey });
+    while (!success && availableClients.length > 0) {
+      // Rotate client
+      const currentClient = availableClients[keyIndex % availableClients.length];
       
       try {
-        const response = await client.chat.completions.create({
-          model: 'llama-3.3-70b-versatile',
-          messages: [{ role: 'user', content: CLASSIFICATION_PROMPT(review) }],
-          temperature: 0.1,
-          response_format: { type: "json_object" }
-        });
-
-        let raw = response.choices[0].message.content.trim();
-        const parsed = JSON.parse(raw);
+        const raw = await callLlm(currentClient, [{ role: 'user', content: CLASSIFICATION_PROMPT(review) }], 0.1);
+        const parsed = JSON.parse(raw.trim());
         results.push({ ...review, claude_output: parsed, processing_status: 'done' });
         success = true;
         keyIndex++; // Only rotate to next key on success to balance load
       } catch (err) {
-        if (err.message && (err.message.includes('rate_limit') || err.message.includes('429'))) {
-           console.log(`\nRate limit hit: ${err.message}`);
-           if (err.message.includes('per_day') || err.message.includes('day')) {
+        if (err.message && (err.message.includes('rate_limit') || err.message.includes('429') || err.message.includes('ResourceExhausted') || err.message.includes('exhausted'))) {
+           console.log(`\nRate limit hit on ${currentClient.provider}: ${err.message}`);
+           if (err.message.includes('per_day') || err.message.includes('day') || err.message.includes('exhausted')) {
              // Key exhausted for the day, remove it from the available pool
-             console.log(`Key exhausted for day. Remaining keys: ${availableKeys.length - 1}`);
-             availableKeys.splice(keyIndex % availableKeys.length, 1);
+             console.log(`Client on ${currentClient.provider} exhausted for day. Remaining clients: ${availableClients.length - 1}`);
+             availableClients.splice(keyIndex % availableClients.length, 1);
            } else {
-             // Transient limit (per minute). Rotate to next key and wait a bit.
+             // Transient limit (per minute). Rotate to next client and wait a bit.
              keyIndex++;
              await new Promise(r => setTimeout(r, 6000)); // Wait 6 seconds to let rate limit reset
            }
         } else {
            // Parse error or other issue, don't retry, just fail this specific review
-           console.log(`\nError: ${err.message}`);
+           console.log(`\nError on ${currentClient.provider}: ${err.message}`);
            break;
         }
       }
@@ -123,9 +159,9 @@ async function classifyReviews() {
     }
 
     if ((i + 1) % 10 === 0) {
-      console.log(`Progress: ${i + 1}/${reviews.length} reviews classified. Active keys: ${availableKeys.length}`);
+      console.log(`Progress: ${i + 1}/${reviews.length} reviews classified. Active clients: ${availableClients.length}`);
     }
-    if (availableKeys.length > 0) {
+    if (availableClients.length > 0) {
       await new Promise(r => setTimeout(r, DELAY_MS));
     }
   }

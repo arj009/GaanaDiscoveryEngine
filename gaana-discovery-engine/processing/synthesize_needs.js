@@ -6,25 +6,66 @@ import dotenv from 'dotenv';
 const envPath = path.resolve(process.cwd(), '.env');
 dotenv.config({ path: envPath });
 
-const apiKeys = [
-  process.env.GROQ_API_KEY_1 || process.env.GROQ_API_KEY,
-  process.env.GROQ_API_KEY_2,
-  process.env.GROQ_API_KEY_3,
-  process.env.GROQ_API_KEY_4,
-  process.env.GROQ_API_KEY_5,
-  process.env.GROQ_API_KEY_6,
-  process.env.GROQ_API_KEY_7,
-  process.env.GROQ_API_KEY_8,
-  process.env.GROQ_API_KEY_9
-].filter(k => k).reverse(); // Reverse so synthesis uses freshest keys first
+const groqKeys = [];
+for (let i = 1; i <= 9; i++) {
+  const k = process.env[`GROQ_API_KEY_${i}`] || process.env[`Groq_API_Key_${i}`] || process.env[`groq_api_key_${i}`];
+  if (k) groqKeys.push(k);
+}
+if (groqKeys.length === 0 && process.env.GROQ_API_KEY) {
+  groqKeys.push(process.env.GROQ_API_KEY);
+}
 
-if (apiKeys.length === 0) {
-    console.error("No GROQ API keys found in environment.");
+const cerebrasKeys = [];
+for (let i = 1; i <= 9; i++) {
+  const k = process.env[`CEREBRAS_API_KEY_${i}`] || process.env[`Cerebras_API_Key_${i}`] || process.env[`cerebras_api_key_${i}`];
+  if (k) cerebrasKeys.push(k);
+}
+if (cerebrasKeys.length === 0 && (process.env.CEREBRAS_API_KEY || process.env.Cerebras_API_Key)) {
+  cerebrasKeys.push(process.env.CEREBRAS_API_KEY || process.env.Cerebras_API_Key);
+}
+
+const apiClients = [
+  ...groqKeys.map(key => ({ provider: 'groq', key, model: 'llama-3.3-70b-versatile' })),
+  ...cerebrasKeys.map(key => ({ provider: 'cerebras', key, model: 'gpt-oss-120b' }))
+];
+
+if (apiClients.length === 0) {
+    console.error("No GROQ or CEREBRAS API keys found in environment.");
     process.exit(1);
 }
 
-// Just use the first valid key for synthesis
-const client = new Groq({ apiKey: apiKeys[0] });
+async function callLlm(clientInfo, messages, temperature = 0.2) {
+  if (clientInfo.provider === 'groq') {
+    const client = new Groq({ apiKey: clientInfo.key });
+    const response = await client.chat.completions.create({
+      model: clientInfo.model,
+      messages: messages,
+      temperature: temperature,
+      response_format: { type: "json_object" }
+    });
+    return response.choices[0].message.content;
+  } else if (clientInfo.provider === 'cerebras') {
+    const response = await fetch('https://api.cerebras.ai/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${clientInfo.key}`
+      },
+      body: JSON.stringify({
+        model: clientInfo.model,
+        messages: messages,
+        temperature: temperature,
+        response_format: { type: "json_object" }
+      })
+    });
+    if (!response.ok) {
+      const errText = await response.text();
+      throw new Error(`Cerebras API error: ${response.status} ${errText}`);
+    }
+    const data = await response.json();
+    return data.choices[0].message.content;
+  }
+}
 
 async function synthesizeUnmetNeeds() {
   if (!fs.existsSync('data/reviews_classified.json')) {
@@ -94,37 +135,30 @@ Respond ONLY with a valid JSON object matching this exact schema:
 }
 `;
 
-  console.log("Synthesizing final top 5 unmet needs using Groq's llama-3.3-70b-versatile...");
+  console.log("Synthesizing final top 5 unmet needs using available LLM clients...");
   
   let success = false;
-  for (let i = 0; i < apiKeys.length; i++) {
+  for (let i = 0; i < apiClients.length; i++) {
+      const currentClient = apiClients[i];
       try {
-          const client = new Groq({ apiKey: apiKeys[i] });
-          const response = await client.chat.completions.create({
-              model: 'llama-3.3-70b-versatile',
-              messages: [{ role: 'user', content: FINAL_PROMPT }],
-              temperature: 0.2,
-              response_format: { type: "json_object" }
-          });
-
-          const raw = response.choices[0].message.content.trim();
-          const parsed = JSON.parse(raw);
+          const raw = await callLlm(currentClient, [{ role: 'user', content: FINAL_PROMPT }], 0.2);
+          const parsed = JSON.parse(raw.trim());
           const needs = parsed.unmet_needs || parsed;
 
           fs.writeFileSync('data/unmet_needs.json', JSON.stringify(needs, null, 2));
-          console.log(`\n✅ Synthesized ${needs.length} unmet needs → data/unmet_needs.json`);
+          console.log(`\n✅ Synthesized ${needs.length} unmet needs using ${currentClient.provider} → data/unmet_needs.json`);
           success = true;
           break; // Exit the loop on success
       } catch (err) {
-          console.error(`Key ${i+1} failed: ${err.message}`);
-          if (!err.message.includes('rate_limit') && !err.message.includes('Invalid')) {
+          console.error(`Client ${i+1} (${currentClient.provider}) failed: ${err.message}`);
+          if (!err.message.includes('rate_limit') && !err.message.includes('429') && !err.message.includes('exhausted')) {
               break; // If it's a real error (like prompt too long), don't keep trying
           }
       }
   }
 
   if (!success) {
-      console.error("All API keys failed for synthesis.");
+      console.error("All API clients failed for synthesis.");
   }
 }
 
