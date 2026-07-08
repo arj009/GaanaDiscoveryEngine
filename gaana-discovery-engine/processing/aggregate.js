@@ -39,6 +39,7 @@ const sortEntries = (obj) => Object.fromEntries(
 );
 
 const aggregated = {
+    last_refreshed: new Date().toISOString(),
     total_reviews: classified.length,
     discovery_friction_pct: Number(discoveryFrictionPct.toFixed(1)),
     sentiment: sortEntries(sentiments),

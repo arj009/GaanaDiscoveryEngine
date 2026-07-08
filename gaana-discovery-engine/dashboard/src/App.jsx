@@ -92,7 +92,10 @@ export default function App() {
       .then(r => r.json())
       .then(json => {
         setData(processAggregatedData(json.aggregated, json.unmetNeeds, json.classifiedReviews))
-        setLastRefresh(new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }))
+        const dateStr = json.aggregated?.last_refreshed 
+          ? new Date(json.aggregated.last_refreshed).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+          : 'Unknown';
+        setLastRefresh(dateStr)
         setLoading(false)
       })
       .catch((err) => {
@@ -104,7 +107,10 @@ export default function App() {
         ])
         .then(([agg, unmet, classified]) => {
           setData(processAggregatedData(agg, unmet, classified))
-          setLastRefresh(new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }))
+          const dateStr = agg?.last_refreshed 
+            ? new Date(agg.last_refreshed).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+            : 'Unknown';
+          setLastRefresh(dateStr)
           setLoading(false)
         })
         .catch(fallbackErr => {
