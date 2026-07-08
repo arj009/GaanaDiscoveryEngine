@@ -1,32 +1,32 @@
 {
-  "last_refreshed": "2026-07-08T08:18:10.076Z",
-  "total_reviews": 618,
-  "discovery_friction_pct": 2.4,
+  "last_refreshed": "2026-07-08T09:13:57.109Z",
+  "total_reviews": 731,
+  "discovery_friction_pct": 2.3,
   "sentiment": {
-    "negative": 493,
-    "positive": 119,
-    "neutral": 6
+    "negative": 592,
+    "positive": 125,
+    "neutral": 14
   },
   "frustrations": {
-    "content_library_gaps": 28,
+    "content_library_gaps": 33,
     "poor_discovery_ui": 3,
     "repetitive_recommendations": 2
   },
   "listening_intents": {
+    "playlist_curation": 20,
     "seek_new_music": 17,
-    "background_listening": 14,
-    "mood_listening": 12,
-    "playlist_curation": 12
+    "mood_listening": 11,
+    "background_listening": 11
   },
   "repetition_causes": {
-    "limited_content_variety": 3,
+    "limited_content_variety": 2,
     "algorithm_overfits_history": 1
   },
   "segments": {
-    "general_user": 528,
-    "casual_listener": 51,
+    "general_user": 631,
+    "casual_listener": 61,
+    "power_user": 19,
     "audiophile": 15,
-    "discovery_seeker": 13,
-    "power_user": 11
+    "discovery_seeker": 5
   }
 }

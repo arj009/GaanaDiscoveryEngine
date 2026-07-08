@@ -1,42 +1,42 @@
 [
   {
-    "name": "Diverse Music Library",
-    "description": "Users want a more extensive music library with diverse recommendations to reduce repetitive listening behavior. This need is evident from reviews complaining about the same songs being played repeatedly.",
-    "primary_segment": "discovery_seeker",
+    "name": "Diverse Recommendations",
+    "description": "Users want a more extensive music library with less repetitive recommendations, and they feel frustrated when the app fails to offer fresh and relevant music. This need is evident in reviews where users compare Gaana's recommendation system unfavorably to other music streaming apps.",
+    "primary_segment": "general_user",
     "mention_pct": 15,
-    "example_phrase": "more than just 10 songs",
+    "example_phrase": "repetitive recommendation system",
     "opportunity_score": 8
   },
   {
     "name": "Intuitive Discovery UI",
-    "description": "Users desire a simpler and more intuitive user interface for music discovery, allowing them to easily find new music. Reviews highlight the current UI as confusing and cluttered.",
+    "description": "Users desire a simplified and intuitive user interface for music discovery, with features like easy access to their library and playlists. The current UI is seen as overwhelming and confusing, leading to cognitive overload during the discovery process.",
     "primary_segment": "general_user",
     "mention_pct": 12,
-    "example_phrase": "clean layout that is easy",
+    "example_phrase": "confusing design",
     "opportunity_score": 9
   },
   {
-    "name": "Transparent Recommendation",
-    "description": "Users want to understand why certain songs are recommended to them, seeking transparency in the recommendation algorithm. This need is reflected in reviews criticizing the repetitive and unexplained recommendations.",
-    "primary_segment": "discovery_seeker",
+    "name": "Accurate Search Function",
+    "description": "Users need a more accurate search function that returns relevant results, allowing them to find specific songs or artists without difficulty. The current search algorithm is seen as inadequate, often failing to suggest relevant music.",
+    "primary_segment": "general_user",
     "mention_pct": 8,
-    "example_phrase": "recommendation logic and overall",
+    "example_phrase": "search algorithm just isn't sophisticated",
     "opportunity_score": 7
   },
   {
-    "name": "Mood-Based Discovery",
-    "description": "Users wish for a feature that allows them to discover music based on their current mood or activity, seeking a more personalized experience. Reviews mention the desire for music that fits their specific situations.",
+    "name": "Personalized Music Sharing",
+    "description": "Users want an intuitive music sharing feature with social discovery, enabling them to share music with friends and discover new songs based on their preferences. This need is reflected in reviews where users express frustration with the current sharing process.",
     "primary_segment": "general_user",
     "mention_pct": 6,
-    "example_phrase": "listen based on mood",
-    "opportunity_score": 8
+    "example_phrase": "sharing music is clunky",
+    "opportunity_score": 6
   },
   {
-    "name": "Social Music Sharing",
-    "description": "Users want an intuitive music sharing feature with social discovery capabilities, enabling them to share and discover music with friends easily. Reviews suggest the current sharing process is clunky and manual.",
-    "primary_segment": "general_user",
+    "name": "Transparent Recommendation Logic",
+    "description": "Users are interested in understanding the logic behind the recommendations they receive, with some expressing a desire for features like 'Discover Weekly' playlists. This need is tied to the desire for more diverse and less repetitive recommendations.",
+    "primary_segment": "discovery_seeker",
     "mention_pct": 5,
-    "example_phrase": "share music with friends",
-    "opportunity_score": 6
+    "example_phrase": "no 'Discover Weekly' equivalent",
+    "opportunity_score": 8
   }
 ]
