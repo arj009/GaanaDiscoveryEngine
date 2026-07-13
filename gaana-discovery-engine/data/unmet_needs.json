@@ -1,42 +1,42 @@
 [
   {
     "name": "Diverse Recommendations",
-    "description": "Users want a more extensive music library with less repetitive recommendations, and they feel frustrated when the app fails to offer fresh and relevant music. This need is evident in reviews where users compare Gaana's recommendation system unfavorably to other music streaming apps.",
-    "primary_segment": "general_user",
-    "mention_pct": 15,
+    "description": "Users want a more diverse and dynamic music recommendation system that doesn't recycle the same tracks. This need arises from frustrations with repetitive recommendations and a desire for fresh music discovery.",
+    "primary_segment": "discovery_seeker",
+    "mention_pct": 20,
     "example_phrase": "repetitive recommendation system",
-    "opportunity_score": 8
-  },
-  {
-    "name": "Intuitive Discovery UI",
-    "description": "Users desire a simplified and intuitive user interface for music discovery, with features like easy access to their library and playlists. The current UI is seen as overwhelming and confusing, leading to cognitive overload during the discovery process.",
-    "primary_segment": "general_user",
-    "mention_pct": 12,
-    "example_phrase": "confusing design",
     "opportunity_score": 9
   },
   {
-    "name": "Accurate Search Function",
-    "description": "Users need a more accurate search function that returns relevant results, allowing them to find specific songs or artists without difficulty. The current search algorithm is seen as inadequate, often failing to suggest relevant music.",
+    "name": "Intuitive Discovery UI",
+    "description": "Users seek a simplified and intuitive user interface for music discovery, free from clutter and cognitive overload. This need stems from difficulties navigating the app and discovering new music.",
     "primary_segment": "general_user",
-    "mention_pct": 8,
-    "example_phrase": "search algorithm just isn't sophisticated",
-    "opportunity_score": 7
-  },
-  {
-    "name": "Personalized Music Sharing",
-    "description": "Users want an intuitive music sharing feature with social discovery, enabling them to share music with friends and discover new songs based on their preferences. This need is reflected in reviews where users express frustration with the current sharing process.",
-    "primary_segment": "general_user",
-    "mention_pct": 6,
-    "example_phrase": "sharing music is clunky",
-    "opportunity_score": 6
+    "mention_pct": 18,
+    "example_phrase": "confusing design",
+    "opportunity_score": 8
   },
   {
     "name": "Transparent Recommendation Logic",
-    "description": "Users are interested in understanding the logic behind the recommendations they receive, with some expressing a desire for features like 'Discover Weekly' playlists. This need is tied to the desire for more diverse and less repetitive recommendations.",
+    "description": "Users desire transparency into how recommendations are generated, wanting to understand why certain songs are suggested. This need emerges from a lack of trust in the current recommendation algorithm.",
     "primary_segment": "discovery_seeker",
-    "mention_pct": 5,
-    "example_phrase": "no 'Discover Weekly' equivalent",
+    "mention_pct": 12,
+    "example_phrase": "recommendation logic",
+    "opportunity_score": 7
+  },
+  {
+    "name": "Social Music Discovery",
+    "description": "Users want an in-app social layer for music discovery and sharing, enabling them to explore music with friends and like-minded individuals. This need arises from a desire for social interaction around music.",
+    "primary_segment": "discovery_seeker",
+    "mention_pct": 10,
+    "example_phrase": "in-app social layer",
     "opportunity_score": 8
+  },
+  {
+    "name": "Mood-Based Discovery",
+    "description": "Users wish for a feature that allows them to discover music based on their current mood or activity, seeking a more personalized music experience. This need is reflected in complaints about the lack of a 'Discover Weekly' equivalent.",
+    "primary_segment": "general_user",
+    "mention_pct": 8,
+    "example_phrase": "mood based music",
+    "opportunity_score": 6
   }
 ]
