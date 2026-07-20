@@ -1,7 +1,7 @@
 [
   {
-    "name": "Diverse Recommendations",
-    "description": "Users want a more diverse and dynamic music recommendation system that doesn't recycle the same tracks. This need arises from frustrations with repetitive recommendations and a desire for fresh music discovery.",
+    "name": "Diverse Music Recommendations",
+    "description": "Users want a more extensive music library with less repetitive recommendations to discover new music. The current algorithm fails to offer fresh and relevant music, leading to frustration.",
     "primary_segment": "discovery_seeker",
     "mention_pct": 20,
     "example_phrase": "repetitive recommendation system",
@@ -9,34 +9,34 @@
   },
   {
     "name": "Intuitive Discovery UI",
-    "description": "Users seek a simplified and intuitive user interface for music discovery, free from clutter and cognitive overload. This need stems from difficulties navigating the app and discovering new music.",
+    "description": "Users need a simplified and intuitive user interface for music discovery to reduce cognitive load and confusion. The current design is overwhelming and cluttered, making it hard to find new music.",
     "primary_segment": "general_user",
-    "mention_pct": 18,
+    "mention_pct": 15,
     "example_phrase": "confusing design",
     "opportunity_score": 8
   },
   {
-    "name": "Transparent Recommendation Logic",
-    "description": "Users desire transparency into how recommendations are generated, wanting to understand why certain songs are suggested. This need emerges from a lack of trust in the current recommendation algorithm.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 12,
-    "example_phrase": "recommendation logic",
-    "opportunity_score": 7
-  },
-  {
-    "name": "Social Music Discovery",
-    "description": "Users want an in-app social layer for music discovery and sharing, enabling them to explore music with friends and like-minded individuals. This need arises from a desire for social interaction around music.",
+    "name": "Social Music Sharing",
+    "description": "Users want an in-app social layer for music discovery and sharing to connect with friends and like-minded individuals. This feature would enhance the overall music experience and encourage social interaction.",
     "primary_segment": "discovery_seeker",
     "mention_pct": 10,
     "example_phrase": "in-app social layer",
+    "opportunity_score": 7
+  },
+  {
+    "name": "Personalized Playlists",
+    "description": "Users desire personalized playlists that cater to their mood, activity, or preferences to improve their listening experience. The lack of such features leads to dissatisfaction and frustration.",
+    "primary_segment": "general_user",
+    "mention_pct": 12,
+    "example_phrase": "playlists based on mood",
     "opportunity_score": 8
   },
   {
-    "name": "Mood-Based Discovery",
-    "description": "Users wish for a feature that allows them to discover music based on their current mood or activity, seeking a more personalized music experience. This need is reflected in complaints about the lack of a 'Discover Weekly' equivalent.",
-    "primary_segment": "general_user",
+    "name": "Transparent Recommendation Logic",
+    "description": "Users want to understand the reasoning behind music recommendations to trust the algorithm and discover new music. The current lack of transparency leads to skepticism and frustration.",
+    "primary_segment": "power_user",
     "mention_pct": 8,
-    "example_phrase": "mood based music",
+    "example_phrase": "recommendation logic",
     "opportunity_score": 6
   }
 ]
