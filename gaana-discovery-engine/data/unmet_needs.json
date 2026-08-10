@@ -1,42 +1,42 @@
 [
   {
-    "name": "Diverse Music",
-    "description": "Users want a more extensive music library with less repetitive recommendations to discover new artists and songs. This need is evident from reviews mentioning the lack of variety in song recommendations and the repetition of the same songs.",
-    "primary_segment": "discovery_seeker",
+    "name": "Diverse Recommendations",
+    "description": "Users want a more diverse music library with less repetitive recommendations. They feel that the current algorithm fails to offer fresh, relevant music, often recycling the same small library of tracks.",
+    "primary_segment": "general_user",
     "mention_pct": 20,
     "example_phrase": "repetitive recommendation system",
     "opportunity_score": 9
   },
   {
-    "name": "Intuitive Discovery",
-    "description": "Users need a simpler and more intuitive user interface for music discovery, allowing them to easily find and explore new music. Reviews highlight the complexity and clutter of the current UI, making it hard to discover new music.",
+    "name": "Intuitive Discovery UI",
+    "description": "Users need a simplified and intuitive user interface for music discovery. They find the current design confusing, with too many buttons and cluttered sections, creating a high cognitive load during the discovery process.",
     "primary_segment": "general_user",
-    "mention_pct": 18,
+    "mention_pct": 15,
     "example_phrase": "confusing design",
     "opportunity_score": 8
   },
   {
-    "name": "Personalized Playlists",
-    "description": "Users desire personalized music recommendations that cater to their tastes and preferences, reducing repetitive listening behavior. Reviews express frustration with the current recommendation algorithm, which often suggests the same songs or artists repeatedly.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 15,
-    "example_phrase": "painfully repetitive",
-    "opportunity_score": 9
+    "name": "Accurate Recommendation",
+    "description": "Users want a more accurate song recommendation system that matches their taste. They feel that the current system often recommends songs that don't align with their preferences, leading to a disappointing experience.",
+    "primary_segment": "general_user",
+    "mention_pct": 12,
+    "example_phrase": "songs don't match my taste",
+    "opportunity_score": 8
   },
   {
-    "name": "Social Music Sharing",
-    "description": "Users want an intuitive music sharing feature with social discovery capabilities, enabling them to share and discover music with friends easily. Reviews suggest that the current sharing process is clunky and manual, hindering social music discovery.",
+    "name": "Transparent Recommendation",
+    "description": "Users desire transparency in the recommendation algorithm, wanting to know why certain songs are suggested. They feel that the lack of transparency leads to mistrust and frustration with the app.",
     "primary_segment": "general_user",
-    "mention_pct": 10,
-    "example_phrase": "sharing music is clunky",
+    "mention_pct": 8,
+    "example_phrase": "no 'Discover Weekly' equivalent",
     "opportunity_score": 7
   },
   {
-    "name": "Transparent Recommendations",
-    "description": "Users want to understand why certain songs are recommended to them, seeking transparency in the recommendation algorithm. Reviews indicate that users are often puzzled by the repetitive or irrelevant song suggestions, highlighting the need for more transparent recommendation reasoning.",
-    "primary_segment": "discovery_seeker",
-    "mention_pct": 8,
-    "example_phrase": "no 'Discover Weekly' equivalent",
+    "name": "Effortless Music Exploration",
+    "description": "Users need an effortless way to explore and discover new music, without excessive friction or complexity. They want to easily find and play songs that match their mood or preferences, without being overwhelmed by the app's interface.",
+    "primary_segment": "general_user",
+    "mention_pct": 10,
+    "example_phrase": "difficult to find songs",
     "opportunity_score": 8
   }
 ]
